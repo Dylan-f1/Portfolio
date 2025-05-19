@@ -5,9 +5,6 @@ import '../styles/Navbar.css';
 const Navbar = () => {
   return (
     <div className="navbar-container">
-      <header className="header">
-        <img src="/Fond Portfolio.png" alt="Fond" className="fond" />
-      </header>
       
       <div className="navigation-container">
         <div className="logo">

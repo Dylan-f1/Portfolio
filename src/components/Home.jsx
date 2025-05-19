@@ -17,6 +17,7 @@ const Home = () => {
 
   return (
     <div className="home-container">
+      <div className="portfolio-background"></div>
       <Navbar />
       <div className="home-content">
         <h1 className="home-title">Dylan Fernandes</h1>

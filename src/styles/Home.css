@@ -9,6 +9,54 @@
   overflow-x: hidden;
 }
 
+.portfolio-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(28, 28, 28, 0.7), rgba(28, 28, 28, 0.95)),
+    radial-gradient(circle at 25% 25%, rgba(74, 144, 226, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(100, 65, 165, 0.3) 0%, transparent 50%);
+  background-size: cover;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.portfolio-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px;
+  z-index: -1;
+}
+
+.portfolio-background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 10%);
+  background-size: 100px 100px;
+  animation: pulse 10s infinite ease-in-out;
+  z-index: -1;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.8; }
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -53,6 +101,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .home-title {

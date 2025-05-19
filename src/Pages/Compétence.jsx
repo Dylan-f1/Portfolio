@@ -23,19 +23,18 @@ const Competences = () => {
             <h3>Développement Back-end</h3>
             <ul>
               <li>Node.js</li>
-              <li>PHP</li>
+              <li>Python</li>
               <li>SQL / Bases de données</li>
-              <li>API REST</li>
             </ul>
           </div>
           
           <div className="competence-card">
-            <h3>Outils & Méthodologies</h3>
+            <h3>Outils</h3>
             <ul>
               <li>Git / GitHub</li>
-              <li>VS Code</li>
-              <li>Méthodologie Agile</li>
-              <li>Tests unitaires</li>
+              <li>Cursor</li>
+              <li>Figma</li>
+              <li>Postman</li>
             </ul>
           </div>
         </div>

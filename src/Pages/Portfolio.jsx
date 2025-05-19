@@ -8,7 +8,7 @@ const Portfolio = () => {
       <section className="portfolio-section">
         <h2>Mon Portfolio</h2>
         <div className="portfolio-container">
-          <p>Cette page est en cours de développement...</p>
+          <p>Cette page est en cours de développement...</p> 
         </div>
       </section>
     </div>
