@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Competences from './Pages/Compétence';
 import CV from './Pages/CV';
-import Portfolio from './Pages/Portfolio';
+import Projets from './Pages/Projets';
 import APropos from './Pages/A-Propos'; 
 import './App.css';
 
@@ -14,11 +14,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/competences" element={<Competences />} />
         <Route path="/cv" element={<CV />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/projets" element={<Projets />} />
         <Route path="/a-propos" element={<APropos />} />
       </Routes>
     </div>
   );
 }
 
-export default App;
+export default App; 
