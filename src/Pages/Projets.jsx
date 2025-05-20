@@ -1,18 +1,18 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 
-const Portfolio = () => {
+const Projets = () => {
   return (
     <div>
       <Navbar />
       <section className="portfolio-section">
-        <h2>Mon Portfolio</h2>
+        <h2>Mes Projets Personnels</h2>
         <div className="portfolio-container">
-          <p>Cette page est en cours de développement...</p> 
+          <p>Voici mes projets personnels et mes travaux en cours</p> 
         </div>
       </section>
     </div>
   );
 };
 
-export default Portfolio; 
+export default Projets; 
