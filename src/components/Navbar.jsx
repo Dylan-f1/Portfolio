@@ -20,11 +20,11 @@ const Navbar = () => {
           <Link to="/projets" className="nav-link">
             PROJETS PERSONNELS
           </Link>
+          <Link to="/vielle-techno" className="nav-link">
+            VIEILLE TECHNOLOGIE
+          </Link>
           <Link to="/a-propos" className="nav-link">
             A PROPOS
-          </Link>
-          <Link to="/Vielle-Techno" className="nav-link">
-            VIEILLE TECHNOLOGIE
           </Link>
         </nav>
       </div>
