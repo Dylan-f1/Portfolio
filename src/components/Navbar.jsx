@@ -23,6 +23,9 @@ const Navbar = () => {
           <Link to="/a-propos" className="nav-link">
             A PROPOS
           </Link>
+          <Link to="/Vielle-Techno" className="nav-link">
+            VIEILLE TECHNOLOGIE
+          </Link>
         </nav>
       </div>
     </div>
