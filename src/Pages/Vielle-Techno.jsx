@@ -7,51 +7,33 @@ const VielleTechno = () => {
     const articles = [
         {
             id: 1,
-            title: "L'évolution des technologies web",
-            description: "Découvrez comment les technologies web ont évolué au fil des années.",
-            imageUrl: "https://via.placeholder.com/300x200?text=Web+Tech",
-            articleUrl: "https://example.com/article1",
-            category: "Développement Web"
+            title: "La Corée du Sud dévoile ses robots humanoïdes équipés de roues à 360° et de commandes flexibles qui défient l’imagination humaine",
+            articleUrl: "https://newsly.fr/2025/05/24/la-coree-du-sud-devoile-ses-robots-humanoides-equipes-de-roues-a-360-et-de-commandes-flexibles-qui-defient-limagination-humaine/",
         },
         {
             id: 2,
-            title: "Histoire des bases de données",
-            description: "Un voyage à travers l'histoire des systèmes de gestion de bases de données.",
-            imageUrl: "https://via.placeholder.com/300x200?text=Database",
-            articleUrl: "https://example.com/article2",
-            category: "Base de données"
+            title: "Le robot Atlas de Boston Dynamics devient plus intelligent et plus affuté avec l'arrivée des capteurs optiques de LG",
+            articleUrl: "https://www.enviro2b.com/2025/05/17/le-robot-atlas-de-boston-dynamics-devient-plus-intelligent-et-plus-affute-avec-larrivee-des-capteurs-optiques-de-lg/",
         },
         {
             id: 3,
-            title: "Les premiers langages de programmation",
-            description: "Retour sur les langages qui ont façonné l'informatique moderne.",
-            imageUrl: "https://via.placeholder.com/300x200?text=Programming",
-            articleUrl: "https://example.com/article3",
-            category: "Programmation"
+            title: "La fin annoncée des superordinateurs : l'ordinateur quantique de Google exécute en quelques secondes ce qui aurait pris 47 ans",
+            articleUrl: "https://techguru.fr/2025/05/16/la-fin-annoncee-des-superordinateurs-lordinateur-quantique-de-google-execute-en-quelques-secondes-ce-qui-aurait-pris-47-ans/",
         },
         {
             id: 4,
-            title: "L'ère des mainframes",
-            description: "Comment les ordinateurs centraux ont révolutionné l'informatique.",
-            imageUrl: "https://via.placeholder.com/300x200?text=Mainframe",
-            articleUrl: "https://example.com/article4",
-            category: "Hardware"
+            title: "Première mondiale : une IA entrainée par un ordinateur quantique compose sa première chanson",
+            articleUrl: "https://www.presse-citron.net/premiere-mondiale-une-ia-entrainee-par-un-ordinateur-quantique-compose-sa-premiere-chanson/",
         },
         {
             id: 5,
-            title: "Naissance d'Internet",
-            description: "Les origines du réseau mondial qui a changé le monde.",
-            imageUrl: "https://via.placeholder.com/300x200?text=Internet",
-            articleUrl: "https://example.com/article5",
-            category: "Réseau"
+            title: "L'ordinateur quantique de Google exécute en quelques secondes ce qui aurait pris 47 ans",
+            articleUrl: "https://techguru.fr/2025/05/16/la-fin-annoncee-des-superordinateurs-lordinateur-quantique-de-google-execute-en-quelques-secondes-ce-qui-aurait-pris-47-ans/",
         },
         {
             id: 6,
-            title: "Les premiers systèmes d'exploitation",
-            description: "L'évolution des OS depuis les premiers systèmes batch.",
-            imageUrl: "https://via.placeholder.com/300x200?text=OS",
-            articleUrl: "https://example.com/article6",
-            category: "Système"
+            title: "Neuralink : l'implant cérébral de Musk fait face à un problème technique",
+            articleUrl: "https://www.futura-sciences.com/sante/actualites/technologie-neuralink-implant-cerebral-musk-fait-face-serieux-probleme-technique-122005/",
         }
     ];
 
@@ -76,11 +58,9 @@ const VielleTechno = () => {
                         >
                             <div className="card-image">
                                 <img src={article.imageUrl} alt={article.title} />
-                                <div className="category-badge">{article.category}</div>
                             </div>
                             <div className="card-content">
                                 <h3>{article.title}</h3>
-                                <p>{article.description}</p>
                                 <div className="read-more">
                                     <span>Lire l'article →</span>
                                 </div>
