@@ -13,8 +13,12 @@ const Competences = () => {
             <h3>Développement Front-end</h3>
             <ul>
               <li>HTML5 / CSS3</li>
-              <li>JavaScript (ES6+)</li>
+              <li>JavaScript</li>
               <li>React.js</li>
+              <li>C#</li>
+              <li>Langage C</li>
+              <li>Langage C++</li>
+              <li>Tailwind CSS</li>
               <li>Responsive Design</li>
             </ul>
           </div>
@@ -24,15 +28,15 @@ const Competences = () => {
             <ul>
               <li>Node.js</li>
               <li>Python</li>
-              <li>SQL / Bases de données</li>
+              <li>MongoDB</li>
             </ul>
           </div>
           
           <div className="competence-card">
             <h3>Outils</h3>
             <ul>
-              <li>Git / GitHub</li>
-              <li>Cursor</li>
+              <li>Git / GitLab / GitHub</li>
+              <li>Cursor / VSCode</li>
               <li>Figma</li>
               <li>Postman</li>
             </ul>

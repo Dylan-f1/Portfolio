@@ -55,10 +55,7 @@ const VielleTechno = () => {
                             key={article.id} 
                             className="article-card"
                             onClick={() => handleArticleClick(article.articleUrl)}
-                        >
-                            <div className="card-image">
-                                <img src={article.imageUrl} alt={article.title} />
-                            </div>
+                        >   
                             <div className="card-content">
                                 <h3>{article.title}</h3>
                                 <div className="read-more">

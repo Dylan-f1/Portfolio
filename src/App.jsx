@@ -6,6 +6,7 @@ import CV from './Pages/CV';
 import Projets from './Pages/Projets';
 import APropos from './Pages/A-Propos';
 import VielleTechno from './Pages/Vielle-Techno';
+import Entreprise from './Pages/entreprise';
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/projets" element={<Projets />} />
         <Route path="/a-propos" element={<APropos />} />
         <Route path="/vielle-techno" element={<VielleTechno />} />
+        <Route path="/entreprise" element={<Entreprise />} />
       </Routes>
     </div>
   );

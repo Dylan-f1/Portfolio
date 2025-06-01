@@ -20,7 +20,7 @@ const Home = () => {
       <div className="portfolio-background"></div>
       <Navbar />
       <div className="home-content">
-        <h1 className="home-title">Dylan Fernandes</h1>
+        <h1 className="home-title" data-text="Dylan Fernandes">Dylan Fernandes</h1>
         <h2 className="home-subtitle">DÉVELOPPEUR INFORMATIQUE</h2>
         
         <div className="social-icons">

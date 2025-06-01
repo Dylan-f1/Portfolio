@@ -20,6 +20,9 @@ const Navbar = () => {
           <Link to="/projets" className="nav-link">
             PROJETS PERSONNELS
           </Link>
+          <Link to="/entreprise" className="nav-link">
+            ENTREPRISE
+          </Link>
           <Link to="/vielle-techno" className="nav-link">
             VIEILLE TECHNOLOGIE
           </Link>
