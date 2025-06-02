@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import '../styles/Vielle-Techno.css';
+import '../styles/Veille-Techno.css';
 
-const VielleTechno = () => {
+const VeilleTechno = () => {
     // Données des articles avec URLs
     const articles = [
         {
@@ -46,7 +46,7 @@ const VielleTechno = () => {
             <Navbar />
             <div className="content">
                 <header className="page-header">
-                    <h1>Vieilles Technologies</h1>
+                    <h1>Veilles Technologies</h1>
                 </header>
                 
                 <div className="articles-grid">
@@ -70,5 +70,5 @@ const VielleTechno = () => {
     );
 };
 
-export default VielleTechno;
+export default VeilleTechno;
 
