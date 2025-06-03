@@ -44,7 +44,7 @@ const Navbar = () => {
           <Link to="/entreprise" className="nav-link">
             ENTREPRISE
           </Link>
-          <Link to="/vielle-techno" className="nav-link">
+          <Link to="/veille-techno" className="nav-link">
             TECHNOLOGIE
           </Link>
           <Link to="/a-propos" className="nav-link">
@@ -66,7 +66,7 @@ const Navbar = () => {
           <Link to="/entreprise" className="nav-link" onClick={closeMenu}>
             ENTREPRISE
           </Link>
-          <Link to="/vielle-techno" className="nav-link" onClick={closeMenu}>
+          <Link to="/veille-techno" className="nav-link" onClick={closeMenu}>
             TECHNOLOGIE
           </Link>
           <Link to="/a-propos" className="nav-link" onClick={closeMenu}>
