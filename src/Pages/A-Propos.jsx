@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import '../styles/A-Propos.css';
+import '../styles/a-propos.css';
 
 const Contact = () => {
   return (
