@@ -1,11 +1,11 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
-import Competences from './Pages/Compétence';
-import CV from './Pages/CV';
-import Projets from './Pages/Projets';
-import APropos from './Pages/A-Propos';
-import VielleTechno from './Pages/Vielle-Techno';
+import Competences from './Pages/compétence';
+import CV from './Pages/cv';
+import Projets from './Pages/projets';
+import APropos from './Pages/a-propos';
+import VeilleTechno from './Pages/veille-techno';
 import Entreprise from './Pages/entreprise';
 import './App.css';
 
@@ -18,7 +18,7 @@ function App() {
         <Route path="/cv" element={<CV />} />
         <Route path="/projets" element={<Projets />} />
         <Route path="/a-propos" element={<APropos />} />
-        <Route path="/vielle-techno" element={<VielleTechno />} />
+        <Route path="/veille-techno" element={<VeilleTechno />} />
         <Route path="/entreprise" element={<Entreprise />} />
       </Routes>
     </div>
