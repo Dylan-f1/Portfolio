@@ -17,7 +17,7 @@
   position: absolute;
   width: 70px;
   height: 3px;
-  background-color: #fefefe;
+  background-color: #c20497;
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
@@ -45,7 +45,7 @@
 .competence-card h3 {
   font-size: 1.4rem;
   margin-bottom: 20px;
-  color: #4a90e2;
+  color: #c20497;
   position: relative;
   padding-bottom: 10px;
 }
@@ -55,7 +55,7 @@
   position: absolute;
   width: 40px;
   height: 2px;
-  background-color: #4a90e2;
+  background-color: #c20497;
   bottom: 0;
   left: 0;
 }
@@ -74,7 +74,7 @@
 
 .competence-card li:before {
   content: "✓";
-  color: #4a90e2;
+  color: #01183c;
   position: absolute;
   left: 0;
 }
