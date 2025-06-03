@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
-import Competences from './Pages/compétence';
+import Competences from './Pages/competence';
 import CV from './Pages/cv';
 import Projets from './Pages/projets';
 import APropos from './Pages/a-propos';
