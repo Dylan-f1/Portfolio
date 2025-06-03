@@ -42,7 +42,7 @@ const VeilleTechno = () => {
     };
 
     return (
-        <div className="vielle-techno-container">
+        <div className="veille-techno-container">
             <Navbar />
             <div className="content">
                 <header className="page-header">
