@@ -5,7 +5,7 @@ import Competences from './Pages/Competences.jsx';
 import CV from './Pages/CV.jsx';
 import Projets from './Pages/Projets.jsx';
 import APropos from './Pages/A-Propos.jsx';
-import VeilleTechno from './Pages/Veille-Techno.jsx';
+import VeilleTechno from './Pages/VeilleTechno.jsx';
 import Entreprise from './Pages/Entreprise.jsx';
 import './App.css';
 
