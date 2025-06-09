@@ -31,7 +31,7 @@ npm run dev
 
 ## 🌐 Déploiement
 
-Déployé sur Vercel : [Portfolio en ligne](https://votre-url-vercel.app)
+Déployé sur Vercel : [Portfolio en ligne](https://portfolio-nine-tan-72.vercel.app)
 
 ---
 *Dernière mise à jour : Build fix pour Vercel*
