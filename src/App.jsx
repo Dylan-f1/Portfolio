@@ -2,11 +2,11 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Competences from './Pages/competence';
-import CV from './Pages/CV';
-import Projets from './Pages/projets.jsx';
+import CV from './Pages/cv';
+import Projets from './Pages/projets';
 import APropos from './Pages/A-Propos';
 import VeilleTechno from './Pages/Veille-Techno';
-import Entreprise from './Pages/entreprise';
+import Entreprise from './Pages/Entreprise';
 import './App.css';
 
 function App() {
