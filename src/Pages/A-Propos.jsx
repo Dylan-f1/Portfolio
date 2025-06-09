@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import '../styles/a-propos.css';
+import '../styles/A-Propos.css';
 
 const APropos = () => {
   return (

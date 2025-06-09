@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import '../styles/veille-techno.css';
+import '../styles/Veille-Techno.css';
 
 const VeilleTechno = () => {
     // Données des articles avec URLs

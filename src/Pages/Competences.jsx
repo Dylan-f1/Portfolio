@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import '../styles/competences.css';
+import '../styles/Competences.css';
 
 const Competences = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import '../styles/projets.css';
+import '../styles/Projets.css';
 
 const Projets = () => {
   const projets = [
