@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Competences from './Pages/competence';
 import CV from './Pages/CV';
-import Projets from './Pages/projets';
+import Projets from './Pages/projets.jsx';
 import APropos from './Pages/A-Propos';
 import VeilleTechno from './Pages/Veille-Techno';
 import Entreprise from './Pages/entreprise';
