@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import '../styles/a-propos.css';
 
-const Contact = () => {
+const APropos = () => {
   return (
     <div>
       <Navbar />
@@ -16,4 +16,4 @@ const Contact = () => {
   );
 };
 
-export default Contact; 
+export default APropos; 
