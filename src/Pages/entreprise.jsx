@@ -74,4 +74,4 @@ const Entreprise = () => {
     );
 };
 
-export default Entreprise;
+export default Entreprise; 
