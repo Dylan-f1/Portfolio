@@ -4,7 +4,7 @@ import Home from './components/Home';
 import Competences from './Pages/Competences';
 import CV from './Pages/CV';
 import Projets from './Pages/Projets';
-import APropos from './Pages/A-Propos';
+import APropos from './Pages/APropos';
 import VeilleTechno from './Pages/VeilleTechno';
 import Entreprise from './Pages/Entreprise';
 import './App.css';
