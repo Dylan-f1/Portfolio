@@ -6,7 +6,7 @@ import CV from './Pages/CV';
 import Projets from './Pages/Projets';
 import APropos from './Pages/APropos';
 import VeilleTechno from './Pages/VeilleTechno';
-import Entreprise from './Pages/Entreprise';
+import Entreprise from './Pages/entreprise';
 import './App.css';
 
 function App() {
