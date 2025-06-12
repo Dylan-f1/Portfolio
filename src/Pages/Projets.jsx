@@ -9,14 +9,14 @@ const Projets = () => {
       title: "Geeki",
       description: "Site bibliothèque de jeux vidéos avec de l'aide pour les nouveaux joueurs",
       image: "https://geeki.fr/assets/images/logo.png",
-      link: "https://github.com/Dylan-f1/Geeki"
+      link: "https://www.geeki-games.fr/"
     },
     {
       id: 2,
       title: "Pokedex",
       description: "Site de la Pokedex avec les informations de chaque Pokémon",
       image: "/Pokeball.webp",
-      link: "https://github.com/Dylan-f1/Pokedex_Web"
+      link: "https://www.pokedex-dylan.fr/"
     },
     {
       id: 3,

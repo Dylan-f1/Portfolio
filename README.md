@@ -22,12 +22,6 @@ Portfolio personnel développé avec React et Vite.
 - React Router
 - CSS3
 
-## 📦 Installation
-
-```bash
-npm install
-npm run dev
-```
 
 ## 🌐 Déploiement
 
