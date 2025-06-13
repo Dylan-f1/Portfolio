@@ -23,7 +23,7 @@ const Projets = () => {
       title: "Site F1 (en cours de réflexion)",
       description: "Site de la F1 avec les informations de chaque pilote, de chaque écurie et de chaque circuit (en cours de réflexion)",
       image: "/F1.webp",
-      link: "https://github.com/Dylan-f1/Site_F1"
+      link: "https://github.com/Dylan-f1/Formule-1"
     }
   ]
 
