@@ -46,7 +46,7 @@ const VeilleTechno = () => {
             <Navbar />
             <div className="content">
                 <header className="page-header">
-                    <h1>Veilles Technologies</h1>
+                    <h1>Veille Technologique</h1>
                 </header>
                 
                 <div className="articles-grid">
