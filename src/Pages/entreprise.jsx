@@ -18,7 +18,7 @@ const Entreprise = () => {
                             j'ai eu l'opportunité de découvrir le monde professionnel à travers un 
                             stage et expériences en entreprise. Ces expériences m'ont permis de développer 
                             mes compétences techniques, d'acquérir une meilleure compréhension du secteur 
-                            informatique et de m'adapter aux exigences du monde du travail.
+                            informatique.
                         </p>
                     </div>
 
@@ -33,9 +33,7 @@ const Entreprise = () => {
                             </div>
                             <div className="experience-description">
                                 <p>
-                                    Voici la description de votre première expérience en entreprise. 
-                                    Détaillez les missions accomplies, les projets sur lesquels vous avez travaillé, 
-                                    et les responsabilités qui vous ont été confiées.
+                                    J'ai développé un site web pour une école d'art.
                                 </p>
                             </div>
                             <div className="skills-section">
@@ -48,24 +46,47 @@ const Entreprise = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    {/* Section des accomplissements */}
-                    <div className="accomplishments-section">
-                        <h3>Accomplissements & Réalisations</h3>
-                        
-                        <div className="accomplishment-item">
-                            <h4>Développement d'un site web</h4>
-                            <p>
-                                Participation de la création d'un site web pour une école d'art.
-                            </p>
+                        <div className="experience-card">
+                            <div className="experience-header">
+                                <h4 className="company-name">Sylnux</h4>
+                                <h5 className="position-title">Stagiaire en Développement Web, Mobile, Jeux et Logiciel</h5>
+                                <p className="duration">Août 2025 - Août2025 (1 mois)</p>
+                                <p className="location">Lyon, France</p>
+                            </div>
+                            <div className="experience-description">
+                                <p>
+                                    J'ai développé un drawer pour une entreprise de cosmétique.
+                                </p>
+                            </div>
+                            <div className="skills-section">
+                                <h5>Compétences développées :</h5>
+                                <div className="skills-list">
+                                    <span className="skill-tag">Python</span>
+                                    <span className="skill-tag">Bootstrap</span>
+                                    <span className="skill-tag">JavaScript</span>
+                                    <span className="skill-tag">React</span>
+                                    <span className="skill-tag">Django</span>
+                                </div>
+                            </div>
                         </div>
-
-                        <div className="accomplishment-item">
-                            <h4>Développement des compétences</h4>
-                            <p>
-                                J'ai pu développer mes compétences en HTML/CSS, JavaScript.
-                            </p>
+                        <div className="experience-card">
+                            <div className="experience-header">
+                                <h4 className="company-name">Sylnux</h4>
+                                <h5 className="position-title">Alternant en Développement Web et Mobile</h5>
+                                <p className="duration">Octobre 2025 - Juin 2026 (1 an)</p>
+                                <p className="location">Lyon, France</p>
+                            </div>
+                            <div className="experience-description">
+                                <p> J'ai développé un site web </p>
+                            </div>
+                            <div className="skills-section">
+                                <h5>Compétences développées :</h5>
+                                <div className="skills-list">
+                                    <span className="skill-tag">Python</span>
+                                    <span className="skill-tag">Bootstrap</span>
+                                    <span className="skill-tag">Django</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

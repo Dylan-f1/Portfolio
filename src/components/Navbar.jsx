@@ -32,6 +32,9 @@ const Navbar = () => {
 
         {/* Navigation desktop */}
         <nav className="navigation">
+        <Link to="/a-propos" className="nav-link">
+            À PROPOS
+          </Link>
           <Link to="/competences" className="nav-link">
             COMPÉTENCES
           </Link>
@@ -47,13 +50,13 @@ const Navbar = () => {
           <Link to="/veille-techno" className="nav-link">
             TECHNOLOGIE
           </Link>
-          <Link to="/a-propos" className="nav-link">
-            À PROPOS
-          </Link>
         </nav>
 
         {/* Navigation mobile */}
         <nav className={`navigation mobile ${isMenuOpen ? 'active' : ''}`}>
+        <Link to="/a-propos" className="nav-link" onClick={closeMenu}>
+            À PROPOS
+          </Link>
           <Link to="/competences" className="nav-link" onClick={closeMenu}>
             COMPÉTENCES
           </Link>
@@ -68,9 +71,6 @@ const Navbar = () => {
           </Link>
           <Link to="/veille-techno" className="nav-link" onClick={closeMenu}>
             TECHNOLOGIE
-          </Link>
-          <Link to="/a-propos" className="nav-link" onClick={closeMenu}>
-            À PROPOS
           </Link>
         </nav>
       </div>
