@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import '../styles/Entreprise.css';
+import 'src/styles/Entreprise.css';
 
 const Entreprise = () => {
     return (
