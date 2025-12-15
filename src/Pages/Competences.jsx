@@ -72,17 +72,6 @@ const Competences = () => {
               <li>Agile / Scrum</li>
             </ul>
           </div>
-
-          <div className="competence-card">
-            <h3>Intégrations & Services</h3>
-            <ul>
-              <li>PayPal SDK</li>
-              <li>Stripe</li>
-              <li>Monetico</li>
-              <li>APIs REST</li>
-              <li>Cloud Services</li>
-            </ul>
-          </div>
         </div>
       </section>
     </div>
