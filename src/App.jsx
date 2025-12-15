@@ -5,7 +5,7 @@ import Competences from './pages/Competences';
 import CV from './pages/CV';
 import Projets from './pages/Projets';
 import ProjetDetail from './pages/projets/ProjetDetail';
-import Entreprise from './pages/entreprise';
+import Entreprise from './pages/Entreprise';
 import VeilleTechno from './pages/VeilleTechno';
 import VeilleDetail from './pages/veille/VeilleDetail';
 import './App.css';
