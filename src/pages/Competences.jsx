@@ -25,7 +25,7 @@ const Competences = () => {
         {showPDF && (
           <div className="pdf-container">
             <iframe
-              src="/BTS SIO 2025 - E4 - Tableau de synthèse.png"
+              src="/Tableau-de-synthese.png"
               title="Tableau de Synthèse des Compétences"
               className="pdf-viewer"
             />
@@ -57,7 +57,6 @@ const Competences = () => {
               <li>Django</li>
               <li>MongoDB</li>
               <li>MySQL</li>
-              <li>REST API</li>
             </ul>
           </div>
           

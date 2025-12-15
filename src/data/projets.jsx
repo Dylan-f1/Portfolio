@@ -8,7 +8,7 @@ export const projetsData = {
     image: "https://geeki.fr/assets/images/logo.png",
     liveUrl: "https://www.geeki-games.fr/",
     githubUrl: "https://github.com/Dylan-f1/geeki",
-    technologies: ["React", "JavaScript", "CSS3", "REST API"],
+    technologies: ["React", "JavaScript", "CSS3"],
     courteDescription: "Plateforme gaming offrant une vaste collection de jeux vidéo avec guides détaillés, bestiaires de personnages et interface moderne pour passionnés",
     
     // CONTENU DÉTAILLÉ
@@ -40,16 +40,14 @@ export const projetsData = {
       techniquesUtilisees: [
         "Components React réutilisables",
         "Context API pour la gestion d'état",
-        "Fetch API pour les appels REST",
         "CSS Modules pour l'isolation des styles",
-        "Lazy loading des images"
       ]
     },
     
     resultats: {
       metriques: [
         "Interface utilisateur moderne et responsive",
-        "Base de données de plus de 100+ jeux référencés",
+        "Base de données de plus de 15 jeux référencés",
         "Système de navigation intuitive",
         "Temps de chargement optimisé"
       ],
@@ -81,7 +79,7 @@ export const projetsData = {
     image: "/Pokeball.webp",
     liveUrl: "https://www.pokedex-dylan.fr/",
     githubUrl: "https://github.com/Dylan-f1/pokedex",
-    technologies: ["React", "JavaScript", "PokéAPI", "CSS3"],
+    technologies: ["React", "JavaScript", "CSS3"],
     courteDescription: "Pokédex interactif moderne permettant de découvrir l'univers Pokémon avec interface intuitive et informations détaillées",
     
     contexte: `Le Pokédex est un projet personnel inspiré par ma passion pour l'univers Pokémon. L'objectif était de créer une application web moderne permettant d'explorer facilement les données de tous les Pokémon en utilisant la PokéAPI.`,
@@ -99,11 +97,11 @@ export const projetsData = {
         description: "Problèmes avec la récupération et le filtrage des données par région. La PokéAPI retourne des données imbriquées complexes nécessitant un traitement côté client.",
         solution: "Mise en place d'une couche d'abstraction pour normaliser les données de l'API. Création de helpers pour le tri et le filtrage par région, type et génération."
       },
-      {
-        titre: "Base de données et Cache",
-        description: "Avec plus de 1000 Pokémon à afficher, les appels API répétés causaient des ralentissements et des problèmes de rate limiting.",
-        solution: "Implémentation d'un système de cache localStorage pour stocker les données déjà récupérées. Stratégie de lazy loading pour charger les Pokémon par batch de 20."
-      },
+      // {
+      //   titre: "Base de données et Cache",
+      //   description: "Avec plus de 1000 Pokémon à afficher, les appels API répétés causaient des ralentissements et des problèmes de rate limiting.",
+      //   solution: "Implémentation d'un système de cache localStorage pour stocker les données déjà récupérées. Stratégie de lazy loading pour charger les Pokémon par batch de 20."
+      // },
       {
         titre: "Structure du projet",
         description: "Organisation du code en composants React pour une maintenance facile et une réutilisabilité maximale.",
@@ -115,40 +113,35 @@ export const projetsData = {
       architecture: "Architecture par composants avec séparation claire des responsabilités. Services API isolés pour une meilleure testabilité.",
       gestionEtat: "Utilisation de useState et useEffect pour la gestion d'état local. Context API pour les filtres globaux.",
       techniquesUtilisees: [
-        "PokéAPI pour les données",
-        "LocalStorage pour le cache",
-        "Lazy loading avec Intersection Observer",
+        "Système de recherche instantanée",
+        "1000+ Pokémon accessibles",
         "Filtres dynamiques (type, région, génération)",
-        "Animations CSS pour les transitions"
+        "Animations CSS pour les transitions",
+        "Filtres multiples fonctionnels"
       ]
     },
     
     resultats: {
       metriques: [
-        "1000+ Pokémon accessibles",
+        "PokéAPI pour les données",
+        "LocalStorage pour le cache",
+        "Lazy loading avec Intersection Observer",
         "Temps de chargement < 2s avec cache",
         "Interface responsive (mobile-first)",
-        "Système de recherche instantanée",
-        "Filtres multiples fonctionnels"
       ],
       impact: "Application fonctionnelle utilisée comme portfolio pour démontrer la maîtrise des appels API, de la gestion de données complexes et du design responsive."
     },
     
     apprentissages: [
-      "Intégration d'API REST tierces",
-      "Gestion de cache frontend",
-      "Optimisation des performances avec lazy loading",
       "Manipulation de données complexes (nested objects)",
       "Design system cohérent",
       "Mobile-first approach"
     ],
     
     prochaines_etapes: [
-      "Résoudre les bugs de filtrage par région",
       "Ajouter un système de favoris",
       "Implémenter une comparaison entre Pokémon",
       "Ajouter des statistiques avancées",
-      "Migration vers TypeScript pour plus de robustesse"
     ]
   },
 
@@ -160,7 +153,7 @@ export const projetsData = {
     subtitle: "E-commerce Cosmétique Bio",
     image: "/LOGO-ZAO_VF.png",
     liveUrl: "https://shop.zaomakeup.com/fr/",
-    technologies: ["React", "Tailwind CSS", "PayPal SDK", "Stripe", "Monetico", "Cypress"],
+    technologies: ["React", "Tailwind CSS", "Cypress"],
     courteDescription: "Refonte complète du système de checkout d'une plateforme e-commerce de cosmétiques bio avec intégration multi-paiements",
     
     contexte: `ZAO Makeup est une marque de cosmétiques bio rechargeable. Dans le cadre de mon stage chez Sylnux, j'ai été chargé de moderniser leur système de paiement en ligne en migrant d'une solution JavaScript vanilla vers React avec Tailwind CSS, tout en maintenant 100% de fidélité au design existant.`,
@@ -179,11 +172,6 @@ export const projetsData = {
         solution: "Approche progressive : découpage en petits composants React réutilisables, migration page par page avec tests intensifs à chaque étape."
       },
       {
-        titre: "Intégrations de paiement multiples",
-        description: "Gérer trois solutions de paiement (PayPal, Stripe, Monetico) avec leurs SDKs respectifs, leurs callbacks et leurs cas d'erreurs spécifiques.",
-        solution: "Création d'une abstraction commune pour les trois providers avec une interface unifiée. Gestion centralisée des erreurs et des états de transaction."
-      },
-      {
         titre: "Tests E2E avec Cypress",
         description: "Mise en place complète de la suite de tests E2E, ce qui était nouveau pour moi. Débogage des tests flaky et gestion des timeouts.",
         solution: "Apprentissage approfondi de Cypress, utilisation de fixtures pour mocker les paiements, mise en place de data-testid sur tous les éléments clés. Configuration de retry logic pour la stabilité."
@@ -191,14 +179,11 @@ export const projetsData = {
     ],
     
     solutions: {
-      architecture: "Architecture React modulaire avec composants réutilisables (CartSummary, PaymentSelector, AddressForm, etc.). Services séparés pour chaque provider de paiement.",
+      architecture: "Architecture React modulaire avec composants réutilisables (OrderSummary, StepPayment, InformationForm, etc).",
       qualite: "Suite de tests E2E Cypress couvrant tous les parcours utilisateur critiques : ajout au panier, modification quantité, application code promo, paiement avec chaque provider.",
       techniquesUtilisees: [
         "React Hooks (useState, useEffect, useContext)",
         "Tailwind CSS avec configuration custom",
-        "PayPal SDK v2",
-        "Stripe Elements",
-        "Monetico API",
         "Cypress pour tests E2E",
         "LocalStorage pour la persistance du panier",
         "Error boundaries pour la robustesse"
@@ -209,7 +194,7 @@ export const projetsData = {
       metriques: [
         "100% de fidélité visuelle au design",
         "3 méthodes de paiement intégrées",
-        "Suite de 25+ tests E2E Cypress",
+        "Suite de 10 tests E2E Cypress",
         "Temps de chargement réduit de 30%",
         "0 bug critique en production",
         "Code maintenance améliorée (composants réutilisables)"
@@ -219,19 +204,11 @@ export const projetsData = {
     
     apprentissages: [
       "Gestion de contraintes strictes (100% fidélité design)",
-      "Intégration de multiples SDKs de paiement",
       "Tests E2E avec Cypress (nouveau pour moi)",
       "Tailwind CSS à un niveau avancé",
       "Importance de la qualité en environnement production",
       "Gestion des états de transaction complexes",
-      "Debugging de tests flaky"
-    ],
-    
-    prochaines_etapes: [
-      "Ajout de nouveaux moyens de paiement (Apple Pay, Google Pay)",
-      "Optimisation des conversions avec A/B testing",
-      "Amélioration des messages d'erreur utilisateur",
-      "Migration vers TypeScript pour plus de sécurité"
+      "Debugging de tests"
     ]
   },
 
@@ -286,18 +263,13 @@ export const projetsData = {
         "Server Components pour performance",
         "Client Components pour interactivité",
         "Tailwind CSS + configuration custom",
-        "Zod pour validation runtime",
         "React Hook Form pour les formulaires",
-        "SWR pour le data fetching",
-        "next/image pour optimisation images"
       ]
     },
     
     resultats: {
       metriques: [
-        "Site complet refondé et moderne",
-        "TypeScript 100% - 0 erreur de compilation",
-        "Lighthouse Score > 90 (Performance, SEO, Accessibility)",
+        "TypeScript 100%",
         "Checkout réutilisé avec succès",
         "Code type-safe et maintenable",
         "SSR pour SEO optimal"
@@ -306,22 +278,14 @@ export const projetsData = {
     },
     
     apprentissages: [
-      "Maîtrise de Next.js App Router (concept avancé)",
-      "TypeScript en production (types complexes, génériques)",
+      "Maîtrise de Next.js App Router",
+      "TypeScript en production",
       "Différence Server Components vs Client Components",
       "Optimisation SEO avec Next.js",
       "Gestion du SSR et hydratation",
       "Refactoring de code legacy",
       "Importance du type safety en équipe",
       "Performance web (Core Web Vitals)"
-    ],
-    
-    prochaines_etapes: [
-      "Ajout de tests unitaires (Jest + React Testing Library)",
-      "Implémentation de Storybook pour la documentation composants",
-      "Progressive Web App (PWA)",
-      "Optimisation du cache côté serveur",
-      "Analytics et tracking utilisateur"
     ]
   },
 
@@ -333,7 +297,7 @@ export const projetsData = {
     image: "/F1-Logo.webp",
     liveUrl: "https://github.com/Dylan-f1/Formule-1",
     githubUrl: "https://github.com/Dylan-f1/Formule-1",
-    technologies: ["React", "JavaScript", "API F1", "CSS3"],
+    technologies: ["React", "JavaScript", "CSS3"],
     courteDescription: "Site de la F1 avec informations sur chaque pilote, écurie et circuit (en cours de réflexion)",
     
     contexte: `Projet en cours de conception visant à créer un site complet sur l'univers de la Formule 1. L'objectif est de centraliser toutes les informations sur les pilotes, écuries, circuits et résultats de course.`,
@@ -355,15 +319,13 @@ export const projetsData = {
     
     apprentissages: [
       "Phase de conception et planning",
-      "Recherche d'APIs disponibles",
+      "Recherche de configurations du backend",
       "Maquettage et wireframing"
     ],
     
     prochaines_etapes: [
       "Finaliser l'architecture du projet",
-      "Choisir l'API ou source de données",
       "Créer les maquettes design",
-      "Développer le MVP",
       "Implémenter les fonctionnalités avancées"
     ]
   }
