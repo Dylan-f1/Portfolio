@@ -47,6 +47,10 @@ const VeilleTechno = () => {
             <div className="content">
                 <header className="page-header">
                     <h1>Veille Technologique</h1>
+                    <div className="veille-source">
+                        <img src="/daily-dev-logo.png" alt="daily.dev" className="daily-logo" />
+                        <p>J'utilise Daily.Dev Maintentant</p>
+                    </div>
                 </header>
                 
                 <div className="articles-grid">
@@ -70,4 +74,4 @@ const VeilleTechno = () => {
     );
 };
 
-export default VeilleTechno; 
+export default VeilleTechno;
