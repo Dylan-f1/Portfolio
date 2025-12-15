@@ -69,7 +69,6 @@ const Competences = () => {
               <li>Figma</li>
               <li>Postman</li>
               <li>Cypress (Tests E2E)</li>
-              <li>Agile / Scrum</li>
             </ul>
           </div>
         </div>

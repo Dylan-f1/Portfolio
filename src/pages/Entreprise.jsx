@@ -58,9 +58,23 @@ const Entreprise = () => {
                                             <strong>Optimisation des performances</strong> - Amélioration des temps 
                                             de chargement et du SEO des sites clients
                                         </li>
+                                        <ul>
                                         <li>
-                                            <strong>Travail en équipe agile</strong> - Collaboration quotidienne avec 
-                                            designers et chefs de projet
+                                            <strong>Refonte complète du système de checkout</strong> - Migration 
+                                            de JavaScript vanilla vers React avec Tailwind CSS
+                                        </li>
+                                        <li>
+                                            <strong>Tests E2E avec Cypress</strong> - Mise en place d'une suite 
+                                            de tests complète pour garantir la qualité
+                                        </li>
+                                        <li>
+                                            <strong>Respect strict du design</strong> - Reproduction pixel-perfect 
+                                            du design existant
+                                        </li>
+                                    </ul>
+                                        <li>
+                                            <strong>Travail en équipe</strong> - Collaboration quotidienne avec 
+                                            mon patron
                                         </li>
                                     </ul>
                                 </div>
@@ -70,6 +84,9 @@ const Entreprise = () => {
                                         <li>✅ Migration réussie vers Next.js App Router</li>
                                         <li>✅ Code TypeScript 100% type-safe (0 erreur de compilation)</li>
                                         <li>✅ Réutilisation efficace de composants entre projets</li>
+                                        <li>✅ 100% de fidélité visuelle au design original</li>
+                                        <li>✅ Suite de 10 tests E2E Cypress</li>
+                                        <li>✅ 0 bug critique en production</li>
                                     </ul>
                                 </div>
                             </div>
@@ -106,20 +123,7 @@ const Entreprise = () => {
                                     <h6>Missions :</h6>
                                     <ul>
                                         <li>
-                                            <strong>Refonte complète du système de checkout</strong> - Migration 
-                                            de JavaScript vanilla vers React avec Tailwind CSS
-                                        </li>
-                                        <li>
-                                            <strong>Intégration multi-paiements</strong> - Implémentation de 
-                                            PayPal, Stripe et Monetico
-                                        </li>
-                                        <li>
-                                            <strong>Tests E2E avec Cypress</strong> - Mise en place d'une suite 
-                                            de tests complète pour garantir la qualité
-                                        </li>
-                                        <li>
-                                            <strong>Respect strict du design</strong> - Reproduction pixel-perfect 
-                                            du design existant
+                                            <strong>Refonte complète du système du panier</strong> - Création d'un drawer pour le panier
                                         </li>
                                     </ul>
                                 </div>
@@ -127,21 +131,15 @@ const Entreprise = () => {
                                     <h6>Réalisations :</h6>
                                     <ul>
                                         <li>✅ 100% de fidélité visuelle au design original</li>
-                                        <li>✅ 3 moyens de paiement fonctionnels</li>
-                                        <li>✅ Suite de 25+ tests E2E Cypress</li>
-                                        <li>✅ 0 bug critique en production</li>
+                                        <li>✅ Suite de 3 tests E2E Cypress</li>
                                     </ul>
                                 </div>
                             </div>
                             <div className="skills-section">
                                 <h6>Technologies & Compétences :</h6>
                                 <div className="skills-list">
-                                    <span className="skill-tag">React</span>
-                                    <span className="skill-tag">Tailwind CSS</span>
+                                    <span className="skill-tag">Bootstrap</span>
                                     <span className="skill-tag">JavaScript</span>
-                                    <span className="skill-tag">PayPal SDK</span>
-                                    <span className="skill-tag">Stripe</span>
-                                    <span className="skill-tag">Monetico</span>
                                     <span className="skill-tag">Cypress</span>
                                     <span className="skill-tag">Git</span>
                                 </div>
@@ -159,7 +157,7 @@ const Entreprise = () => {
                             <div className="experience-description">
                                 <p className="mission-intro">
                                     <strong>Projet :</strong> Création d'un site web vitrine pour une école d'art 
-                                    parisienne.
+                                    chinoise.
                                 </p>
                                 <div className="missions-detail">
                                     <h6>Missions :</h6>
@@ -195,7 +193,7 @@ const Entreprise = () => {
                                 <div className="skills-list">
                                     <span className="skill-tag">HTML/CSS</span>
                                     <span className="skill-tag">JavaScript</span>
-                                    <span className="skill-tag">React</span>
+                                    <span className="skill-tag">GSAP</span>
                                     <span className="skill-tag">Git</span>
                                     <span className="skill-tag">Responsive Design</span>
                                 </div>
@@ -219,9 +217,9 @@ const Entreprise = () => {
                             <div className="learning-card">
                                 <h4>🤝 Soft Skills</h4>
                                 <ul>
-                                    <li>Communication avec les clients et l'équipe</li>
+                                    <li>Communication avec l'équipe</li>
                                     <li>Gestion du temps et des priorités</li>
-                                    <li>Travail en équipe agile</li>
+                                    <li>Travail en équipe</li>
                                     <li>Adaptation à différents contextes</li>
                                 </ul>
                             </div>
