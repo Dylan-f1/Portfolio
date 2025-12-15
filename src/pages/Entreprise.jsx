@@ -97,11 +97,7 @@ const Entreprise = () => {
                                     <span className="skill-tag">TypeScript</span>
                                     <span className="skill-tag">React</span>
                                     <span className="skill-tag">Tailwind CSS</span>
-                                    <span className="skill-tag">Python</span>
-                                    <span className="skill-tag">Django</span>
-                                    <span className="skill-tag">Bootstrap</span>
                                     <span className="skill-tag">Git</span>
-                                    <span className="skill-tag">Agile</span>
                                 </div>
                             </div>
                         </div>
