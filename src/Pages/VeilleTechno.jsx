@@ -1,77 +1,60 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
+import { getAllVeille } from '../data/veilleTechno';
 import '../styles/VeilleTechno.css';
 
 const VeilleTechno = () => {
-    // Données des articles avec URLs
-    const articles = [
-        {
-            id: 1,
-            title: "La Corée du Sud dévoile ses robots humanoïdes équipés de roues à 360° et de commandes flexibles qui défient l'imagination humaine",
-            articleUrl: "https://newsly.fr/2025/05/24/la-coree-du-sud-devoile-ses-robots-humanoides-equipes-de-roues-a-360-et-de-commandes-flexibles-qui-defient-limagination-humaine/",
-        },
-        {
-            id: 2,
-            title: "Le robot Atlas de Boston Dynamics devient plus intelligent et plus affuté avec l'arrivée des capteurs optiques de LG",
-            articleUrl: "https://www.enviro2b.com/2025/05/17/le-robot-atlas-de-boston-dynamics-devient-plus-intelligent-et-plus-affute-avec-larrivee-des-capteurs-optiques-de-lg/",
-        },
-        {
-            id: 3,
-            title: "La fin annoncée des superordinateurs : l'ordinateur quantique de Google exécute en quelques secondes ce qui aurait pris 47 ans",
-            articleUrl: "https://techguru.fr/2025/05/16/la-fin-annoncee-des-superordinateurs-lordinateur-quantique-de-google-execute-en-quelques-secondes-ce-qui-aurait-pris-47-ans/",
-        },
-        {
-            id: 4,
-            title: "Première mondiale : une IA entrainée par un ordinateur quantique compose sa première chanson",
-            articleUrl: "https://www.presse-citron.net/premiere-mondiale-une-ia-entrainee-par-un-ordinateur-quantique-compose-sa-premiere-chanson/",
-        },
-        {
-            id: 5,
-            title: "L'ordinateur quantique de Google exécute en quelques secondes ce qui aurait pris 47 ans",
-            articleUrl: "https://techguru.fr/2025/05/16/la-fin-annoncee-des-superordinateurs-lordinateur-quantique-de-google-execute-en-quelques-secondes-ce-qui-aurait-pris-47-ans/",
-        },
-        {
-            id: 6,
-            title: "Neuralink : l'implant cérébral de Musk fait face à un problème technique",
-            articleUrl: "https://www.futura-sciences.com/sante/actualites/technologie-neuralink-implant-cerebral-musk-fait-face-serieux-probleme-technique-122005/",
-        }
-    ];
+  const articles = getAllVeille();
 
-    const handleArticleClick = (url) => {
-        window.open(url, '_blank');
-    };
-
-    return (
-        <div className="veille-techno-container">
-            <Navbar />
-            <div className="content">
-                <header className="page-header">
-                    <h1>Veille Technologique</h1>
-                    <div className="veille-source">
-                        <img src="/daily-dev-logo.png" alt="daily.dev" className="daily-logo" />
-                        <p>J'utilise Daily.Dev Maintentant</p>
-                    </div>
-                </header>
-                
-                <div className="articles-grid">
-                    {articles.map(article => (
-                        <div 
-                            key={article.id} 
-                            className="article-card"
-                            onClick={() => handleArticleClick(article.articleUrl)}
-                        >   
-                            <div className="card-content">
-                                <h3>{article.title}</h3>
-                                <div className="read-more">
-                                    <span>Lire l'article →</span>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
+  return (
+    <div className="veille-techno-container">
+      <Navbar />
+      <div className="content">
+        <header className="page-header">
+          <h1>Veille Technologique</h1>
+          <p>Analyses approfondies des dernières innovations technologiques</p>
+          <div className="veille-source">
+            <img src="/daily-dev-logo.png" alt="daily.dev" className="daily-logo" />
+            <p>Sources : Daily.Dev et actualités tech</p>
+          </div>
+        </header>
+        
+        <div className="articles-grid">
+          {articles.map(article => (
+            <Link 
+              key={article.id} 
+              to={`/veille/${article.id}`}
+              className="article-card"
+            >
+              <div className="category-badge">{article.category}</div>
+              <div className="card-content">
+                <span className="article-date">{article.date}</span>
+                <h3>{article.title}</h3>
+                <p className="article-resume">{article.resumeCourt}</p>
+                <div className="read-more">
+                  <span>Lire l'analyse complète →</span>
                 </div>
-            </div>
+              </div>
+            </Link>
+          ))}
         </div>
-    );
+
+        <div className="veille-info">
+          <h3>📚 À propos de ma veille technologique</h3>
+          <p>
+            Je réalise une veille technologique constante pour rester à jour sur les dernières innovations. 
+            Chaque article que je sélectionne fait l'objet d'une analyse approfondie où j'explore les technologies, 
+            compare les approches, réfléchis aux implications futures et partage ma vision personnelle.
+          </p>
+          <p>
+            L'objectif n'est pas juste de relayer l'information, mais de <strong>l'analyser, la contextualiser 
+            et en tirer des conclusions</strong> pertinentes pour comprendre l'évolution de notre industrie.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default VeilleTechno;

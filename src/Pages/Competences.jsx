@@ -25,7 +25,7 @@ const Competences = () => {
         {showPDF && (
           <div className="pdf-container">
             <iframe
-              src="public/BTS SIO 2025 - E4 - Tableau de synthèse .pdf "
+              src="/BTS SIO 2025 - E4 - Tableau de synthèse.png"
               title="Tableau de Synthèse des Compétences"
               className="pdf-viewer"
             />
@@ -41,6 +41,8 @@ const Competences = () => {
               <li>GSAP</li>
               <li>JavaScript</li>
               <li>React.js</li>
+              <li>Next.js</li>
+              <li>TypeScript</li>
               <li>Tailwind CSS</li>
               <li>Bootstrap</li>
               <li>Responsive Design</li>
@@ -54,17 +56,31 @@ const Competences = () => {
               <li>Python</li>
               <li>Django</li>
               <li>MongoDB</li>
+              <li>MySQL</li>
+              <li>REST API</li>
             </ul>
           </div>
           
           <div className="competence-card">
-            <h3>Outils</h3>
+            <h3>Outils & Méthodologies</h3>
             <ul>
-              <li>GitLab</li>
-              <li>GitHub</li>
+              <li>Git / GitLab / GitHub</li>
               <li>Cursor / VSCode</li>
               <li>Figma</li>
               <li>Postman</li>
+              <li>Cypress (Tests E2E)</li>
+              <li>Agile / Scrum</li>
+            </ul>
+          </div>
+
+          <div className="competence-card">
+            <h3>Intégrations & Services</h3>
+            <ul>
+              <li>PayPal SDK</li>
+              <li>Stripe</li>
+              <li>Monetico</li>
+              <li>APIs REST</li>
+              <li>Cloud Services</li>
             </ul>
           </div>
         </div>

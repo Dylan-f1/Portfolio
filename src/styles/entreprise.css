@@ -1,34 +1,22 @@
-.contact-section {
+/* Entreprise.css */
+
+.entreprise-main-section {
     min-height: 100vh;
     background-color: transparent;
     padding: 2rem 0;
     position: relative;
+    color: white;
   }
   
-  .contact-section h2 {
+  .entreprise-main-section h2 {
     position: relative;
     z-index: 2;
     text-align: center;
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 700;
     margin-bottom: 3rem;
-    color: #ffffff;
-    background: linear-gradient(135deg, #c20497 0%, #c20497 50%, #c20497 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: titleGlow 4s ease-in-out infinite;
-    padding: 0 1rem;
-  }
-  
-  @keyframes titleGlow {
-    0%, 100% { 
-      filter: drop-shadow(0 0 20px #c20497);
-    }
-    50% { 
-      filter: drop-shadow(0 0 40px #c20497) 
-              drop-shadow(0 0 60px #c20497);
-    }
+    color: var(--alpine-blue);
+    text-shadow: 0 0 20px rgba(0, 144, 255, 0.5);
   }
   
   .entreprise-container {
@@ -39,322 +27,16 @@
     padding: 0 clamp(1rem, 3vw, 2rem);
   }
   
+  /* Introduction */
   .intro-section {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.05);
     border-radius: clamp(15px, 3vw, 20px);
     padding: clamp(2rem, 4vw, 3rem) clamp(1.5rem, 3vw, 2rem);
     margin-bottom: clamp(2rem, 4vw, 3rem);
-    box-shadow: 
-      0 20px 40px rgba(0, 0, 0, 0.3),
-      0 0 60px rgba(74, 144, 226, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(0, 144, 255, 0.3);
     animation: slideInUp 1s ease-out;
-  }
-  
-  .intro-section h3 {
-    font-size: clamp(1.5rem, 4vw, 2.2rem);
-    color: #2c3e50;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    font-weight: 600;
-  }
-  
-  .intro-section p {
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
-    line-height: 1.8;
-    color: #34495e;
-    text-align: justify;
-    margin-bottom: 0;
-  }
-  
-  .experiences-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
-    gap: clamp(1rem, 3vw, 2rem);
-    margin-bottom: clamp(2rem, 4vw, 3rem);
-  }
-  
-  .experience-card {
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: clamp(10px, 2vw, 15px);
-    padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1rem, 2.5vw, 2rem);
-    box-shadow: 
-      0 15px 30px rgba(0, 0, 0, 0.2),
-      0 0 40px rgba(74, 144, 226, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    min-height: 300px;
-  }
-  
-  .experience-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, #c20497, #c20497, #c20497);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-  }
-  
-  .experience-card:hover::before {
-    transform: scaleX(1);
-  }
-  
-  .experience-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 
-      0 25px 50px rgba(0, 0, 0, 0.3),
-      0 0 60px rgba(74, 144, 226, 0.2);
-  }
-  
-  .experience-header {
-    margin-bottom: 1.5rem;
-  }
-  
-  .company-name {
-    font-size: clamp(1.3rem, 3vw, 1.8rem);
-    font-weight: 700;
-    color: #2c3e50;
-    margin-bottom: 0.5rem;
-    word-wrap: break-word;
-  }
-  
-  .position-title {
-    font-size: clamp(1.1rem, 2.5vw, 1.3rem);
-    font-weight: 500;
-    color: #c20497;
-    margin-bottom: 0.5rem;
-    word-wrap: break-word;
-  }
-  
-  .duration {
-    font-size: clamp(0.9rem, 2vw, 1rem);
-    color: #7f8c8d;
-    font-style: italic;
-    margin-bottom: 0.5rem;
-  }
-  
-  .location {
-    font-size: clamp(0.9rem, 2vw, 1rem);
-    color: #95a5a6;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-  }
-  
-  .location::before {
-    content: "📍";
-    font-size: 0.9rem;
-    flex-shrink: 0;
-  }
-  
-  .experience-description {
-    color: #34495e;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    font-size: clamp(0.9rem, 2vw, 1rem);
-  }
-  
-  .experience-description p {
-    word-wrap: break-word;
-    hyphens: auto;
-  }
-  
-  .skills-section {
-    margin-top: 1.5rem;
-  }
-  
-  .skills-section h5 {
-    font-size: clamp(1rem, 2.2vw, 1.1rem);
-    color: #2c3e50;
-    margin-bottom: 0.8rem;
-    font-weight: 600;
-  }
-  
-  .skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: clamp(0.3rem, 1vw, 0.5rem);
-  }
-  
-  .skill-tag {
-    background: linear-gradient(135deg, #c20497, #c20497);
-    color: white;
-    padding: clamp(0.25rem, 0.8vw, 0.3rem) clamp(0.6rem, 1.5vw, 0.8rem);
-    border-radius: 20px;
-    font-size: clamp(0.75rem, 1.8vw, 0.85rem);
-    font-weight: 500;
-    box-shadow: 0 2px 8px rgba(116, 185, 255, 0.3);
-    transition: all 0.3s ease;
-    white-space: nowrap;
-  }
-  
-  .skill-tag:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.4);
-  }
-  
-  .accomplishments-section {
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: clamp(15px, 3vw, 20px);
-    padding: clamp(2rem, 4vw, 3rem) clamp(1.5rem, 3vw, 2rem);
-    margin-bottom: clamp(2rem, 4vw, 3rem);
-    box-shadow: 
-      0 20px 40px rgba(0, 0, 0, 0.3),
-      0 0 60px rgba(74, 144, 226, 0.2);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
-  
-  .accomplishments-section h3 {
-    font-size: clamp(1.5rem, 4vw, 2.2rem);
-    color: #2c3e50;
-    margin-bottom: 2rem;
-    text-align: center;
-    font-weight: 600;
-  }
-  
-  .accomplishment-item {
-    margin-bottom: 1.5rem;
-    padding: clamp(1rem, 2.5vw, 1.5rem);
-    background: rgba(116, 185, 255, 0.1);
-    border-radius: clamp(8px, 1.5vw, 10px);
-    border-left: 4px solid #c20497;
-    transition: all 0.3s ease;
-  }
-  
-  .accomplishment-item:hover {
-    background: rgba(116, 185, 255, 0.15);
-    transform: translateX(5px);
-  }
-  
-  .accomplishment-item h4 {
-    color: #2c3e50;
-    font-size: clamp(1.1rem, 2.5vw, 1.3rem);
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-    word-wrap: break-word;
-  }
-  
-  .accomplishment-item p {
-    color: #34495e;
-    line-height: 1.6;
-    margin: 0;
-    font-size: clamp(0.9rem, 2vw, 1rem);
-    word-wrap: break-word;
-    hyphens: auto;
-  }
-  
-  .timeline-section {
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: clamp(15px, 3vw, 20px);
-    padding: clamp(2rem, 4vw, 3rem) clamp(1.5rem, 3vw, 2rem);
-    margin-bottom: clamp(2rem, 4vw, 3rem);
-    box-shadow: 
-      0 20px 40px rgba(0, 0, 0, 0.3),
-      0 0 60px rgba(74, 144, 226, 0.2);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
-  
-  .timeline-section h3 {
-    font-size: clamp(1.5rem, 4vw, 2.2rem);
-    color: #2c3e50;
-    margin-bottom: 2rem;
-    text-align: center;
-    font-weight: 600;
-  }
-  
-  .timeline {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .timeline::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background: linear-gradient(180deg, #c20497, #c20497, #c20497);
-    transform: translateX(-50%);
-  }
-  
-  .timeline-item {
-    position: relative;
-    margin-bottom: clamp(2rem, 4vw, 3rem);
-    width: 45%;
-  }
-  
-  .timeline-item:nth-child(odd) {
-    left: 0;
-    padding-right: 2rem;
-  }
-  
-  .timeline-item:nth-child(even) {
-    left: 55%;
-    padding-left: 2rem;
-  }
-  
-  .timeline-item::before {
-    content: "";
-    position: absolute;
-    top: 1rem;
-    width: 15px;
-    height: 15px;
-    background: #74b9ff;
-    border-radius: 50%;
-    border: 3px solid white;
-    box-shadow: 0 0 10px rgba(116, 185, 255, 0.5);
-  }
-  
-  .timeline-item:nth-child(odd)::before {
-    right: -7.5px;
-  }
-  
-  .timeline-item:nth-child(even)::before {
-    left: -7.5px;
-  }
-  
-  .timeline-content {
-    background: white;
-    padding: clamp(1rem, 2.5vw, 1.5rem);
-    border-radius: clamp(8px, 1.5vw, 10px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(116, 185, 255, 0.2);
-  }
-  
-  .timeline-date {
-    font-size: clamp(0.8rem, 1.8vw, 0.9rem);
-    color: #74b9ff;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .timeline-title {
-    font-size: clamp(1rem, 2.2vw, 1.2rem);
-    color: #2c3e50;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    word-wrap: break-word;
-  }
-  
-  .timeline-description {
-    color: #34495e;
-    line-height: 1.5;
-    font-size: clamp(0.85rem, 1.8vw, 0.95rem);
-    word-wrap: break-word;
-    hyphens: auto;
   }
   
   @keyframes slideInUp {
@@ -368,237 +50,335 @@
     }
   }
   
-  /* Responsive Design */
+  .intro-section h3 {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    color: var(--alpine-pink);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+  }
   
-  /* Extra Large Screens */
-  @media (min-width: 1440px) {
-    .contact-section h2 {
-      font-size: 4.5rem;
+  .intro-section p {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    line-height: 1.8;
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+  }
+  
+  .intro-section strong {
+    color: #ffffff;
+    font-weight: 600;
+  }
+  
+  .intro-section em {
+    color: #ff69b4;
+    font-style: italic;
+  }
+  
+  /* Grille des expériences */
+  .experiences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+    gap: clamp(1.5rem, 3vw, 2rem);
+    margin-bottom: clamp(2rem, 4vw, 3rem);
+  }
+  
+  /* Experience Card */
+  .experience-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: clamp(10px, 2vw, 15px);
+    padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1rem, 2.5vw, 2rem);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 144, 255, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+  }
+  
+  .experience-card:nth-child(1) { animation-delay: 0.1s; }
+  .experience-card:nth-child(2) { animation-delay: 0.2s; }
+  .experience-card:nth-child(3) { animation-delay: 0.3s; }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
-    
-    .experiences-grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 3rem;
-    }
-    
-    .entreprise-container {
-      max-width: 1400px;
+    from {
+      opacity: 0;
+      transform: translateY(20px);
     }
   }
   
-  /* Large Screens / Laptops */
-  @media (max-width: 1280px) {
-    .experiences-grid {
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    }
-    
-    .timeline::before {
-      left: 50%;
-    }
+  .experience-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--alpine-blue), var(--alpine-pink));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
   }
   
-  /* Medium Large Screens */
+  .experience-card:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0, 144, 255, 0.3);
+  }
+  
+  /* Highlight card (en cours) */
+  .highlight-card {
+    border: 2px solid rgba(255, 20, 147, 0.5);
+    background: linear-gradient(135deg, rgba(0, 144, 255, 0.1), rgba(255, 20, 147, 0.05));
+  }
+  
+  .experience-ribbon {
+    position: absolute;
+    top: 20px;
+    right: -35px;
+    background: linear-gradient(135deg, var(--alpine-pink), var(--alpine-blue));
+    color: white;
+    padding: 5px 40px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transform: rotate(45deg);
+    box-shadow: 0 4px 10px rgba(0, 144, 255, 0.3);
+  }
+  
+  /* Header */
+  .experience-header {
+    margin-bottom: 1.5rem;
+  }
+  
+  .company-name {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: 700;
+    color: var(--alpine-pink);
+    margin-bottom: 0.5rem;
+  }
+  
+  .position-title {
+    font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+    font-weight: 500;
+    color: var(--alpine-blue);
+    margin-bottom: 0.5rem;
+  }
+  
+  .duration {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    color: #b0b0b0;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+  
+  .location {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    color: #95a5a6;
+  }
+  
+  /* Description */
+  .experience-description {
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: clamp(0.95rem, 2vw, 1rem);
+  }
+  
+  .mission-intro {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: rgba(0, 144, 255, 0.1);
+    border-radius: 8px;
+    border-left: 3px solid var(--alpine-blue);
+  }
+  
+  .missions-detail h6,
+  .accomplishments h6 {
+    color: var(--alpine-pink);
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    margin-top: 1rem;
+  }
+  
+  .missions-detail ul,
+  .accomplishments ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .missions-detail li,
+  .accomplishments li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  .missions-detail li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--alpine-blue);
+    font-weight: bold;
+  }
+  
+  .accomplishments li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #51ffa9;
+    font-weight: bold;
+  }
+  
+  /* Skills */
+  .skills-section {
+    margin-top: 1.5rem;
+  }
+  
+  .skills-section h6 {
+    font-size: clamp(1rem, 2.2vw, 1.1rem);
+    color: var(--alpine-pink);
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(0.4rem, 1vw, 0.6rem);
+  }
+  
+  .skill-tag {
+    background: linear-gradient(135deg, var(--alpine-blue), var(--alpine-pink));
+    color: white;
+    padding: clamp(0.3rem, 0.8vw, 0.4rem) clamp(0.7rem, 1.5vw, 1rem);
+    border-radius: 20px;
+    font-size: clamp(0.75rem, 1.8vw, 0.85rem);
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0, 144, 255, 0.3);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  .skill-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 144, 255, 0.4);
+  }
+  
+  /* Global Learnings */
+  .global-learnings {
+    margin-top: 4rem;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 144, 255, 0.3);
+  }
+  
+  .global-learnings h3 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    color: var(--alpine-blue);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .learnings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .learning-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 15px;
+    border-left: 4px solid var(--alpine-blue);
+  }
+  
+  .learning-card h4 {
+    color: var(--alpine-pink);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .learning-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .learning-card li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #e0e0e0;
+  }
+  
+  .learning-card li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--alpine-blue);
+    font-weight: bold;
+  }
+  
+  /* Responsive */
   @media (max-width: 1024px) {
-    .contact-section {
-      background-attachment: scroll;
-    }
-    
-    .contact-section h2 {
-      font-size: 3rem;
-      margin-bottom: 2.5rem;
-    }
-    
     .experiences-grid {
       grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-    
-    .entreprise-container {
-      padding: 0 1.5rem;
-    }
-    
-    .intro-section,
-    .accomplishments-section,
-    .timeline-section {
-      padding: 2.5rem 2rem;
-    }
-    
-    .experience-card {
-      min-height: 250px;
     }
   }
   
-  /* Tablets */
   @media (max-width: 768px) {
-    .contact-section {
+    .entreprise-main-section {
       padding: 1.5rem 0;
     }
-    
-    .contact-section h2 {
-      font-size: 2.5rem;
-      margin-bottom: 2rem;
-    }
-    
+  
     .intro-section,
-    .accomplishments-section,
-    .timeline-section {
+    .global-learnings {
       padding: 2rem 1.5rem;
-      margin-bottom: 2rem;
-      border-radius: 15px;
     }
-    
+  
     .experience-card {
       padding: 2rem 1.5rem;
-      min-height: 200px;
     }
-    
-    .company-name {
-      font-size: 1.4rem;
-    }
-    
-    .position-title {
-      font-size: 1.2rem;
-    }
-    
-    /* Timeline responsive */
-    .timeline::before {
-      left: 2rem;
-    }
-    
-    .timeline-item {
-      width: 100%;
-      left: 0 !important;
-      padding-left: 4rem !important;
-      padding-right: 0 !important;
-    }
-    
-    .timeline-item::before {
-      left: 1.25rem !important;
-      right: auto !important;
-    }
-    
-    .skills-list {
-      justify-content: center;
+  
+    .learnings-grid {
+      grid-template-columns: 1fr;
     }
   }
   
-  /* Large Mobile Phones */
-  @media (max-width: 640px) {
+  @media (max-width: 480px) {
     .entreprise-container {
       padding: 0 1rem;
     }
-    
+  
     .intro-section,
-    .accomplishments-section,
-    .timeline-section {
+    .global-learnings {
       padding: 1.5rem 1rem;
     }
-    
+  
     .experience-card {
       padding: 1.5rem 1rem;
-      min-height: auto;
     }
-    
+  
+    .learning-card {
+      padding: 1.5rem;
+    }
+  
     .skills-list {
       gap: 0.3rem;
-      justify-content: flex-start;
     }
-    
-    .accomplishment-item {
-      padding: 1rem;
-    }
-    
-    .timeline-content {
-      padding: 1rem;
-    }
-  }
   
-  /* Small Mobile Phones */
-  @media (max-width: 480px) {
-    .contact-section {
-      padding: 1rem 0;
-    }
-    
-    .contact-section h2 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-    }
-    
-    .entreprise-container {
-      padding: 0 0.5rem;
-    }
-    
-    .intro-section,
-    .accomplishments-section,
-    .timeline-section {
-      padding: 1.5rem 1rem;
-      margin-bottom: 1.5rem;
-      border-radius: 10px;
-    }
-    
-    .experience-card {
-      padding: 1.5rem 1rem;
-      border-radius: 10px;
-    }
-    
-    .experiences-grid {
-      gap: 1rem;
-    }
-    
-    .skills-list {
-      gap: 0.25rem;
-    }
-    
     .skill-tag {
       font-size: 0.75rem;
-      padding: 0.2rem 0.5rem;
-    }
-    
-    .accomplishment-item {
-      margin-bottom: 1rem;
-      padding: 0.8rem;
-    }
-    
-    .timeline-item {
-      margin-bottom: 2rem;
-      padding-left: 3rem !important;
-    }
-    
-    .timeline::before {
-      left: 1.5rem;
-    }
-    
-    .timeline-item::before {
-      left: 0.75rem !important;
-      width: 12px;
-      height: 12px;
-    }
-  }
-  
-  /* Extra Small Devices */
-  @media (max-width: 360px) {
-    .contact-section h2 {
-      font-size: 1.8rem;
-      padding: 0 0.5rem;
-    }
-    
-    .intro-section,
-    .accomplishments-section,
-    .timeline-section,
-    .experience-card {
-      padding: 1rem 0.8rem;
-    }
-    
-    .skills-list {
-      justify-content: center;
-    }
-    
-    .accomplishment-item h4 {
-      font-size: 1rem;
-    }
-    
-    .timeline-content {
-      padding: 0.8rem;
+      padding: 0.25rem 0.6rem;
     }
   }
   

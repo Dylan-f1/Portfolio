@@ -16,6 +16,15 @@ const CV = () => {
               className="cv-image" 
             />
           </div>
+          <div className="cv-download">
+            <a 
+              href="/CV-Dylan-Fernandes.pdf" 
+              download
+              className="download-button"
+            >
+              📥 Télécharger le CV (PDF)
+            </a>
+          </div>
         </div>
       </section>
     </div>
