@@ -15,7 +15,7 @@ const Home = () => {
           <div className="hero-left">
             <div className="profile-card">
               <div className="profile-image">
-                <img src="/profile-photo.jpg" alt="Dylan Fernandes" />
+                <img src="/profile-photo.png" alt="Dylan Fernandes" />
               </div>
               <div className="profile-info">
                 <span className="profile-badge">Apprenti BTS SIO</span>
@@ -98,10 +98,9 @@ const Home = () => {
       {/* Section Entreprise + Veille */}
       <section className="bottom-sections">
         <div className="bottom-container">
-          {/* Logo Tec6 */}
           <Link to="/entreprise" className="bottom-card enterprise-card">
-            <div className="enterprise-logo">
-              <img src="/tec6-logo.png" alt="Tec6" />
+          <div className="card-preview">
+              <div className="preview-item">Sylnux</div>
             </div>
             <div className="card-content">
               <span className="card-label">EN SAVOIR PLUS SUR</span>

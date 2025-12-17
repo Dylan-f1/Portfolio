@@ -1,11 +1,11 @@
 export const veilleTechnoData = {
   robotsHumanoides: {
-    id: 'robots-humanoides',
+    id: 'robotsHumanoides',
     title: "Robots Humanoïdes Coréens à Roues 360°",
     category: "Robotique",
     date: "24 Mai 2024",
     sourceUrl: "https://newsly.fr/2025/05/24/la-coree-du-sud-devoile-ses-robots-humanoides-equipes-de-roues-a-360-et-de-commandes-flexibles-qui-defient-limagination-humaine/",
-    image: "/robot-humanoide.jpg", // À remplacer par vraie image
+    image: "/robot-humanoide.jpg",
     resumeCourt: "La Corée du Sud dévoile ses robots humanoïdes équipés de roues à 360° et de commandes flexibles qui défient l'imagination humaine",
     
     // ANALYSE APPROFONDIE
@@ -42,10 +42,10 @@ export const veilleTechnoData = {
     analyseApprofondie: `
 Cette innovation représente un changement de paradigme dans la conception des robots humanoïdes. Plutôt que de chercher à imiter parfaitement la locomotion humaine, les ingénieurs coréens ont opté pour une approche hybride privilégiant l'efficacité et la praticité.
 
-**Implications Techniques :**
+Implications Techniques :
 Les roues omnidirectionnelles résolvant le complexe "problème de la marche bipède" qui a longtemps ralenti le développement des robots humanoïdes. Boston Dynamics avec Atlas a montré qu'un robot peut marcher, mais au prix d'une consommation énergétique massive et d'une complexité mécanique extrême. L'approche coréenne sacrifie la capacité de monter les escaliers pour gagner en efficacité énergétique et en rapidité.
 
-**Systèmes de Contrôle Adaptatifs :**
+Systèmes de Contrôle Adaptatifs :
 La flexibilité des commandes suggère l'utilisation d'algorithmes d'IA avancés, probablement basés sur le machine learning et le reinforcement learning. Le robot peut ainsi apprendre de ses interactions et s'adapter à de nouveaux scénarios sans intervention humaine.
     `,
     
@@ -73,48 +73,20 @@ La flexibilité des commandes suggère l'utilisation d'algorithmes d'IA avancés
       ]
     },
     
-    useCasesConcrets: [
-      {
-        domaine: "Logistique et Entrepôts",
-        description: "Déplacement rapide de marchandises dans des environnements contrôlés",
-        pertinence: "⭐⭐⭐⭐⭐ Optimal"
-      },
-      {
-        domaine: "Hôtellerie et Service",
-        description: "Robot de service dans hôtels, restaurants, centres commerciaux",
-        pertinence: "⭐⭐⭐⭐ Très pertinent"
-      },
-      {
-        domaine: "Santé et Assistance",
-        description: "Assistance dans les hôpitaux pour transport de médicaments/équipements",
-        pertinence: "⭐⭐⭐⭐ Très pertinent"
-      },
-      {
-        domaine: "Sécurité et Surveillance",
-        description: "Patrouilles dans des espaces clos (bureaux, centres commerciaux)",
-        pertinence: "⭐⭐⭐ Pertinent"
-      },
-      {
-        domaine: "Domestique",
-        description: "Aide à domicile (limité par les escaliers)",
-        pertinence: "⭐⭐ Limité"
-      }
-    ],
-    
     impactFutur: `
-**Court terme (1-3 ans) :**
+Court terme (1-3 ans) :
 - Déploiement dans les environnements industriels coréens
 - Adoption par les secteurs de la logistique et de l'hôtellerie
 - Amélioration continue des algorithmes de contrôle
 - Réduction des coûts de production
 
-**Moyen terme (3-7 ans) :**
+Moyen terme (3-7 ans) :
 - Standardisation potentielle de cette approche hybride
 - Émergence de versions combinant roues ET capacité de franchir des obstacles
 - Intégration massive dans les espaces publics (aéroports, hôpitaux)
 - Développement d'un écosystème d'applications et services
 
-**Long terme (7-15 ans) :**
+Long terme (7-15 ans) :
 - Omniprésence dans les environnements urbains
 - Versions domestiques adaptées (avec capacité escaliers)
 - Intégration avec IoT et smart cities
@@ -122,26 +94,26 @@ La flexibilité des commandes suggère l'utilisation d'algorithmes d'IA avancés
     `,
     
     reflexionPersonnelle: `
-Ce qui me fascine particulièrement dans cette innovation, c'est le **pragmatisme de l'approche**. Plutôt que de s'obstiner à reproduire l'humain dans tous ses aspects, les ingénieurs coréens ont identifié ce qui compte vraiment : l'efficacité et l'utilité pratique.
+Ce qui me fascine particulièrement dans cette innovation, c'est le pragmatisme de l'approche. Plutôt que de s'obstiner à reproduire l'humain dans tous ses aspects, les ingénieurs coréens ont identifié ce qui compte vraiment : l'efficacité et l'utilité pratique.
 
-C'est une leçon importante en développement technologique : **la meilleure solution n'est pas toujours celle qui imite parfaitement la nature, mais celle qui résout le problème de la façon la plus efficace**.
+C'est une leçon importante en développement technologique : la meilleure solution n'est pas toujours celle qui imite parfaitement la nature, mais celle qui résout le problème de la façon la plus efficace.
 
 En tant que développeur, je vois un parallèle avec notre domaine : on pourrait passer des mois à créer un framework "parfait" qui fait tout, ou bien identifier les vrais besoins et créer une solution pragmatique qui fonctionne. C'est exactement ce que font ces robots coréens.
 
-**Mon avis sur l'évolution :**
+Mon avis sur l'évolution :
 Je pense que nous verrons dans les 5 prochaines années une convergence des approches : des robots hybrides capables à la fois de se déplacer rapidement sur roues en intérieur, mais équipés de jambes rétractables pour franchir des obstacles quand nécessaire. Le futur de la robotique sera probablement dans cette flexibilité adaptative plutôt que dans la spécialisation extrême.
     `,
     
     conclusionOuverture: `
-Les robots humanoïdes coréens à roues 360° ne sont pas qu'une simple innovation technique : ils représentent un **changement de philosophie dans la conception robotique**. Plutôt que la perfection biomimétique, c'est l'efficacité pratique qui prime.
+Les robots humanoïdes coréens à roues 360° ne sont pas qu'une simple innovation technique : ils représentent un changement de philosophie dans la conception robotique. Plutôt que la perfection biomimétique, c'est l'efficacité pratique qui prime.
 
-**Questions ouvertes pour le futur :**
+Questions ouvertes pour le futur :
 - Comment ces robots évolueront-ils pour gérer les environnements non-plats ?
 - Quelle sera l'acceptation sociale de robots "moins humains" dans les espaces publics ?
 - Peut-on combiner le meilleur des deux mondes (roues + jambes) de façon économiquement viable ?
 - Quel impact sur l'emploi dans les secteurs de service et logistique ?
 
-**Ma conclusion :** Cette innovation coréenne pourrait bien définir le standard des robots de service des années 2030. L'approche pragmatique, énergétiquement efficace et économiquement viable en fait une solution plus susceptible d'adoption massive que les robots humanoïdes bipèdes ultra-complexes comme Atlas. Le futur de la robotique sera probablement défini par ceux qui choisissent l'efficacité plutôt que la perfection esthétique.
+Ma conclusion : Cette innovation coréenne pourrait bien définir le standard des robots de service des années 2030. L'approche pragmatique, énergétiquement efficace et économiquement viable en fait une solution plus susceptible d'adoption massive que les robots humanoïdes bipèdes ultra-complexes comme Atlas. Le futur de la robotique sera probablement défini par ceux qui choisissent l'efficacité plutôt que la perfection esthétique.
     `,
     
     ressourcesComplementaires: [
@@ -153,7 +125,7 @@ Les robots humanoïdes coréens à roues 360° ne sont pas qu'une simple innovat
   },
 
   ordinateurQuantique: {
-    id: 'ordinateur-quantique',
+    id: 'ordinateurQuantique',
     title: "L'Ordinateur Quantique de Google",
     category: "Informatique Quantique",
     date: "16 Mai 2024",
@@ -186,19 +158,19 @@ Les robots humanoïdes coréens à roues 360° ne sont pas qu'une simple innovat
     ],
     
     analyseApprofondie: `
-**Comprendre la Révolution Quantique :**
+Comprendre la Révolution Quantique :
 
-L'informatique quantique ne fonctionne pas comme l'informatique classique. Là où un bit classique est soit 0 soit 1, un qubit peut être dans une **superposition** des deux états simultanément. C'est comme si vous pouviez explorer tous les chemins possibles d'un labyrinthe en même temps au lieu de les tester un par un.
+L'informatique quantique ne fonctionne pas comme l'informatique classique. Là où un bit classique est soit 0 soit 1, un qubit peut être dans une superposition des deux états simultanément. C'est comme si vous pouviez explorer tous les chemins possibles d'un labyrinthe en même temps au lieu de les tester un par un.
 
-**L'Exploit de Google :**
+L'Exploit de Google :
 Le processeur quantique de Google, nommé Sycamore, a résolu un problème spécifique de "échantillonnage de circuits quantiques aléatoires" en 200 secondes. Le superordinateur Summit d'IBM aurait eu besoin de 47 ans pour le même calcul.
 
-**Pourquoi c'est important :**
-1. **Preuve de concept** : Démontre que l'informatique quantique n'est plus théorique
-2. **Accélération exponentielle** : Pas 2x ou 10x plus rapide, mais des millions de fois
-3. **Nouveaux paradigmes** : Ouvre des possibilités impossibles avec l'informatique classique
+Pourquoi c'est important :
+1. Preuve de concept : Démontre que l'informatique quantique n'est plus théorique
+2. Accélération exponentielle : Pas 2x ou 10x plus rapide, mais des millions de fois
+3. Nouveaux paradigmes : Ouvre des possibilités impossibles avec l'informatique classique
 
-**Limitations actuelles :**
+Limitations actuelles :
 - Le problème résolu n'a pas d'application pratique directe (benchmark)
 - Fonctionne uniquement à des températures extrêmement basses (-273°C)
 - Taux d'erreur encore élevé nécessitant la correction d'erreurs quantiques
@@ -276,74 +248,74 @@ Le processeur quantique de Google, nommé Sycamore, a résolu un problème spéc
     ],
     
     impactFutur: `
-**Court terme (1-5 ans) :**
+Court terme (1-5 ans) :
 - Amélioration continue des processeurs quantiques (plus de qubits, moins d'erreurs)
 - Premières applications pratiques en cryptographie et chimie
 - Cloud computing quantique accessible (AWS, Azure, Google déjà disponibles)
 - Début de la migration "quantum-safe" de la cryptographie
 
-**Moyen terme (5-15 ans) :**
-- **Révolution cryptographique** : Transition complète vers la cryptographie post-quantique
+Moyen terme (5-15 ans) :
+- Révolution cryptographique : Transition complète vers la cryptographie post-quantique
 - Découverte accélérée de nouveaux matériaux et médicaments
 - Ordinateurs quantiques hybrides (quantique + classique)
 - IA quantique : modèles beaucoup plus puissants
 - Démocratisation via le cloud (payer à l'usage)
 
-**Long terme (15-30 ans) :**
+Long terme (15-30 ans) :
 - Ordinateurs quantiques de bureau (peut-être)
 - Résolution de problèmes actuellement impossibles (protéines, climat)
 - Nouvelle ère de l'IA avec des capacités de raisonnement inédites
 - Révolution dans la science des matériaux
 - Impact sur tous les secteurs (santé, transport, énergie, finance)
 
-**Scénario catastrophe à anticiper :**
+Scénario catastrophe à anticiper :
 Le "Q-Day" - Le jour où un ordinateur quantique pourra casser RSA. Tous les systèmes de sécurité actuels (HTTPS, VPN, blockchain) deviendraient vulnérables. C'est POURQUOI la migration vers la cryptographie post-quantique est urgente.
     `,
     
     reflexionPersonnelle: `
 L'annonce de Google m'a fait réaliser que nous sommes à un point d'inflexion similaire à celui des années 1950 avec les premiers ordinateurs. À l'époque, on pensait qu'une poignée d'ordinateurs suffirait pour le monde entier. Aujourd'hui, nous avons des superordinateurs dans nos poches.
 
-**Ce qui me fascine :**
+Ce qui me fascine :
 
-1. **Le paradoxe de la puissance** : Un ordinateur quantique peut résoudre certains problèmes en secondes, mais ne peut pas faire tourner Word ou Chrome. C'est contre-intuitif !
+1. Le paradoxe de la puissance : Un ordinateur quantique peut résoudre certains problèmes en secondes, mais ne peut pas faire tourner Word ou Chrome. C'est contre-intuitif !
 
-2. **L'importance de choisir le bon outil** : En tant que développeur, cela me rappelle qu'il n'y a pas de "solution universelle". Parfois React est overkill, parfois tu as besoin de Next.js. L'informatique quantique sera pareille : ultra-puissante pour certaines tâches, inutile pour d'autres.
+2. L'importance de choisir le bon outil : En tant que développeur, cela me rappelle qu'il n'y a pas de "solution universelle". Parfois React est overkill, parfois tu as besoin de Next.js. L'informatique quantique sera pareille : ultra-puissante pour certaines tâches, inutile pour d'autres.
 
-3. **L'impact sur notre métier** : Dans 10-20 ans, les développeurs devront peut-être apprendre à programmer des ordinateurs quantiques. De nouveaux langages comme Q#, Qiskit, et Cirq émergent déjà. C'est excitant et intimidant à la fois.
+3. L'impact sur notre métier : Dans 10-20 ans, les développeurs devront peut-être apprendre à programmer des ordinateurs quantiques. De nouveaux langages comme Q#, Qiskit, et Cirq émergent déjà. C'est excitant et intimidant à la fois.
 
-**Ma plus grande préoccupation :**
-La **sécurité**. Toute l'infrastructure Internet repose sur le fait qu'il est pratiquement impossible de factoriser de grands nombres. L'algorithme de Shor sur un ordinateur quantique suffisamment puissant pourrait casser RSA. Cela signifie :
+Ma plus grande préoccupation :
+La sécurité. Toute l'infrastructure Internet repose sur le fait qu'il est pratiquement impossible de factoriser de grands nombres. L'algorithme de Shor sur un ordinateur quantique suffisamment puissant pourrait casser RSA. Cela signifie :
 - Plus de HTTPS sécurisé
 - Blockchain/crypto vulnérables
 - VPN cassés
 - Données chiffrées actuelles déchiffrables rétroactivement
 
-C'est pourquoi je suis les développements de la **cryptographie post-quantique** de près. NIST a déjà standardisé de nouveaux algorithmes résistants au quantique.
+C'est pourquoi je suis les développements de la cryptographie post-quantique de près. NIST a déjà standardisé de nouveaux algorithmes résistants au quantique.
 
-**Ce que j'aimerais explorer :**
+Ce que j'aimerais explorer :
 J'aimerais un jour créer un petit programme sur un simulateur quantique (Qiskit de IBM) pour comprendre concrètement comment cela fonctionne. C'est comme apprendre React : tu peux lire toute la théorie, mais rien ne remplace le fait de coder et voir les résultats.
     `,
     
     conclusionOuverture: `
-L'ordinateur quantique de Google ne marque pas "la fin des superordinateurs" comme le titre sensationnaliste le suggère, mais plutôt **le début d'une ère complémentaire**. Les ordinateurs classiques et quantiques coexisteront, chacun excellent dans son domaine.
+L'ordinateur quantique de Google ne marque pas "la fin des superordinateurs" comme le titre sensationnaliste le suggère, mais plutôt le début d'une ère complémentaire. Les ordinateurs classiques et quantiques coexisteront, chacun excellent dans son domaine.
 
-**Questions ouvertes pour notre génération :**
+Questions ouvertes pour notre génération :
 
-1. **Éthique** : Qui aura accès à cette puissance de calcul ? Les GAFAM uniquement ou sera-t-elle démocratisée ?
+1. Éthique : Qui aura accès à cette puissance de calcul ? Les GAFAM uniquement ou sera-t-elle démocratisée ?
 
-2. **Sécurité** : Comment gérer la transition cryptographique avant que le "Q-Day" n'arrive ?
+2. Sécurité : Comment gérer la transition cryptographique avant que le "Q-Day" n'arrive ?
 
-3. **Éducation** : Comment former les futurs développeurs à penser "quantique" ?
+3. Éducation : Comment former les futurs développeurs à penser "quantique" ?
 
-4. **Applications** : Quels problèmes actuellement impossibles pourrons-nous résoudre ? Le changement climatique ? Les maladies rares ?
+4. Applications : Quels problèmes actuellement impossibles pourrons-nous résoudre ? Le changement climatique ? Les maladies rares ?
 
-**Ma conclusion personnelle :**
+Ma conclusion personnelle :
 
-L'informatique quantique est probablement la **plus grande avancée technologique de notre génération**. Bien plus que l'IA (qui d'ailleurs sera décuplée par le quantique), elle ouvre des possibilités qu'on ne peut même pas imaginer aujourd'hui.
+L'informatique quantique est probablement la plus grande avancée technologique de notre génération. Bien plus que l'IA (qui d'ailleurs sera décuplée par le quantique), elle ouvre des possibilités qu'on ne peut même pas imaginer aujourd'hui.
 
 Pour nous, développeurs de 2025, c'est un rappel que notre industrie évolue à une vitesse folle. Dans 20 ans, peut-être que "développeur quantique" sera aussi commun que "développeur web" aujourd'hui. 
 
-**L'important : rester curieux, continuer à apprendre, et être prêt pour la révolution quantique qui arrive.**
+L'important : rester curieux, continuer à apprendre, et être prêt pour la révolution quantique qui arrive.
     `,
     
     ressourcesComplementaires: [
@@ -369,7 +341,7 @@ Pour nous, développeurs de 2025, c'est un rappel que notre industrie évolue à
     
     technologiesAnalysees: [
       {
-        nom: "Interface Cerveau-Machine (BCI)",
+        nom: "Interface Cerveau-Machine ()",
         description: "Dispositif permettant une communication directe entre le cerveau et un ordinateur",
         fonctionnement: "Des électrodes ultra-fines enregistrent l'activité neuronale et la traduisent en commandes numériques",
         composants: [
@@ -397,31 +369,31 @@ Pour nous, développeurs de 2025, c'est un rappel que notre industrie évolue à
     },
     
     analyseApprofondie: `
-**Le Contexte Technologique :**
+Le Contexte Technologique :
 
 Neuralink promet de révolutionner l'interface homme-machine en permettant aux personnes paralysées de contrôler des ordinateurs par la pensée. L'objectif ultime est encore plus ambitieux : augmenter les capacités cognitives humaines et créer une "symbiose" avec l'IA.
 
-**Le Problème Rencontré :**
+Le Problème Rencontré :
 
 Le détachement des électrodes n'est pas surprenant pour les experts du domaine. Le cerveau n'est pas un organe statique : il bouge légèrement à chaque battement de cœur, à chaque respiration. De plus, le corps considère tout implant comme un corps étranger et tente de l'isoler avec du tissu cicatriciel, ce qui peut dégrader le signal.
 
-**Pourquoi c'est plus complexe qu'il n'y paraît :**
+Pourquoi c'est plus complexe qu'il n'y paraît :
 
-1. **Défi mécanique** : Les fils doivent être suffisamment souples pour ne pas endommager le cerveau, mais suffisamment rigides pour rester en place.
+1. Défi mécanique : Les fils doivent être suffisamment souples pour ne pas endommager le cerveau, mais suffisamment rigides pour rester en place.
 
-2. **Défi biologique** : Le corps va tout faire pour rejeter ou isoler l'implant. C'est sa fonction naturelle.
+2. Défi biologique : Le corps va tout faire pour rejeter ou isoler l'implant. C'est sa fonction naturelle.
 
-3. **Défi électrique** : Maintenir un signal propre sur des années dans un environnement biologique hostile (humidité, protéines, cellules immunitaires).
+3. Défi électrique : Maintenir un signal propre sur des années dans un environnement biologique hostile (humidité, protéines, cellules immunitaires).
 
-**Comparaison avec d'autres BCI :**
+Comparaison avec d'autres  :
 
 Des concurrents comme Synchron utilisent une approche moins invasive (implant dans les vaisseaux sanguins plutôt que directement dans le cerveau). Leur dispositif enregistre moins de canaux mais évite certains problèmes rencontrés par Neuralink.
 
-C'est le **dilemme classique** : plus tu es invasif, plus tu as de données de qualité, mais plus tu prends de risques.
+C'est le dilemme classique : plus tu es invasif, plus tu as de données de qualité, mais plus tu prends de risques.
     `,
     
     comparaisonTechnologique: {
-      titre: "Différentes Approches BCI",
+      titre: "Différentes Approches ",
       comparaisons: [
         {
           entreprise: "Neuralink",
@@ -478,90 +450,71 @@ C'est le **dilemme classique** : plus tu es invasif, plus tu as de données de q
     ],
     
     reflexionPersonnelle: `
-**Mon avis sur Neuralink :**
+Mon avis sur Neuralink :
 
-Je suis à la fois **fasciné et inquiet**. Fasciné par le potentiel : imaginez pouvoir aider une personne paralysée à remarcher, à communiquer, à retrouver son autonomie. C'est incroyablement noble et excitant.
+Je suis à la fois fasciné et inquiet. Fasciné par le potentiel : imaginez pouvoir aider une personne paralysée à remarcher, à communiquer, à retrouver son autonomie. C'est incroyablement noble et excitant.
 
 Inquiet par plusieurs aspects :
 
-**1. La Rush Culture d'Elon Musk**
+1. La Rush Culture d'Elon Musk
 Elon a une réputation de "move fast and break things". Ça marche pour des voitures ou des fusées, mais pour des cerveaux humains ? Je ne suis pas sûr. La prudence devrait primer sur la vitesse.
 
-**2. Le Manque de Transparence**
-Contrairement à des entreprises de recherche médicale classiques, Neuralink est très secrète. On découvre les problèmes via des fuites, pas des publications scientifiques peer-reviewed. Red flag pour moi.
+2. Le Manque de Transparence
+Contrairement à des entreprises de recherche médicale classiques, Neuralink est très secrète. On découvre les problèmes via des fuites, pas des publications scientifiques.
 
-**3. L'Objectif Final**
+3. L'Objectif Final
 Musk parle ouvertement de "fusion avec l'IA" et "d'augmentation humaine". Même si je comprends l'intérêt (ne pas être "dépassé par l'IA"), cela soulève d'énormes questions éthiques.
 
-**En tant que Développeur, ce qui m'interpelle :**
+En tant que Développeur, ce qui m'interpelle :
 
 Nous, devs, avons déjà du mal à sécuriser des applications web. Imaginez devoir sécuriser un dispositif implanté dans un cerveau. Un bug dans le code ne ferait pas juste planter une app, mais pourrait affecter la vie d'une personne.
 
-**L'importance des Tests :**
-Ce problème technique de Neuralink me rappelle pourquoi les tests (unitaires, E2E, etc.) sont si cruciaux. Dans le logiciel, un bug peut être patché. Dans le hardware implanté dans un cerveau, c'est une nouvelle chirurgie.
-
-**Interface Homme-Machine ≠ Interface Utilisateur classique :**
-Développer une UI pour un BCI n'a rien à voir avec développer un site web. Il faut penser en termes de signaux neuronaux, de calibration par patient, d'apprentissage adaptatif. C'est un domaine fascinant où se mêlent neurosciences, IA et développement logiciel.
+Interface Homme-Machine ≠ Interface Utilisateur classique :
+Développer une UI pour un humain n'a rien à voir avec développer un site web. Il faut penser en termes de signaux neuronaux, de calibration par patient, d'apprentissage adaptatif. C'est un domaine fascinant où se mêlent neurosciences, IA et développement logiciel.
     `,
     
     impactFutur: `
-**Court terme (1-5 ans) :**
-- Neuralink et concurrents vont résoudre les problèmes techniques actuels
+Court terme :
+- Neuralink et ces concurrents vont résoudre les problèmes techniques 
 - Plus de patients traités dans des essais cliniques contrôlés
-- BCI non-invasifs vont continuer à s'améliorer (ex: casques EEG pour gaming)
-- Début de standardisation des protocoles de sécurité
+- Puces non-invasifs vont continuer à s'améliorer
 
-**Moyen terme (5-15 ans) :**
-- BCI pour paralysie deviendront standard médical (comme les pacemakers)
-- Premières applications grand public non-médicales (contrôle d'appareils, gaming)
+Moyen terme:
+- Puces pour paralysie deviendront standard médical (comme les pacemakers)
 - Régulations strictes mises en place
-- Débat sociétal sur l'augmentation humaine
 
-**Long terme (15-30 ans) :**
-Deux scénarios possibles :
-
-**Scénario Optimiste :**
-- BCI courante pour thérapie (paralysie, épilepsie, Parkinson)
-- Interfaces homme-machine naturelles (plus de clavier/souris)
+Long terme :
+Scénario Optimiste :
+-  courante pour thérapie (paralysie, épilepsie, Parkinson)
+- Interfaces homme-machine naturelles 
 - Progrès majeurs en neurosciences grâce aux données récoltées
 - Réglementation équilibrée protégeant les patients
 
-**Scénario Dystopique :**
-- Fracture sociale entre "augmentés" et "naturels"
-- Surveillance cérébrale par les gouvernements/entreprises
-- Hacking de cerveaux devenu réalité
-- Pression sociale pour s'implanter pour "rester compétitif"
-
-La réalité sera probablement entre les deux.
     `,
     
     conclusionOuverture: `
-Le problème technique de Neuralink n'est pas un échec, mais un **rappel de la complexité du vivant**. Le cerveau humain est infiniment plus complexe que n'importe quel système informatique. Penser qu'on peut simplement "plugger" des fils dedans et que ça fonctionnera parfaitement est naïf.
+Le problème technique de Neuralink n'est pas un échec, mais un rappel de la complexité du vivant. Le cerveau humain est infiniment plus complexe que n'importe quel système informatique. Penser qu'on peut simplement "plugger" des fils dedans et que ça fonctionnera parfaitement est naïf.
 
-**Ce que cet incident nous enseigne :**
+Ce que cet incident nous enseigne :
 
-1. **La biologie ne se plie pas à la "Silicon Valley pace"** : On ne peut pas "move fast and break things" avec des cerveaux humains.
+1. La biologie ne se plie pas à la "Silicon Valley pace" : On ne peut pas "move fast and break things" avec des cerveaux humains.
 
-2. **L'importance de la recherche fondamentale** : Les approches plus prudentes (Synchron, Blackrock) qui ont pris plus de temps montrent moins de problèmes.
+2. L'importance de la recherche fondamentale : Les approches plus prudentes (Synchron, Blackrock) qui ont pris plus de temps montrent moins de problèmes.
 
-3. **L'éthique doit guider la tech** : Avant de penser à l'augmentation humaine, résolvons d'abord les problèmes médicaux urgents sans créer de nouveaux risques.
+3. L'éthique doit guider la tech : Avant de penser à l'augmentation humaine, résolvons d'abord les problèmes médicaux urgents sans créer de nouveaux risques.
 
-**Questions pour notre génération :**
+Questions pour notre génération :
 
 - Voulons-nous vraiment un monde où ton cerveau est connecté à Internet ?
 - Qui régulera cette technologie ? Les entreprises ? Les gouvernements ? Un organisme international ?
 - Comment protéger les plus vulnérables de l'exploitation ?
-- Où s'arrête la thérapie et où commence l'augmentation ?
 
-**Ma position personnelle :**
+Ma position personnelle :
 
-Je suis **prudemment optimiste**. Les BCI ont un potentiel énorme pour aider des millions de personnes. Mais nous devons avancer avec **prudence, transparence et éthique**. 
+Je suis assez optimiste mais nous devons avancer avec prudence, transparence et éthique. 
 
-La technologie n'est ni bonne ni mauvaise. C'est ce qu'on en fait qui compte. Neuralink pourrait révolutionner la médecine... ou créer une dystopie cyberpunk. C'est à nous, en tant que société, de décider quelle voie prendre.
+La technologie n'est ni bonne ni mauvaise. C'est ce qu'on en fait qui compte. Neuralink pourrait révolutionner la médecine ou créer une dystopie cyberpunk. C'est à nous, en tant que société, de décider quelle voie prendre.
 
-**Mon conseil aux développeurs intéressés par ce domaine :**
-
-Si vous voulez travailler dans les BCI, étudiez non seulement l'informatique, mais aussi les neurosciences, l'éthique, et la sécurité. Ce domaine est à la croisée de multiples disciplines. Et surtout, gardez toujours à l'esprit que votre code pourrait littéralement affecter la vie de quelqu'un. Responsabilité maximale.
     `
   }
 };
