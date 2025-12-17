@@ -20,7 +20,7 @@ const Home = () => {
               <div className="profile-info">
                 <span className="profile-badge">Apprenti BTS SIO</span>
                 <h1 className="profile-name">Dylan Fernandes</h1>
-                <p className="profile-role">Étudiant en BTS SIO à Lyon chez Nexa Digital School, Apprenti chez Tec6</p>
+                <p className="profile-role">Étudiant en BTS SIO à Lyon chez Nexa Digital School, Apprenti chez Sylnux</p>
               </div>
             </div>
           </div>
