@@ -98,8 +98,10 @@ const Home = () => {
       {/* Section Entreprise + Veille */}
       <section className="bottom-sections">
         <div className="bottom-container">
-          {/* Logo Tec6 */}
           <Link to="/entreprise" className="bottom-card enterprise-card">
+          <div className="card-preview">
+              <div className="preview-item">Sylnux</div>
+            </div>
             <div className="card-content">
               <span className="card-label">EN SAVOIR PLUS SUR</span>
               <h2 className="card-title">Mon Entreprise</h2>
