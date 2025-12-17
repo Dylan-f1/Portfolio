@@ -1,6 +1,6 @@
 export const veilleTechnoData = {
   robotsHumanoides: {
-    id: 'robots-humanoides',
+    id: 'robotsHumanoides',
     title: "Robots Humanoïdes Coréens à Roues 360°",
     category: "Robotique",
     date: "24 Mai 2024",
@@ -125,7 +125,7 @@ Ma conclusion : Cette innovation coréenne pourrait bien définir le standard de
   },
 
   ordinateurQuantique: {
-    id: 'ordinateur-quantique',
+    id: 'ordinateurQuantique',
     title: "L'Ordinateur Quantique de Google",
     category: "Informatique Quantique",
     date: "16 Mai 2024",
