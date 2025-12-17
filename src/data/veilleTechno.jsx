@@ -73,34 +73,6 @@ La flexibilité des commandes suggère l'utilisation d'algorithmes d'IA avancés
       ]
     },
     
-    useCasesConcrets: [
-      {
-        domaine: "Logistique et Entrepôts",
-        description: "Déplacement rapide de marchandises dans des environnements contrôlés",
-        pertinence: "⭐⭐⭐⭐⭐ Optimal"
-      },
-      {
-        domaine: "Hôtellerie et Service",
-        description: "Robot de service dans hôtels, restaurants, centres commerciaux",
-        pertinence: "⭐⭐⭐⭐ Très pertinent"
-      },
-      {
-        domaine: "Santé et Assistance",
-        description: "Assistance dans les hôpitaux pour transport de médicaments/équipements",
-        pertinence: "⭐⭐⭐⭐ Très pertinent"
-      },
-      {
-        domaine: "Sécurité et Surveillance",
-        description: "Patrouilles dans des espaces clos (bureaux, centres commerciaux)",
-        pertinence: "⭐⭐⭐ Pertinent"
-      },
-      {
-        domaine: "Domestique",
-        description: "Aide à domicile (limité par les escaliers)",
-        pertinence: "⭐⭐ Limité"
-      }
-    ],
-    
     impactFutur: `
 Court terme (1-3 ans) :
 - Déploiement dans les environnements industriels coréens
