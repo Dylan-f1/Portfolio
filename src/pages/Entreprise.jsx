@@ -17,7 +17,7 @@ const Entreprise = () => {
                             j'ai eu l'opportunité de mettre en pratique mes compétences à travers plusieurs 
                             expériences professionnelles enrichissantes. Ces stages et mon alternance m'ont permis 
                             de travailler sur des projets concrets, de comprendre les enjeux du développement en 
-                            entreprise et d'affiner mes compétences techniques et organisationnelles.
+                            entreprise et d'affiner mes compétences techniques.
                         </p>
                         <p>
                             De la <em>refonte complète de systèmes e-commerce</em> à la <em>création de sites web 
@@ -32,10 +32,10 @@ const Entreprise = () => {
                         <div className="experience-card highlight-card">
                             <div className="experience-ribbon">En cours</div>
                             <div className="experience-header">
-                                <h4 className="company-name">🏢 Sylnux</h4>
+                                <h4 className="company-name"> Sylnux</h4>
                                 <h5 className="position-title">Alternant Développeur Web & Mobile</h5>
-                                <p className="duration">📅 Octobre 2025 - Juin 2026 (9 mois)</p>
-                                <p className="location">📍 Lyon, France</p>
+                                <p className="duration"> Octobre 2025 - Juin 2026 (9 mois)</p>
+                                <p className="location"> Lyon, France</p>
                             </div>
                             <div className="experience-description">
                                 <p className="mission-intro">
@@ -105,10 +105,10 @@ const Entreprise = () => {
                         {/* Stage Sylnux Août */}
                         <div className="experience-card">
                             <div className="experience-header">
-                                <h4 className="company-name">🏢 Sylnux</h4>
+                                <h4 className="company-name"> Sylnux</h4>
                                 <h5 className="position-title">Stagiaire Développeur Web</h5>
-                                <p className="duration">📅 Août 2025 (1 mois)</p>
-                                <p className="location">📍 Lyon, France</p>
+                                <p className="duration"> Août 2025 (1 mois)</p>
+                                <p className="location"> Lyon, France</p>
                             </div>
                             <div className="experience-description">
                                 <p className="mission-intro">
@@ -145,10 +145,10 @@ const Entreprise = () => {
                         {/* Stage Quevyn Rohel */}
                         <div className="experience-card">
                             <div className="experience-header">
-                                <h4 className="company-name">🎨 Quevyn Rohel EI</h4>
+                                <h4 className="company-name"> Quevyn Rohel EI</h4>
                                 <h5 className="position-title">Stagiaire Développeur Web</h5>
-                                <p className="duration">📅 Avril 2025 - Juillet 2025 (2 mois)</p>
-                                <p className="location">📍 Paris, France</p>
+                                <p className="duration"> Avril 2025 - Juillet 2025 (2 mois)</p>
+                                <p className="location"> Paris, France</p>
                             </div>
                             <div className="experience-description">
                                 <p className="mission-intro">
