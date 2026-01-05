@@ -8,7 +8,7 @@ export const projetsData = {
     image: "Geeki-logo.png",
     liveUrl: "https://www.geeki-games.fr/",
     githubUrl: "https://github.com/Dylan-f1/Geeki",
-    technologies: ["React", "JavaScript", "CSS3", "REST API"],
+    technologies: ["React", "JavaScript", "CSS3"],
     courteDescription: "Plateforme gaming offrant une vaste collection de jeux vidéo avec guides détaillés, bestiaires de personnages et interface moderne pour passionnés",
     
     // CONTENU DÉTAILLÉ
@@ -79,10 +79,10 @@ export const projetsData = {
     image: "/Pokeball.webp",
     liveUrl: "https://www.pokedex-dylan.fr/",
     githubUrl: "https://github.com/Dylan-f1/PokedexWeb",
-    technologies: ["React", "JavaScript", "PokéAPI", "CSS3"],
+    technologies: ["React", "JavaScript", "CSS3"],
     courteDescription: "Pokédex interactif moderne permettant de découvrir l'univers Pokémon avec interface intuitive et informations détaillées",
     
-    contexte: `Le Pokédex est un projet personnel inspiré par ma passion pour l'univers Pokémon. L'objectif était de créer une application web moderne permettant d'explorer facilement les données de tous les Pokémon en utilisant la PokéAPI.`,
+    contexte: `Le Pokédex est un projet personnel inspiré par ma passion pour l'univers Pokémon. L'objectif était de créer une application web moderne permettant d'explorer facilement les données de tous les Pokémon en utilisant l'API.`,
     
     problematique: "Comment créer une interface utilisateur élégante pour afficher et filtrer plus de 1000 Pokémon tout en gérant les appels API de manière efficiente et en résolvant les problèmes de structuration de données complexes ?",
     
@@ -94,8 +94,8 @@ export const projetsData = {
       },
       {
         titre: "Gestion du Backend",
-        description: "Problèmes avec la récupération et le filtrage des données par région. La PokéAPI retourne des données imbriquées complexes nécessitant un traitement côté client.",
-        solution: "Mise en place d'une couche d'abstraction pour normaliser les données de l'API. Création de helpers pour le tri et le filtrage par région, type et génération."
+        description: "Problèmes avec la récupération et le filtrage des données par région. L'Api retourne des données imbriquées complexes nécessitant un traitement côté client.",
+        solution: "Création de helpers pour le tri et le filtrage par région, type et génération."
       },
       {
         titre: "Structure du projet",
@@ -105,7 +105,7 @@ export const projetsData = {
     ],
     
     solutions: {
-      architecture: "Architecture par composants avec séparation claire des responsabilités. Services API isolés pour une meilleure testabilité.",
+      architecture: "Architecture par composants avec séparation claire des responsabilités.",
       gestionEtat: "Utilisation de useState et useEffect pour la gestion d'état local. Context API pour les filtres globaux.",
       techniquesUtilisees: [
         "Filtres dynamiques (type, région, génération)",
@@ -144,7 +144,7 @@ gsb2: {
   image: "/gsb-logo.png",
   liveUrl: null,
   githubUrl: "https://github.com/Dylan-f1/GSB_2",
-  technologies: ["C#", ".NET Framework", "Windows Forms", "MySQL", "ADO.NET"],
+  technologies: ["C#", ".NET Framework", "Windows Forms", "MySQL"],
   courteDescription: "Application de bureau pour la gestion complète des patients, médicaments et prescriptions avec système de rôles (Docteur/Admin)",
   
   contexte: `GSB 2 est une application de gestion médicale développée pour répondre aux besoins des professionnels de santé. Le projet vise à centraliser la gestion des patients, du catalogue de médicaments et des prescriptions dans une interface desktop sécurisée avec contrôle d'accès basé sur les rôles.`,
@@ -221,7 +221,7 @@ gsb_frontend: {
   image: "/gsb-logo.png",
   liveUrl: null,
   githubUrl: "https://github.com/Dylan-f1/GSB_Front-End",
-  technologies: ["React", "React Router", "JavaScript", "CSS3", "REST API", "Render"],
+  technologies: ["React", "React Router", "JavaScript", "CSS3", "Render"],
   courteDescription: "Interface web moderne pour la gestion des notes de frais avec système d'authentification complet et communication API REST",
   
   contexte: `GSB Frontend est l'interface utilisateur web du système GSB, permettant aux utilisateurs de gérer leurs notes de frais de manière intuitive. Le projet met l'accent sur une expérience utilisateur moderne, une navigation fluide et une communication efficace avec l'API backend hébergée sur Render.`,
@@ -289,7 +289,7 @@ gsb_frontend: {
 
   // PROJETS ENTREPRISE
   zaoMakeup: {
-    id: 'zao-makeup',
+    id: 'ZAOMakeup',
     type: 'entreprise',
     title: "ZAO Makeup - Refonte Checkout",
     subtitle: "E-commerce Cosmétique Bio",
@@ -361,7 +361,7 @@ gsb_frontend: {
     subtitle: "E-commerce Cosmétique Écoresponsable",
     image: "/LMA.jpg",
     liveUrl: "",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React", "API Platform"],
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
     courteDescription: "Refonte totale d'un site e-commerce avec migration du checkout ZAO vers Next.js et TypeScript",
     
     contexte: `Lamazuna est une entreprise pionnière dans les cosmétiques solides et zéro déchet. En alternance chez Sylnux, j'ai été chargé de la refonte complète de leur site e-commerce, incluant la migration du système de checkout développé pour ZAO vers l'écosystème Next.js avec TypeScript.`,
@@ -434,14 +434,14 @@ gsb_frontend: {
   },
 
   f1Site: {
-    id: 'f1-site',
+    id: 'SiteF1',
     type: 'personnel',
     title: "Site F1",
     subtitle: "Plateforme Formule 1 (En cours)",
     image: "/F1-Logo.webp",
     liveUrl: "https://github.com/Dylan-f1/Formule-1",
     githubUrl: "https://github.com/Dylan-f1/Formule-1",
-    technologies: ["React", "JavaScript", "API F1", "CSS3"],
+    technologies: ["React", "JavaScript","CSS3"],
     courteDescription: "Site de la F1 avec informations sur chaque pilote, écurie et circuit (en cours de réflexion)",
     
     contexte: `Projet en cours de conception visant à créer un site complet sur l'univers de la Formule 1. L'objectif est de centraliser toutes les informations sur les pilotes, écuries, circuits et résultats de course.`,
@@ -452,7 +452,7 @@ gsb_frontend: {
       {
         titre: "Architecture de données",
         description: "Définir la structure de données optimale pour gérer pilotes, écuries, circuits et leurs relations.",
-        solution: "En cours de réflexion - probable utilisation d'une API F1 existante ou création d'une base de données structurée."
+        solution: "En cours de réflexion - probable utilisation d'une API F1 création d'une base de données structurée."
       },
       {
         titre: "Design et UX",
@@ -463,13 +463,12 @@ gsb_frontend: {
     
     apprentissages: [
       "Phase de conception et planning",
-      "Recherche d'APIs disponibles",
       "Maquettage et wireframing"
     ],
     
     prochaines_etapes: [
       "Finaliser l'architecture du projet",
-      "Choisir l'API ou source de données",
+      "Créer l'API",
       "Créer les maquettes design",
       "Développer le MVP",
       "Implémenter les fonctionnalités avancées"
