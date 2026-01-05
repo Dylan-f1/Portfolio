@@ -12,31 +12,31 @@ export const projetsData = {
     courteDescription: "Plateforme gaming offrant une vaste collection de jeux vidéo avec guides détaillés, bestiaires de personnages et interface moderne pour passionnés",
     
     // CONTENU DÉTAILLÉ
-    contexte: `Geeki est né d'une passion pour les jeux vidéo et du besoin de créer une plateforme centralisée où les gamers peuvent trouver des informations détaillées sur leurs jeux préférés. Le projet vise à créer une communauté autour du gaming avec des guides complets, des analyses de personnages et une base de données exhaustive.`,
+    contexte: `Geeki est né d'une passion pour les jeux vidéo et du besoin de créer une plateforme centralisée où les gamers peuvent trouver des informations détaillées sur leurs jeux préférés. Le projet vise à créer une communauté autour du gaming avec des guides complets, des analyses de personnages.`,
     
     problematique: "Comment créer une expérience utilisateur fluide et engageante pour une plateforme gaming tout en gérant une grande quantité de données et en maintenant des performances optimales ?",
     
     defis: [
       {
         titre: "Cohésion d'équipe",
-        description: "Le projet impliquant plusieurs développeurs, j'ai rencontré des difficultés dans la coordination et la cohérence du code. La communication et la mise en place de conventions étaient essentielles.",
-        solution: "Mise en place de conventions de nommage claires, sessions de code review régulières et utilisation de Git avec une stratégie de branches structurée."
+        description: "Le projet impliquant plusieurs développeurs, j'ai rencontré des difficultés dans la coordination et les envies des autres développeurs. Il y avait que moi qui travaillait dessus.",
+        solution: "Arrêter le projet en groupe et le faire en solo."
       },
       {
         titre: "Problèmes de styling",
-        description: "Garantir une cohérence visuelle sur toute l'application avec des composants multiples développés par différentes personnes.",
+        description: "Garantir une cohérence visuelle sur toute l'application avec des composants multiples développés.",
         solution: "Création d'un système de design centralisé avec des variables CSS réutilisables et des composants UI de base partagés."
       },
       {
         titre: "Gestion de données volumineuses",
         description: "Afficher des centaines de jeux et personnages sans compromettre les performances.",
-        solution: "Implémentation de lazy loading, pagination côté client et optimisation des images avec des formats modernes."
+        solution: "Pagination côté client et optimisation des images avec des formats modernes."
       }
     ],
     
     solutions: {
       architecture: "Architecture par composants actuellement en place, permettant une réutilisabilité maximale. Chaque composant (Card, Header, GameDetails, etc.) est isolé et testable indépendamment.",
-      evolutionPrevue: "Migration prévue vers une architecture par fonctionnalités pour améliorer la scalabilité. Chaque feature (games, characters, guides) aura son propre dossier avec composants, styles et logique métier.",
+      evolutionPrevue: "Migration prévue vers une architecture par fonctionnalités pour améliorer l'adaptabilité. Chaque feature (games, characters, guides) aura son propre dossier avec composants, styles et logique métier.",
       techniquesUtilisees: [
         "Components React réutilisables",
         "Context API pour la gestion d'état",
@@ -55,18 +55,15 @@ export const projetsData = {
     },
     
     apprentissages: [
-      "Gestion de projet en équipe avec Git",
       "Importance des conventions de code",
       "Optimisation des performances frontend",
       "Architecture évolutive d'applications React",
-      "Résolution de conflits de merge"
     ],
     
     prochaines_etapes: [
       "Migration vers architecture par fonctionnalités",
       "Ajout d'un système d'authentification",
       "Implémentation d'une API backend dédiée",
-      "Ajout de fonctionnalités sociales (commentaires, likes)",
       "Tests unitaires et E2E"
     ]
   },
@@ -90,7 +87,7 @@ export const projetsData = {
       {
         titre: "Design et UX",
         description: "Créer une interface à la fois fidèle à l'esprit Pokémon tout en restant moderne et intuitive. Trouver le bon équilibre entre esthétique et fonctionnalité.",
-        solution: "Itérations successives du design avec focus sur la simplicité. Utilisation d'une palette de couleurs inspirée des jeux Pokémon et d'animations subtiles pour l'interactivité."
+        solution: "Itéractions successives du design avec focus sur la simplicité. Utilisation d'une palette de couleurs inspirée des jeux Pokémon et des Pokedexs."
       },
       {
         titre: "Gestion du Backend",
@@ -115,24 +112,20 @@ export const projetsData = {
     resultats: {
       metriques: [
         "1000 Pokémon accessibles",
-        "Temps de chargement < 2s avec cache",
-        "Interface responsive (mobile-first)",
+        "classé par générations et régions"
       ],
-      impact: "Application fonctionnelle utilisée comme portfolio pour démontrer la maîtrise des appels API, de la gestion de données complexes et du design responsive."
+      impact: "Application fonctionnelle utilisée pour démontrer la maîtrise des appels API, de la gestion de données complexes et du design responsive."
     },
     
     apprentissages: [
-      "Manipulation de données complexes (nested objects)",
-      "Design system cohérent",
-      "Mobile-first approach"
+      "Manipulation de données complexes",
+      "Design system cohérent"
     ],
     
     prochaines_etapes: [
       "Résoudre les bugs de filtrage par région",
-      "Ajouter un système de favoris",
       "Implémenter une comparaison entre Pokémon",
       "Ajouter des statistiques avancées",
-      "Migration vers TypeScript pour plus de robustesse"
     ]
   },
 // PROJET GSB2 - Système de Gestion Médicale (C# Windows Forms)
@@ -289,7 +282,7 @@ gsb_frontend: {
 
   // PROJETS ENTREPRISE
   zaoMakeup: {
-    id: 'ZAOMakeup',
+    id: 'zaoMakeup',
     type: 'entreprise',
     title: "ZAO Makeup - Refonte Checkout",
     subtitle: "E-commerce Cosmétique Bio",
@@ -434,7 +427,7 @@ gsb_frontend: {
   },
 
   f1Site: {
-    id: 'SiteF1',
+    id: 'f1Site',
     type: 'personnel',
     title: "Site F1",
     subtitle: "Plateforme Formule 1 (En cours)",

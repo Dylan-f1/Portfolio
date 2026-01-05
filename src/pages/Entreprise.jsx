@@ -34,7 +34,7 @@ const Entreprise = () => {
                             <div className="experience-header">
                                 <h4 className="company-name"> Sylnux</h4>
                                 <h5 className="position-title">Alternant Développeur Web & Mobile</h5>
-                                <p className="duration"> Octobre 2025 - Juin 2026 (9 mois)</p>
+                                <p className="duration"> Octobre 2025 - Juin 2026</p>
                                 <p className="location"> Lyon, France</p>
                             </div>
                             <div className="experience-description">
@@ -107,7 +107,7 @@ const Entreprise = () => {
                             <div className="experience-header">
                                 <h4 className="company-name"> Sylnux</h4>
                                 <h5 className="position-title">Stagiaire Développeur Web</h5>
-                                <p className="duration"> Août 2025 (1 mois)</p>
+                                <p className="duration"> Août 2025</p>
                                 <p className="location"> Lyon, France</p>
                             </div>
                             <div className="experience-description">
@@ -147,7 +147,7 @@ const Entreprise = () => {
                             <div className="experience-header">
                                 <h4 className="company-name"> Quevyn Rohel EI</h4>
                                 <h5 className="position-title">Stagiaire Développeur Web</h5>
-                                <p className="duration"> Avril 2025 - Juillet 2025 (2 mois)</p>
+                                <p className="duration"> Avril 2025 - Juillet 2025</p>
                                 <p className="location"> Paris, France</p>
                             </div>
                             <div className="experience-description">

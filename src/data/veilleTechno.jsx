@@ -40,14 +40,11 @@ export const veilleTechnoData = {
     ],
     
     analyseApprofondie: `
-Cette innovation représente un changement de paradigme dans la conception des robots humanoïdes. Plutôt que de chercher à imiter parfaitement la locomotion humaine, les ingénieurs coréens ont opté pour une approche hybride privilégiant l'efficacité et la praticité.
+Cette innovation marque une nouvelle approche dans la conception des robots humanoïdes. Plutôt que de reproduire fidèlement la marche humaine, les ingénieurs coréens ont privilégié une solution hybride axée sur l’efficacité et la praticité.
 
-Implications Techniques :
-Les roues omnidirectionnelles résolvant le complexe "problème de la marche bipède" qui a longtemps ralenti le développement des robots humanoïdes. Boston Dynamics avec Atlas a montré qu'un robot peut marcher, mais au prix d'une consommation énergétique massive et d'une complexité mécanique extrême. L'approche coréenne sacrifie la capacité de monter les escaliers pour gagner en efficacité énergétique et en rapidité.
+Sur le plan technique, l’utilisation de roues omnidirectionnelles permet d’éviter les contraintes liées à la marche bipède, souvent coûteuse en énergie et mécaniquement complexe, comme l’a montré le robot Atlas de Boston Dynamics. Ce choix implique certains compromis, notamment l’impossibilité de monter des escaliers, mais offre en contrepartie une meilleure rapidité et une efficacité énergétique accrue.
 
-Systèmes de Contrôle Adaptatifs :
-La flexibilité des commandes suggère l'utilisation d'algorithmes d'IA avancés, probablement basés sur le machine learning et le reinforcement learning. Le robot peut ainsi apprendre de ses interactions et s'adapter à de nouveaux scénarios sans intervention humaine.
-    `,
+Enfin, la flexibilité du contrôle suggère l’intégration d’algorithmes d’intelligence artificielle avancés, permettant au robot d’apprendre de ses interactions et de s’adapter à différents environnements de manière autonome.`,
     
     comparaisonTechnologique: {
       titre: "Comparaison avec les Approches Concurrentes",
@@ -93,16 +90,11 @@ Long terme (7-15 ans) :
 - Évolution vers des systèmes autonomes de prise de décision
     `,
     
-    reflexionPersonnelle: `
-Ce qui me fascine particulièrement dans cette innovation, c'est le pragmatisme de l'approche. Plutôt que de s'obstiner à reproduire l'humain dans tous ses aspects, les ingénieurs coréens ont identifié ce qui compte vraiment : l'efficacité et l'utilité pratique.
+    reflexionPersonnelle: `Ce qui me fascine dans cette innovation, c’est son pragmatisme. Plutôt que d’imiter l’humain à tout prix, les ingénieurs coréens ont mis l’accent sur l’efficacité et l’utilité réelle.
 
-C'est une leçon importante en développement technologique : la meilleure solution n'est pas toujours celle qui imite parfaitement la nature, mais celle qui résout le problème de la façon la plus efficace.
+C’est une leçon essentielle en technologie : la meilleure solution n’est pas toujours la plus fidèle à la nature, mais la plus efficace. En tant que développeur, j’y vois un parallèle clair avec notre métier : mieux vaut répondre aux besoins concrets avec une solution simple et fonctionnelle que viser la perfection théorique.
 
-En tant que développeur, je vois un parallèle avec notre domaine : on pourrait passer des mois à créer un framework "parfait" qui fait tout, ou bien identifier les vrais besoins et créer une solution pragmatique qui fonctionne. C'est exactement ce que font ces robots coréens.
-
-Mon avis sur l'évolution :
-Je pense que nous verrons dans les 5 prochaines années une convergence des approches : des robots hybrides capables à la fois de se déplacer rapidement sur roues en intérieur, mais équipés de jambes rétractables pour franchir des obstacles quand nécessaire. Le futur de la robotique sera probablement dans cette flexibilité adaptative plutôt que dans la spécialisation extrême.
-    `,
+À l’avenir, je pense que la robotique évoluera vers des modèles hybrides, combinant roues pour la rapidité et jambes rétractables pour franchir des obstacles, privilégiant ainsi la flexibilité plutôt que la spécialisation extrême.`,
     
     conclusionOuverture: `
 Les robots humanoïdes coréens à roues 360° ne sont pas qu'une simple innovation technique : ils représentent un changement de philosophie dans la conception robotique. Plutôt que la perfection biomimétique, c'est l'efficacité pratique qui prime.
@@ -157,25 +149,23 @@ Ma conclusion : Cette innovation coréenne pourrait bien définir le standard de
       }
     ],
     
-    analyseApprofondie: `
-Comprendre la Révolution Quantique :
+    analyseApprofondie: `Comprendre l’informatique quantique
 
-L'informatique quantique ne fonctionne pas comme l'informatique classique. Là où un bit classique est soit 0 soit 1, un qubit peut être dans une superposition des deux états simultanément. C'est comme si vous pouviez explorer tous les chemins possibles d'un labyrinthe en même temps au lieu de les tester un par un.
+Contrairement à l’informatique classique, où un bit vaut soit 0 soit 1, l’informatique quantique utilise des qubits capables d’être dans plusieurs états à la fois grâce à la superposition. Cela permet d’explorer de nombreuses solutions simultanément, comme tester tous les chemins d’un labyrinthe en parallèle.
 
-L'Exploit de Google :
-Le processeur quantique de Google, nommé Sycamore, a résolu un problème spécifique de "échantillonnage de circuits quantiques aléatoires" en 200 secondes. Le superordinateur Summit d'IBM aurait eu besoin de 47 ans pour le même calcul.
+La prouesse de Google
 
-Pourquoi c'est important :
-1. Preuve de concept : Démontre que l'informatique quantique n'est plus théorique
-2. Accélération exponentielle : Pas 2x ou 10x plus rapide, mais des millions de fois
-3. Nouveaux paradigmes : Ouvre des possibilités impossibles avec l'informatique classique
+Le processeur quantique Sycamore de Google a résolu en 200 secondes un problème que le superordinateur Summit d’IBM aurait mis des dizaines d’années à traiter, démontrant ainsi le potentiel du calcul quantique.
 
-Limitations actuelles :
-- Le problème résolu n'a pas d'application pratique directe (benchmark)
-- Fonctionne uniquement à des températures extrêmement basses (-273°C)
-- Taux d'erreur encore élevé nécessitant la correction d'erreurs quantiques
-- Nombre de qubits limité (actuellement ~100 qubits stables)
-    `,
+Pourquoi c’est important: 
+- Preuve que l’informatique quantique fonctionne réellement
+- Accélérations bien supérieures aux gains classiques
+- Nouvelles possibilités de calcul jusque-là inaccessibles
+
+Limites actuelles
+- Cas d’usage encore expérimental
+- Fonctionnement à des températures extrêmes
+- Erreurs fréquentes et nombre de qubits encore limité`,
     
     comparaisonTechnologique: {
       titre: "Informatique Classique vs Quantique",
