@@ -29,7 +29,7 @@
   
   /* Introduction */
   .intro-section {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(3, 3, 3, 0.6);
     border-radius: clamp(15px, 3vw, 20px);
     padding: clamp(2rem, 4vw, 3rem) clamp(1.5rem, 3vw, 2rem);
     margin-bottom: clamp(2rem, 4vw, 3rem);
@@ -85,7 +85,7 @@
   
   /* Experience Card */
   .experience-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(3, 3, 3, 0.6);
     border-radius: clamp(10px, 2vw, 15px);
     padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1rem, 2.5vw, 2rem);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
@@ -272,11 +272,11 @@
     box-shadow: 0 4px 12px rgba(0, 144, 255, 0.4);
   }
   
-  /* Global Learnings */
+  /* Apprentissages Globaux */
   .global-learnings {
     margin-top: 4rem;
     padding: 3rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(3, 3, 3, 0.6);
     border-radius: 20px;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(0, 144, 255, 0.3);

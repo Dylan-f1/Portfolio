@@ -1,15 +1,32 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
-import '../styles/Competences.css';
+import '../styles/APropos.css';
 
 const Competences = () => {
   const [showPDF, setShowPDF] = useState(false);
 
+  const parcours = [
+    {
+      annee: "2024 - 2026",
+      titre: "BTS SIO SLAM",
+      etablissement: "Nexa Digital School - Lyon",
+      description: "Spécialisation Solutions Logicielles et Applications Métiers",
+      statut: "En cours"
+    },
+    {
+      annee: "2021 - 2023",
+      titre: "Baccalauréat",
+      etablissement: "Lycée Martinière Monplaisir ",
+      description: "Bac Technologique STI2D",
+      statut: "Obtenu"
+    }
+  ];
+
   return (
     <div>
       <Navbar />
-      <section id="competences" className="competences-section">
-        <h2 className="section-title">Mes Compétences</h2>
+      <section id="a-propos" className="competences-section">
+        <h2 className="section-title">À Propos de Moi</h2>
         
         {/* Bouton pour afficher/masquer le tableau de synthèse */}
         <div className="pdf-toggle-container">
@@ -32,6 +49,29 @@ const Competences = () => {
           </div>
         )}
 
+        {/* Nouvelle section : Parcours scolaire */}
+        <div className="parcours-section">
+          <h2 className="section-subtitle">Mon Parcours</h2>
+          <div className="timeline">
+            {parcours.map((item, index) => (
+              <div key={index} className="timeline-item">
+                <div className="timeline-dot"></div>
+                <div className="timeline-content">
+                  <div className="timeline-year">{item.annee}</div>
+                  <h3 className="timeline-title">{item.titre}</h3>
+                  <h4 className="timeline-etablissement">{item.etablissement}</h4>
+                  <p className="timeline-description">{item.description}</p>
+                  <span className={`timeline-badge ${item.statut === 'En cours' ? 'badge-encours' : 'badge-obtenu'}`}>
+                    {item.statut}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Section compétences existante */}
+        <h2 className="section-subtitle" style={{marginTop: '80px'}}>Mes Compétences</h2>
         <div className="competences-container">
           <div className="competence-card">
             <h3>Développement Front-end</h3>

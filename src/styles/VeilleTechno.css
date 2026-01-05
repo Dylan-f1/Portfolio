@@ -83,7 +83,7 @@
 }
 
 .article-card {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(3, 3, 3, 0.6);
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -185,7 +185,7 @@
 .veille-info {
   margin-top: 5rem;
   padding: 3rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(3, 3, 3, 0.6);
   border-radius: 20px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(0, 144, 255, 0.3);

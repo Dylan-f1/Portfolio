@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
-import Competences from './pages/Competences';
+import APropos from './pages/APropos';
 import CV from './pages/CV';
 import Projets from './pages/Projets';
 import ProjetDetail from './pages/projets/ProjetDetail';
@@ -18,7 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         
         {/* Pages principales */}
-        <Route path="/competences" element={<Competences />} />
+        <Route path="/a-propos" element={<APropos />} />
         <Route path="/cv" element={<CV />} />
         <Route path="/entreprise" element={<Entreprise />} />
         

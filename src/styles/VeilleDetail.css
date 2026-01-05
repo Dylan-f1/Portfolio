@@ -37,7 +37,7 @@
   .veille-hero {
     margin-bottom: 3rem;
     padding: 2rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(3, 3, 3, 0.6);
     border-radius: 20px;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(0, 144, 255, 0.3);
@@ -85,7 +85,7 @@
   .veille-section {
     margin-bottom: 3rem;
     padding: 2rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(3, 3, 3, 0.6);
     border-radius: 15px;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(0, 144, 255, 0.2);
@@ -144,7 +144,7 @@
   }
   
   .tech-analysis-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(3, 3, 3, 0.6);
     padding: 1.5rem;
     border-radius: 10px;
     border-left: 4px solid var(--alpine-blue);
@@ -204,7 +204,7 @@
   }
   
   .comparaison-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(3, 3, 3, 0.6);
     padding: 1.5rem;
     border-radius: 10px;
     border: 1px solid rgba(0, 144, 255, 0.3);
@@ -229,7 +229,7 @@
   }
   
   .usecase-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(3, 3, 3, 0.6);
     padding: 1.5rem;
     border-radius: 10px;
     border-left: 4px solid var(--alpine-blue);
