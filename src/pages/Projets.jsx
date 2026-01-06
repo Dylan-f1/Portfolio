@@ -12,21 +12,23 @@ const Projets = () => {
     <div className="projets-container">
       <Navbar />
       <div className="content">
-        {/* Section Projets Personnels */}
-        <header className="page-header">
-          <h1>Mes Projets Personnels</h1>
-          <p>Découvrez mes projets personnels développés par passion</p>
+
+                {/* Section Projets Entreprise */}
+                <header className="page-header enterprise-header">
+          <h1>Projets Entreprise</h1>
+          <p>Projets professionnels réalisés en stage et alternance</p>
         </header>
         
         <div className="articles-grid">
-          {projetsPersonnels.map(projet => (
+          {projetsEntreprise.map(projet => (
             <Link 
               key={projet.id} 
               to={`/projets/${projet.id}`}
-              className="article-card"
+              className="article-card enterprise-card"
             >
               <div className="card-image">
                 <img src={projet.image} alt={projet.title} />
+                <div className="enterprise-badge">Entreprise</div>
               </div>
               <div className="card-content">
                 <h3>{projet.title}</h3>
@@ -44,23 +46,22 @@ const Projets = () => {
             </Link>
           ))}
         </div>
-
-        {/* Section Projets Entreprise */}
-        <header className="page-header enterprise-header">
-          <h1>Projets Entreprise</h1>
-          <p>Projets professionnels réalisés en stage et alternance</p>
+        
+        {/* Section Projets Personnels */}
+        <header className="page-header">
+          <h1>Mes Projets Personnels</h1>
+          <p>Découvrez mes projets personnels développés par passion</p>
         </header>
         
         <div className="articles-grid">
-          {projetsEntreprise.map(projet => (
+          {projetsPersonnels.map(projet => (
             <Link 
               key={projet.id} 
               to={`/projets/${projet.id}`}
-              className="article-card enterprise-card"
+              className="article-card"
             >
               <div className="card-image">
                 <img src={projet.image} alt={projet.title} />
-                <div className="enterprise-badge">Entreprise</div>
               </div>
               <div className="card-content">
                 <h3>{projet.title}</h3>

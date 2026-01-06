@@ -20,8 +20,7 @@ const Entreprise = () => {
                             entreprise et d'affiner mes compétences techniques.
                         </p>
                         <p>
-                            De la <em>refonte complète de systèmes e-commerce</em> à la <em>création de sites web 
-                            pour des clients variés</em>, chaque mission m'a apporté une expérience unique et 
+                            J'ai fait de la <em>refonte complète de systèmes e-commerce</em>, chaque mission m'a apporté une expérience unique et 
                             des apprentissages précieux.
                         </p>
                     </div>
