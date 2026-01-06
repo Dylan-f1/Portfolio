@@ -1,5 +1,3 @@
-/* Competences.css */
-
 .competences-section {
   min-height: 100vh;
   padding: 2rem 10px 80px 10px;
@@ -92,6 +90,57 @@
   background: white;
 }
 
+/* Section Introduction */
+.introduction-section {
+  max-width: 900px;
+  margin: 60px auto 80px;
+  padding: 0 20px;
+}
+
+.intro-content {
+  background: rgba(3, 3, 3, 0.6);
+  border-radius: 15px;
+  padding: 40px;
+  border: 1px solid rgba(0, 144, 255, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.intro-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 144, 255, 0.4);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(0, 144, 255, 0.5);
+}
+
+.intro-text {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  text-align: justify;
+  position: relative;
+  padding-left: 20px;
+}
+
+.intro-text:last-child {
+  margin-bottom: 0;
+}
+
+.intro-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 4px;
+  height: calc(100% - 16px);
+  background: linear-gradient(180deg, var(--alpine-blue) 0%, var(--alpine-pink) 100%);
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 144, 255, 0.5);
+}
+
 /* Parcours scolaire - Timeline */
 .parcours-section {
   margin: 60px auto 40px;
@@ -166,6 +215,17 @@
   }
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .timeline-dot {
   position: absolute;
   left: 50%;
@@ -180,7 +240,6 @@
   box-shadow: 0 0 20px rgba(0, 144, 255, 0.6);
   transition: all 0.3s ease;
 }
-
 
 .timeline-content {
   width: 45%;
@@ -210,7 +269,6 @@
   margin-left: auto;
   margin-right: 0;
 }
-
 
 /* Flèche pointant vers le centre avec effet brillant */
 .timeline-content::before {
@@ -302,100 +360,67 @@
   box-shadow: 0 0 20px rgba(34, 197, 94, 0.5);
 }
 
-/* Grille des compétences */
-.competences-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.competence-card {
-  background: rgba(3, 3, 3, 0.6);
-  border-radius: 15px;
-  padding: 25px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(0, 144, 255, 0.3);
-  animation: fadeInUp 0.6s ease forwards;
-  opacity: 0;
-}
-
-.competence-card:nth-child(1) { animation-delay: 0.1s; }
-.competence-card:nth-child(2) { animation-delay: 0.2s; }
-.competence-card:nth-child(3) { animation-delay: 0.3s; }
-.competence-card:nth-child(4) { animation-delay: 0.4s; }
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+/* Responsive Introduction */
+@media (max-width: 768px) {
+  .introduction-section {
+    margin: 40px auto 60px;
+    padding: 0 10px;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .intro-content {
+    padding: 30px 25px;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+    padding-left: 15px;
+    text-align: left;
   }
 }
 
-.competence-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0, 144, 255, 0.4);
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(0, 144, 255, 0.5);
-}
+@media (max-width: 480px) {
+  .introduction-section {
+    margin: 30px auto 50px;
+  }
 
-.competence-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  color: var(--alpine-blue);
-  position: relative;
-  padding-bottom: 10px;
-  text-shadow: 0 0 10px rgba(0, 144, 255, 0.3);
-}
+  .intro-content {
+    padding: 25px 20px;
+  }
 
-.competence-card h3:after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 3px;
-  background: linear-gradient(90deg, var(--alpine-blue), var(--alpine-pink));
-  bottom: 0;
-  left: 0;
-  box-shadow: 0 0 10px rgba(0, 144, 255, 0.5);
-}
+  .intro-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    padding-left: 12px;
+  }
 
-.competence-card ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.competence-card li {
-  padding: 10px 0;
-  position: relative;
-  padding-left: 30px;
-  color: #e0e0e0;
-  transition: all 0.3s ease;
-}
-
-.competence-card li::before {
-  content: "✓";
-  color: var(--alpine-blue);
-  position: absolute;
-  left: 0;
-  font-weight: bold;
-  font-size: 1.2rem;
-  text-shadow: 0 0 8px rgba(0, 144, 255, 0.5);
-}
-
-.competence-card li:hover {
-  color: white;
-  padding-left: 35px;
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  .intro-text::before {
+    width: 3px;
+  }
 }
 
 /* Responsive Timeline */
 @media (max-width: 768px) {
+  .competences-section {
+    padding: 1rem 10px 60px 10px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .pdf-viewer {
+    height: 600px;
+  }
+
+  .pdf-toggle-btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+
+  .pdf-container {
+    padding: 15px;
+  }
+
   .timeline::before {
     left: 30px;
   }
@@ -435,6 +460,23 @@
 }
 
 @media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .pdf-viewer {
+    height: 500px;
+  }
+
+  .pdf-toggle-btn {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+
+  .pdf-container {
+    padding: 10px;
+  }
+
   .parcours-section {
     margin: 40px auto 20px;
   }
@@ -467,68 +509,5 @@
   .timeline-badge {
     padding: 5px 14px;
     font-size: 0.75rem;
-  }
-}
-
-/* Responsive Competences */
-@media (max-width: 1024px) {
-  .competences-container {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 25px;
-  }
-}
-
-@media (max-width: 768px) {
-  .competences-section {
-    padding: 1rem 10px 60px 10px;
-  }
-
-  .competences-container {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .competence-card {
-    padding: 20px;
-  }
-  
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .pdf-viewer {
-    height: 600px;
-  }
-
-  .pdf-toggle-btn {
-    padding: 12px 30px;
-    font-size: 1rem;
-  }
-
-  .pdf-container {
-    padding: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .section-title {
-    font-size: 1.8rem;
-  }
-
-  .pdf-viewer {
-    height: 500px;
-  }
-
-  .pdf-toggle-btn {
-    padding: 10px 25px;
-    font-size: 0.9rem;
-  }
-
-  .pdf-container {
-    padding: 10px;
-  }
-
-  .competence-card {
-    padding: 15px;
   }
 }

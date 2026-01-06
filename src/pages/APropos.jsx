@@ -49,7 +49,29 @@ const Competences = () => {
           </div>
         )}
 
-        {/* Nouvelle section : Parcours scolaire */}
+        {/* Section Introduction */}
+        <div className="introduction-section">
+          <div className="intro-content">
+            <p className="intro-text">
+              Ma passion pour l'informatique est née de ma passion pour les jeux vidéo. 
+              Cependant, j'ai rapidement réalisé que l'industrie du jeu vidéo, bien que fascinante, 
+              est extrêmement exigeante et compétitive. J'ai donc choisi de m'orienter vers le 
+              développement web et d'applications, un domaine où je peux exprimer ma créativité 
+              tout en construisant des solutions concrètes et innovantes.
+            </p>
+            <p className="intro-text">
+              Au-delà de la l'informatique, je suis passionné par la Formule 1 et le sport automobile. Ce sport représente 
+              pour moi bien plus que de simples courses : c'est un concentré d'innovation technologique, 
+              d'optimisation des performances et de travail d'équipe. L'analyse des données en temps réel, 
+              les stratégies complexes et l'évolution constante des technologies en F1 m'inspirent dans 
+              mon approche du développement logiciel. Tout comme les écuries cherchent constamment à 
+              optimiser leurs performances, je m'efforce d'améliorer continuellement mes compétences 
+              et d'adopter les meilleures pratiques de développement.
+            </p>
+          </div>
+        </div>
+
+        {/* Section Parcours scolaire */}
         <div className="parcours-section">
           <h2 className="section-subtitle">Mon Parcours</h2>
           <div className="timeline">
@@ -67,48 +89,6 @@ const Competences = () => {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* Section compétences existante */}
-        <h2 className="section-subtitle" style={{marginTop: '80px'}}>Mes Compétences</h2>
-        <div className="competences-container">
-          <div className="competence-card">
-            <h3>Développement Front-end</h3>
-            <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>GSAP</li>
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-              <li>React.js</li>
-              <li>Next.js</li>
-              <li>Tailwind CSS</li>
-              <li>Bootstrap</li>
-              <li>Responsive Design</li>
-            </ul>
-          </div>
-          
-          <div className="competence-card">
-            <h3>Développement Back-end</h3>
-            <ul>
-              <li>Node.js</li>
-              <li>Python</li>
-              <li>Django</li>
-              <li>MongoDB</li>
-              <li>MySQL</li>
-            </ul>
-          </div>
-          
-          <div className="competence-card">
-            <h3>Outils & Méthodologies</h3>
-            <ul>
-              <li>Git / GitLab / GitHub</li>
-              <li>Cursor / VSCode</li>
-              <li>Figma</li>
-              <li>Postman</li>
-              <li>Cypress (Tests E2E)</li>
-            </ul>
           </div>
         </div>
       </section>
