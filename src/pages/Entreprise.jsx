@@ -119,6 +119,10 @@ const Entreprise = () => {
                                         <li>
                                             <strong>Refonte complète du système du panier</strong> - Création d'un drawer pour le panier
                                         </li>
+                                        <li>
+                                            <strong>Tests E2E avec Cypress</strong> - Mise en place d'une suite 
+                                            de tests complète pour garantir la qualité
+                                        </li>
                                     </ul>
                                 </div>
                                 <div className="accomplishments">
@@ -188,7 +192,7 @@ const Entreprise = () => {
                                     <span className="skill-tag">HTML/CSS</span>
                                     <span className="skill-tag">JavaScript</span>
                                     <span className="skill-tag">GSAP</span>
-                                    <span className="skill-tag">Git</span>
+                                    <span className="skill-tag">Gitlab</span>
                                     <span className="skill-tag">Responsive Design</span>
                                 </div>
                             </div>
