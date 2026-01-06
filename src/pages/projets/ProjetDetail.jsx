@@ -57,6 +57,18 @@ const ProjetDetail = () => {
           </div>
         </header>
 
+        {/* Conclusion Orale - Nouvelle section */}
+        {projet.conclusionOrale && (
+          <section className="conclusion-orale-section">
+            <div className="conclusion-header">
+              <h2>🎯 Synthèse du Projet</h2>
+            </div>
+            <div className="conclusion-content">
+              <p className="conclusion-text">{projet.conclusionOrale}</p>
+            </div>
+          </section>
+        )}
+
         {/* Technologies */}
         <section className="projet-section">
           <h2>Technologies Utilisées</h2>

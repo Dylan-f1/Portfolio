@@ -1,5 +1,162 @@
 /* ProjetDetail.css - Page détaillée projet */
 
+/* Conclusion Orale Section */
+.conclusion-orale-section {
+  margin: 3rem 0;
+  padding: 0;
+  animation: slideInUp 0.8s ease-out;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.conclusion-orale-section .conclusion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.conclusion-orale-section .conclusion-header h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: var(--alpine-blue);
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-shadow: 0 0 15px rgba(0, 144, 255, 0.4);
+}
+
+.conclusion-badge {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background: linear-gradient(135deg, var(--alpine-pink), var(--alpine-blue));
+  color: white;
+  border-radius: 25px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(255, 20, 147, 0.3);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 15px rgba(255, 20, 147, 0.3);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 20, 147, 0.5);
+  }
+}
+
+.conclusion-orale-section .conclusion-content {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 144, 255, 0.15) 0%,
+    rgba(255, 20, 147, 0.1) 100%
+  );
+  border: 2px solid rgba(0, 144, 255, 0.4);
+  border-radius: 15px;
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 30px rgba(0, 144, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.conclusion-orale-section .conclusion-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 144, 255, 0.05) 0%,
+    transparent 50%,
+    rgba(255, 20, 147, 0.05) 100%
+  );
+  pointer-events: none;
+}
+
+.conclusion-orale-section .conclusion-content:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0, 144, 255, 0.3);
+  border-color: rgba(0, 144, 255, 0.6);
+}
+
+.conclusion-text {
+  position: relative;
+  z-index: 1;
+  font-size: clamp(1.05rem, 2.5vw, 1.2rem);
+  line-height: 1.8;
+  color: #e8e8e8;
+  margin: 0;
+  text-align: justify;
+  font-weight: 400;
+}
+
+.conclusion-text strong {
+  color: var(--alpine-blue);
+  font-weight: 600;
+}
+
+.conclusion-text em {
+  color: var(--alpine-pink);
+  font-style: italic;
+}
+
+/* Responsive pour conclusion orale */
+@media (max-width: 768px) {
+  .conclusion-orale-section {
+    margin: 2rem 0;
+  }
+
+  .conclusion-orale-section .conclusion-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .conclusion-orale-section .conclusion-content {
+    padding: 1.5rem;
+  }
+
+  .conclusion-text {
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .conclusion-badge {
+    font-size: 0.75rem;
+    padding: 0.4rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .conclusion-orale-section .conclusion-content {
+    padding: 1.2rem;
+  }
+
+  .conclusion-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}
+
 .projet-detail-container {
     min-height: 100vh;
     background-color: transparent;

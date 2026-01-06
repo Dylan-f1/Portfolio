@@ -11,6 +11,8 @@ export const projetsData = {
     technologies: ["React", "JavaScript", "CSS3"],
     courteDescription: "Plateforme gaming offrant une vaste collection de jeux vidéo avec guides détaillés, bestiaires de personnages et interface moderne pour passionnés",
     
+    conclusionOrale: "Geeki illustre mon apprentissage de l'architecture React et de la gestion d'état. Malgré les difficultés de coordination d'équipe où j'ai dû travailler principalement seul, j'ai su créer une plateforme gaming fonctionnelle avec plus de 15 jeux référencés. Le projet démontre ma capacité à maintenir la cohérence visuelle à travers des composants réutilisables et à optimiser les performances. L'évolution prévue vers une architecture par fonctionnalités montre ma compréhension de l'amélioration continue du code.",
+
     // CONTENU DÉTAILLÉ
     contexte: `Geeki est né d'une passion pour les jeux vidéo et du besoin de créer une plateforme centralisée où les gamers peuvent trouver des informations détaillées sur leurs jeux préférés. Le projet vise à créer une communauté autour du gaming avec des guides complets, des analyses de personnages.`,
     
@@ -79,6 +81,8 @@ export const projetsData = {
     technologies: ["React", "JavaScript", "CSS3"],
     courteDescription: "Pokédex interactif moderne permettant de découvrir l'univers Pokémon avec interface intuitive et informations détaillées",
     
+    conclusionOrale: "Le Pokédex démontre ma maîtrise des appels API et de la gestion de données complexes avec plus de 1000 Pokémon accessibles. J'ai réussi à créer une interface élégante fidèle à l'esprit Pokémon tout en restant moderne. Les filtres dynamiques par type, région et génération montrent ma capacité à structurer du code React maintenable. Ce projet illustre mon approche méthodique de la résolution de problèmes, notamment dans le traitement des données imbriquées retournées par l'API.",
+
     contexte: `Le Pokédex est un projet personnel inspiré par ma passion pour l'univers Pokémon. L'objectif était de créer une application web moderne permettant d'explorer facilement les données de tous les Pokémon en utilisant l'API.`,
     
     problematique: "Comment créer une interface utilisateur élégante pour afficher et filtrer plus de 1000 Pokémon tout en gérant les appels API de manière efficiente et en résolvant les problèmes de structuration de données complexes ?",
@@ -140,6 +144,8 @@ gsb2: {
   technologies: ["C#", ".NET Framework", "Windows Forms", "MySQL"],
   courteDescription: "Application de bureau pour la gestion complète des patients, médicaments et prescriptions avec système de rôles (Docteur/Admin)",
   
+  conclusionOrale: "GSB 2 est mon projet le plus complet en C# et démontre ma maîtrise de l'architecture en trois couches (Forms/Models/DAO). J'ai implémenté un système de rôles et permissions robuste avec gestion des relations N-N en base de données MySQL. La gestion de 5 tables relationnelles avec validation métier complète prouve ma compréhension des principes SOLID et de la sécurité applicative. Ce projet illustre ma capacité à concevoir des systèmes desktop complexes et maintenables pour des données sensibles.",
+
   contexte: `GSB 2 est une application de gestion médicale développée pour répondre aux besoins des professionnels de santé. Le projet vise à centraliser la gestion des patients, du catalogue de médicaments et des prescriptions dans une interface desktop sécurisée avec contrôle d'accès basé sur les rôles.`,
   
   problematique: "Comment créer une application desktop robuste et sécurisée permettant la gestion complète d'un système médical avec différents niveaux d'accès tout en garantissant l'intégrité des données ?",
@@ -217,6 +223,8 @@ gsb_frontend: {
   technologies: ["React", "React Router", "JavaScript", "CSS3", "Render"],
   courteDescription: "Interface web moderne pour la gestion des notes de frais avec système d'authentification complet et communication API REST",
   
+  conclusionOrale: "GSB Frontend illustre ma maîtrise de React Router v6 et de la Context API pour créer une application web complète avec authentification JWT. J'ai développé une interface 100% responsive communiquant avec une API REST hébergée sur Render. La gestion des rôles utilisateurs avec routes protégées et le système d'authentification sécurisé démontrent ma compréhension des enjeux de sécurité web. Ce projet prouve ma capacité à créer des interfaces modernes et intuitives tout en maintenant une architecture propre.",
+
   contexte: `GSB Frontend est l'interface utilisateur web du système GSB, permettant aux utilisateurs de gérer leurs notes de frais de manière intuitive. Le projet met l'accent sur une expérience utilisateur moderne, une navigation fluide et une communication efficace avec l'API backend hébergée sur Render.`,
   
   problematique: "Comment créer une interface web React performante et intuitive pour la gestion de frais tout en assurant une authentification sécurisée et une communication fluide avec une API REST distante ?",
@@ -291,6 +299,8 @@ gsb_frontend: {
     technologies: ["React", "Tailwind CSS", "Cypress"],
     courteDescription: "Refonte complète du système de checkout d'une plateforme e-commerce de cosmétiques bio avec intégration multi-paiements",
     
+    conclusionOrale: "ZAO Makeup représente mon premier projet professionnel majeur avec des contraintes strictes de fidélité design. La migration de JavaScript vanilla vers React avec Tailwind CSS, tout en maintenant une reproduction pixel-perfect, a été un défi technique important. La mise en place d'une suite de 10 tests E2E Cypress a assuré une qualité zéro défaut en production. Ce projet a été tellement réussi qu'il sert maintenant de base technique réutilisée pour d'autres clients de Sylnux, démontrant la qualité et la maintenabilité de mon code.",
+
     contexte: `ZAO Makeup est une marque de cosmétiques bio rechargeable. Dans le cadre de mon stage chez Sylnux, j'ai été chargé de moderniser leur système de paiement en ligne en migrant d'une solution JavaScript vanilla vers React avec Tailwind CSS, tout en maintenant 100% de fidélité au design existant.`,
     
     problematique: "Comment moderniser un système de checkout critique pour l'entreprise tout en garantissant une parfaite fidélité au design existant, en intégrant trois solutions de paiement différentes et en assurant une qualité zéro défaut ?",
@@ -357,6 +367,8 @@ gsb_frontend: {
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
     courteDescription: "Refonte totale d'un site e-commerce avec migration du checkout ZAO vers Next.js et TypeScript",
     
+    conclusionOrale: "Lamazuna est mon projet le plus ambitieux et complexe techniquement. La migration complète vers Next.js App Router avec TypeScript strict représente une montée en compétences significative. J'ai dû maîtriser les concepts avancés de Server/Client Components, le SSR, et typer l'ensemble du code sans erreur de compilation. Le score Lighthouse supérieur à 90 démontre mon attention à la performance et au SEO. Ce projet prouve ma capacité à adopter rapidement des technologies de pointe et à les appliquer dans un contexte e-commerce professionnel exigeant.",
+
     contexte: `Lamazuna est une entreprise pionnière dans les cosmétiques solides et zéro déchet. En alternance chez Sylnux, j'ai été chargé de la refonte complète de leur site e-commerce, incluant la migration du système de checkout développé pour ZAO vers l'écosystème Next.js avec TypeScript.`,
     
     problematique: "Comment migrer un checkout React vanilla vers Next.js App Router avec TypeScript tout en refondant l'intégralité du site, en gérant les spécificités SSR/CSR et en maintenant les performances ?",
@@ -437,6 +449,8 @@ gsb_frontend: {
     technologies: ["React", "JavaScript","CSS3"],
     courteDescription: "Site de la F1 avec informations sur chaque pilote, écurie et circuit (en cours de réflexion)",
     
+    conclusionOrale: "Le site F1 est mon projet passion actuel, encore en phase de conception. Il combine ma passion pour la Formule 1 avec mes compétences en développement web. Ce projet me permettra d'appliquer tout ce que j'ai appris sur les précédents projets : architecture React optimale, design moderne, gestion de données complexes avec relations entre pilotes, écuries et circuits. C'est un projet ambitieux qui démontrera ma capacité à mener un projet complet de la conception à la réalisation.",
+
     contexte: `Projet en cours de conception visant à créer un site complet sur l'univers de la Formule 1. L'objectif est de centraliser toutes les informations sur les pilotes, écuries, circuits et résultats de course.`,
     
     problematique: "Comment structurer et présenter efficacement une grande quantité de données F1 tout en créant une expérience utilisateur engageante pour les fans de sport automobile ?",
