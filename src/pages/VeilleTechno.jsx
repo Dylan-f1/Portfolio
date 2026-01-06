@@ -47,10 +47,6 @@ const VeilleTechno = () => {
             Chaque article que je sélectionne fait l'objet d'une analyse approfondie où j'explore les technologies, 
             compare les approches, réfléchis aux implications futures et partage ma vision personnelle.
           </p>
-          <p>
-            L'objectif n'est pas juste de relayer l'information, mais de <strong>l'analyser, la contextualiser 
-            et en tirer des conclusions</strong> pertinentes pour comprendre l'évolution de notre industrie.
-          </p>
         </div>
       </div>
     </div>
