@@ -92,7 +92,6 @@ const Competences = () => {
           <div className="competence-card">
             <h3>Développement Back-end</h3>
             <ul>
-              <li>Language C</li>
               <li>Node.js</li>
               <li>Python</li>
               <li>Django</li>
