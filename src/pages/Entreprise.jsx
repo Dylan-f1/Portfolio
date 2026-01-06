@@ -81,12 +81,10 @@ const Entreprise = () => {
                                 <div className="accomplishments">
                                     <h6>Réalisations :</h6>
                                     <ul>
-                                        <li> Migration réussie vers Next.js App Router</li>
-                                        <li> Code TypeScript 100% type-safe (0 erreur de compilation)</li>
+                                        <li> Code TypeScript 100% type-safe</li>
                                         <li> Réutilisation efficace de composants entre projets</li>
                                         <li> 100% de fidélité visuelle au design original</li>
                                         <li> Suite de 10 tests E2E Cypress</li>
-                                        <li> 0 bug critique en production</li>
                                     </ul>
                                 </div>
                             </div>
@@ -97,7 +95,7 @@ const Entreprise = () => {
                                     <span className="skill-tag">TypeScript</span>
                                     <span className="skill-tag">React</span>
                                     <span className="skill-tag">Tailwind CSS</span>
-                                    <span className="skill-tag">Git</span>
+                                    <span className="skill-tag">Gitlab</span>
                                 </div>
                             </div>
                         </div>
@@ -132,12 +130,12 @@ const Entreprise = () => {
                                 </div>
                             </div>
                             <div className="skills-section">
-                                <h6>Technologies & Compétences :</h6>
+                                <h6>Technologies & Compétences :</h6> 
                                 <div className="skills-list">
                                     <span className="skill-tag">Bootstrap</span>
                                     <span className="skill-tag">JavaScript</span>
                                     <span className="skill-tag">Cypress</span>
-                                    <span className="skill-tag">Git</span>
+                                    <span className="skill-tag">Gitlab</span>
                                 </div>
                             </div>
                         </div>

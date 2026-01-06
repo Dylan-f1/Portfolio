@@ -331,7 +331,7 @@ L'important : rester curieux, continuer à apprendre, et être prêt pour la ré
     
     technologiesAnalysees: [
       {
-        nom: "Interface Cerveau-Machine ()",
+        nom: "Interface Cerveau-Machine",
         description: "Dispositif permettant une communication directe entre le cerveau et un ordinateur",
         fonctionnement: "Des électrodes ultra-fines enregistrent l'activité neuronale et la traduisent en commandes numériques",
         composants: [
@@ -503,8 +503,7 @@ Ma position personnelle :
 
 Je suis assez optimiste mais nous devons avancer avec prudence, transparence et éthique. 
 
-La technologie n'est ni bonne ni mauvaise. C'est ce qu'on en fait qui compte. Neuralink pourrait révolutionner la médecine ou créer une dystopie cyberpunk. C'est à nous, en tant que société, de décider quelle voie prendre.
-
+La technologie n'est ni bonne ni mauvaise. C'est ce qu'on en fait qui compte. Neuralink pourrait révolutionner la médecine ou créer une dystopie cyberpunk.
     `
   }
 };

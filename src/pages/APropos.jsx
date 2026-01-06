@@ -80,9 +80,9 @@ const Competences = () => {
               <li>CSS3</li>
               <li>GSAP</li>
               <li>JavaScript</li>
+              <li>TypeScript</li>
               <li>React.js</li>
               <li>Next.js</li>
-              <li>TypeScript</li>
               <li>Tailwind CSS</li>
               <li>Bootstrap</li>
               <li>Responsive Design</li>

@@ -20,7 +20,7 @@ export const projetsData = {
       {
         titre: "Cohésion d'équipe",
         description: "Le projet impliquant plusieurs développeurs, j'ai rencontré des difficultés dans la coordination et les envies des autres développeurs. Il y avait que moi qui travaillait dessus.",
-        solution: "Arrêter le projet en groupe et le faire en solo."
+        solution: "Mettre un système pour faire travailler les autres développeurs."
       },
       {
         titre: "Problèmes de styling",
