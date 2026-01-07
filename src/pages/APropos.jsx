@@ -56,7 +56,7 @@ const Competences = () => {
               Ma passion pour l'informatique est née de ma passion pour les jeux vidéo. 
               Cependant, j'ai rapidement réalisé que l'industrie du jeu vidéo, bien que fascinante, 
               est extrêmement exigeante et compétitive. J'ai donc choisi de m'orienter vers le 
-              développement web et d'applications, un domaine où je peux exprimer ma créativité 
+              développement web et le développement d'applications, un domaine où je peux exprimer ma créativité 
               tout en construisant des solutions concrètes et innovantes.
             </p>
             <p className="intro-text">

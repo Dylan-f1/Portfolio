@@ -80,7 +80,7 @@ const Home = () => {
           {/* Carte Mes Projets */}
           <Link to="/projets" className="section-card projects-card">
             <div className="card-preview">
-              <div className="preview-item">MY WORKS</div>
+              <div className="preview-item">My Works</div>
             </div>
             <div className="card-content">
               <span className="card-label">DÉCOUVRIR</span>
