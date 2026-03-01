@@ -41,7 +41,13 @@ const VeilleTechno = () => {
         </div>
 
         <div className="veille-info">
-          <h3>📚 À propos de ma veille technologique</h3>
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true" style={{verticalAlign:'middle',marginRight:'8px'}}>
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            </svg>
+            À propos de ma veille technologique
+          </h3>
           <p>
             Je réalise une veille technologique constante pour rester à jour sur les dernières innovations. 
             Chaque article que je sélectionne fait l'objet d'une analyse approfondie où j'explore les technologies, 

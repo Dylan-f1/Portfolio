@@ -202,37 +202,37 @@ Limites actuelles
       {
         domaine: "Cryptographie",
         description: "Cassage des systèmes de chiffrement actuels (RSA, ECC) et création de nouveaux systèmes quantiques",
-        impact: "🔴 CRITIQUE - Menace la sécurité actuelle",
+        impact: "CRITIQUE - Menace la sécurité actuelle",
         echeance: "5-10 ans"
       },
       {
         domaine: "Découverte de Médicaments",
         description: "Simulation moléculaire pour découvrir de nouveaux médicaments plus rapidement",
-        impact: "🟢 RÉVOLUTIONNAIRE",
+        impact: "RÉVOLUTIONNAIRE",
         echeance: "7-15 ans"
       },
       {
         domaine: "Intelligence Artificielle",
         description: "Accélération de l'entraînement des modèles d'IA et optimisation",
-        impact: "🟢 RÉVOLUTIONNAIRE",
+        impact: "RÉVOLUTIONNAIRE",
         echeance: "10-20 ans"
       },
       {
         domaine: "Finance",
         description: "Optimisation de portefeuilles, détection de fraudes, pricing d'options",
-        impact: "🟡 IMPORTANT",
+        impact: "IMPORTANT",
         echeance: "10-15 ans"
       },
       {
         domaine: "Logistique",
         description: "Optimisation de routes, supply chain, planification",
-        impact: "🟡 IMPORTANT",
+        impact: "IMPORTANT",
         echeance: "15-20 ans"
       },
       {
         domaine: "Climat",
         description: "Modélisation climatique ultra-précise",
-        impact: "🟢 RÉVOLUTIONNAIRE",
+        impact: "RÉVOLUTIONNAIRE",
         echeance: "15-25 ans"
       }
     ],

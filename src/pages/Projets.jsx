@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import { getProjetsPerssonels, getProjetsEntreprise } from '../data/projets';
+import { getProjetsPersonnels, getProjetsEntreprise } from '../data/projets';
 import '../styles/Projets.css';
 
 const Projets = () => {
-  const projetsPersonnels = getProjetsPerssonels();
+  const projetsPersonnels = getProjetsPersonnels();
   const projetsEntreprise = getProjetsEntreprise();
 
   return (

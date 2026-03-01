@@ -20,7 +20,7 @@ const Home = () => {
               <div className="profile-info">
                 <span className="profile-badge">Apprenti BTS SIO</span>
                 <h1 className="profile-name">Dylan Fernandes</h1>
-                <p className="profile-role">Étudiant en BTS SIO à Lyon chez Nexa Digital School, Apprenti chez Sylnux</p>
+                <p className="profile-role">Étudiant en BTS SIO SLAM à Lyon, Apprenti chez Sylnux</p>
               </div>
             </div>
           </div>
@@ -115,7 +115,12 @@ const Home = () => {
 
           {/* Veille Techno */}
           <Link to="/veille-techno" className="bottom-card veille-card">
-            <div className="card-icon-small">📚</div>
+            <div className="card-icon-small">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              </svg>
+            </div>
             <div className="card-content">
               <span className="card-label">VEILLE</span>
               <h2 className="card-title">Technologique</h2>

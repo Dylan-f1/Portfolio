@@ -449,13 +449,13 @@
   }
   
   .apprentissages-list li::before {
-    content: "💡";
+    content: "›";
     position: absolute;
     left: 0;
   }
-  
+
   .etapes-list li::before {
-    content: "🚀";
+    content: "›";
     position: absolute;
     left: 0;
   }
