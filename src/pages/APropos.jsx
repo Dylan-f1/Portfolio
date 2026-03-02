@@ -9,7 +9,7 @@ const Competences = () => {
     {
       annee: "2024 - 2026",
       titre: "BTS SIO SLAM",
-      etablissement: "Nexa Digital School - Lyon",
+      etablissement: "Lyon",
       description: "Spécialisation Solutions Logicielles et Applications Métiers",
       statut: "En cours"
     },
@@ -61,7 +61,7 @@ const Competences = () => {
             </p>
             <p className="intro-text">
               Au-delà de la l'informatique, je suis passionné par le sport automobile plus particulièrement la Formule 1. Ce sport représente 
-              pour moi bien plus que de simples courses : c'est un concentré d'innovation technologique, 
+              pour moi bien plus que de simples courses: c'est un concentré d'innovation technologique, 
               d'optimisation des performances et de travail d'équipe. L'analyse des données en temps réel, 
               les stratégies complexes et l'évolution constante des technologies en F1 m'inspirent dans 
               mon approche du développement logiciel. Tout comme les écuries cherchent constamment à 

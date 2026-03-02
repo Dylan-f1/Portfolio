@@ -9,11 +9,11 @@ export const juliaApp = {
   technologies: ["React Native", "Expo", "Node.js", "MongoDB", "Google Gemini", "NativeWind", "Expo Router"],
   courteDescription: "Application thérapeutique cross-platform connectant patients et thérapeutes via un assistant IA conversationnel disponible entre les séances",
 
-  conclusionOrale: "Julia App est le projet le plus complexe architecturalement que j'ai développé. Gérer deux interfaces distinctes (patient mobile-first, thérapeute desktop-first) avec deux systèmes d'authentification indépendants dans un seul codebase React Native a nécessité une rigueur architecturale importante. L'intégration de Gemini pour l'IA conversationnelle, la gestion du cross-platform web/mobile avec des APIs natives différentes, et la mise en place d'un système de détection de crise démontrent ma capacité à concevoir des applications complexes à fort enjeu humain.",
+  conclusionOrale: "Julia App est le projet le plus complexe architecturalement que j'ai développé, et aussi celui qui posait les enjeux de sécurité les plus critiques. Les données traitées — humeur, anxiété, sommeil, conversations thérapeutiques, situations de crise — sont des données de santé au sens de l'article 9 du RGPD. Chaque décision architecturale a été guidée par cet enjeu : consentement explicite avant toute collecte, séparation stricte des données par rôle, magic link sans mot de passe pour réduire la surface d'attaque sur l'identité numérique des patients, SecureStore pour le stockage chiffré côté mobile. L'intégration de Gemini soulève également la question du transfert de données de santé vers un prestataire tiers (Google), ce qui nécessite une base légale explicite. Ce projet démontre ma capacité à penser la cybersécurité et la protection des données dès la conception, sur une application à fort enjeu humain.",
 
   contexte: `Julia App est une application thérapeutique qui connecte patients et thérapeutes via un assistant IA nommé Julia, disponible entre les séances. Les thérapeutes disposent d'un dashboard de suivi complet, tandis que les patients accèdent à leur interface via magic link — sans mot de passe. Le projet est développé en React Native avec Expo pour cibler à la fois le mobile et le web depuis un seul codebase.`,
 
-  problematique: "Comment construire une plateforme thérapeutique cross-platform avec deux interfaces distinctes (patient mobile-first, thérapeute desktop-first), deux systèmes d'authentification différents, et une IA conversationnelle intégrée, tout en garantissant la stabilité et la sécurité des données sensibles ?",
+  problematique: "Comment construire une plateforme thérapeutique cross-platform avec deux interfaces distinctes (patient mobile-first, thérapeute desktop-first), deux systèmes d'authentification différents et une IA conversationnelle intégrée, tout en garantissant la sécurité des données de santé (RGPD art. 9), la préservation de l'identité numérique des patients et la conformité des traitements par une IA tierce (Google Gemini) ?",
 
   defis: [
     {
@@ -45,6 +45,11 @@ export const juliaApp = {
       titre: "Intégration Gemini API",
       description: "Le modèle gemini-1.5-flash-latest retournait une erreur 404 sur l'API v1beta. Identifiant incorrect qui a nécessité un debug approfondi de l'API.",
       solution: "Utilisation du bon identifiant gemini-1.5-flash (sans suffixe) après test direct du schéma API réel. Leçon généralisée à toutes les intégrations d'APIs tierces du projet."
+    },
+    {
+      titre: "Conformité RGPD — données de santé et IA tierce",
+      description: "L'application collecte des données de santé au sens de l'article 9 du RGPD (humeur, anxiété, sommeil, conversations thérapeutiques, détection de crise). Ces données sont transmises à Google Gemini pour le traitement IA, ce qui implique un transfert vers un sous-traitant avec des obligations contractuelles spécifiques.",
+      solution: "Consentement explicite implémenté avant toute collecte (ConsentScreen avec stockage AsyncStorage). Séparation stricte des données par rôle : deux collections MongoDB distinctes, deux middlewares d'auth indépendants, aucune donnée patient accessible sans token valide. Magic link sans mot de passe pour préserver l'identité numérique des patients (OWASP A07 — Identification and Authentication Failures) : pas de mot de passe à compromettre. SecureStore (mobile) pour le stockage chiffré des tokens d'authentification. Routes API séparées (/patient/... et /therapist/...) pour l'isolation des données sensibles."
     }
   ],
 
@@ -57,7 +62,11 @@ export const juliaApp = {
       "Node.js + MongoDB pour le backend",
       "Google Gemini pour l'IA conversationnelle",
       "NativeWind pour le styling",
-      "Magic link authentication (sans mot de passe)",
+      "Magic link authentication — préservation identité numérique (OWASP A07)",
+      "Consentement explicite RGPD avant toute collecte de données de santé",
+      "SecureStore (mobile) pour stockage chiffré des tokens — AsyncStorage (web) en fallback",
+      "Deux collections MongoDB séparées par rôle — isolation des données sensibles",
+      "Deux middlewares d'auth indépendants — routes /patient/... et /therapist/... totalement isolées",
       "AWS S3 pour l'upload de notes de session",
       "12 variantes de skeleton components + hook useApiError",
       "Système de détection automatique des situations de crise"
@@ -79,16 +88,19 @@ export const juliaApp = {
 
   apprentissages: [
     "La gestion de l'authentification multi-rôle demande une séparation franche dès l'architecture — middleware, routes et stockage doivent être totalement isolés entre les rôles",
+    "Les données de santé (RGPD art. 9) imposent une conception sécurisée dès le départ : consentement explicite, minimisation, isolation par rôle — pas en post-production",
+    "Le magic link sans mot de passe réduit la surface d'attaque sur l'identité numérique : pas de mot de passe à brute-forcer, pas de réutilisation de credentials (OWASP A07)",
+    "Transmettre des données de santé à un sous-traitant IA (Google Gemini) soulève une question RGPD explicite : base légale, DPA (Data Processing Agreement), transfert hors UE",
     "Expo Router impose un modèle de navigation fondamentalement différent de React Navigation — repenser les patterns de navigation dès le départ",
     "La vérification d'état critique (consentement, auth) au niveau screen est toujours plus robuste qu'au niveau layout pour éviter les cycles",
-    "Tester chaque intégration d'API tierce (Gemini, Mailjet, Saleor) sur le schéma réel avant d'écrire la logique métier",
-    "Abstraction des APIs natives pour la compatibilité cross-platform",
-    "Architecture d'applications à données sensibles"
+    "Tester chaque intégration d'API tierce (Gemini, Mailjet) sur le schéma réel avant d'écrire la logique métier",
+    "Abstraction des APIs natives (SecureStore/AsyncStorage) pour la compatibilité cross-platform sans compromettre la sécurité mobile"
   ],
 
   prochaines_etapes: [
     "Implémenter les notifications de crise en temps réel (push notifications quand Julia détecte une situation grave)",
     "Affiner le système d'évaluation quotidienne avec des visualisations graphiques dans le dashboard thérapeute",
-    "Ajouter une couche de tests unitaires sur les services critiques (auth, geminiService, emailService)"
+    "Ajouter une couche de tests unitaires sur les services critiques (auth, geminiService, emailService)",
+    "Rédiger une politique de confidentialité conforme RGPD et implémenter le droit à l'effacement des données (droit à l'oubli — art. 17)"
   ]
 };

@@ -9,7 +9,7 @@ export const pokedex = {
   technologies: ["React", "Node.js", "Express.js", "MongoDB", "JWT", "Vite", "Vercel", "Render"],
   courteDescription: "Pokédex full-stack avec 1025 Pokémon, système de favoris, comparaison, panel admin CRUD et authentification JWT — déployé sur Vercel + Render + MongoDB Atlas",
 
-  conclusionOrale: "Le Pokédex est passé d'un simple front-end consommant une API publique à une application full-stack complète avec son propre backend Node.js, sa base de données MongoDB et un système d'authentification JWT. J'ai développé des fonctionnalités avancées comme le calcul des efficacités de types côté client (324 interactions), la comparaison de Pokémon, les URLs partageables et un panel admin avec CRUD complet. Le projet est déployé en production sur trois services distincts (Vercel, Render, MongoDB Atlas) avec une gestion propre des variables d'environnement et un CORS restreint aux origines autorisées.",
+  conclusionOrale: "Le Pokédex est passé d'un simple front-end consommant une API publique à une application full-stack complète avec son propre backend Node.js, sa base de données MongoDB et un système d'authentification JWT. Dès la conception du backend, j'ai appliqué une démarche de sécurité cohérente couvrant les principales vulnérabilités OWASP : CORS restreint aux origines autorisées (A05 — Security Misconfiguration), authentification JWT avec middleware Express (A07 — Auth Failures), variables d'environnement séparées et gitignorées (A02 — Cryptographic Failures), et routes protégées côté client. Ces mesures ne sont pas des ajouts tardifs mais des décisions d'architecture prises dès le départ pour sécuriser un panel admin exposé en production.",
 
   contexte: `Le Pokédex est un projet personnel qui a évolué bien au-delà de sa version initiale. L'objectif était de créer une application web complète permettant d'explorer les 1025 Pokémon avec une expérience utilisateur riche : recherche avancée, filtres combinables, comparaison, favoris et une interface bilingue FR/EN. Le projet dispose désormais de son propre backend Express.js avec MongoDB Atlas pour stocker et servir les données Pokémon, complété par la PokéAPI pour les sprites et statistiques.`,
 
@@ -32,9 +32,9 @@ export const pokedex = {
       solution: "Chargement unique des 1025 Pokémon au démarrage, puis filtrage et découpage en pages (24 par page) entièrement côté React. Les filtres sont chaînés séquentiellement pour produire la liste finale paginée."
     },
     {
-      titre: "Authentification JWT et panel admin",
-      description: "Sécuriser le panel admin avec une authentification par token sans base d'utilisateurs complexe, et protéger la route /admin contre les accès non authentifiés.",
-      solution: "Login avec mot de passe admin générant un JWT valable 24h. AuthContext React pour la gestion de session côté client. Middleware authMiddleware Express vérifiant le token sur toutes les routes protégées. ProtectedRoute redirige vers /login si non authentifié."
+      titre: "Démarche de sécurité applicative — OWASP",
+      description: "Un panel admin CRUD exposé en production nécessite une sécurisation multicouche : protéger l'accès (authentification), restreindre les origines (CORS), ne jamais exposer les secrets (variables d'environnement) et protéger les routes côté client.",
+      solution: "Authentification JWT (token 24h) avec middleware Express vérifiant chaque requête vers les routes protégées (OWASP A07). CORS restreint : pokedex-dylan.fr en prod, localhost:5173 en dev uniquement — aucune requête cross-origin non autorisée (OWASP A05). Variables d'environnement séparées dev/prod, gitignorées — aucune clé ou secret dans le code source (OWASP A02). ProtectedRoute React côté client avec redirection vers /login. AuthContext pour la gestion du cycle de vie du token sans exposition en localStorage brut."
     },
     {
       titre: "URLs partageables et navigation directe",
@@ -50,14 +50,14 @@ export const pokedex = {
       "React 18 + Vite pour le frontend",
       "Node.js + Express.js pour le backend",
       "MongoDB Atlas + Mongoose pour la base de données",
-      "JWT pour l'authentification admin (token 24h)",
-      "React Router v6 avec routes protégées et URLs partageables",
+      "JWT pour l'authentification admin (token 24h) — OWASP A07",
+      "React Router v6 avec routes protégées (ProtectedRoute) et URLs partageables",
+      "CORS restreint aux origines autorisées — OWASP A05",
+      "Variables d'environnement séparées dev/prod, gitignorées — OWASP A02",
       "PokéAPI pour les sprites, stats et chaînes d'évolution",
       "Table des types Gen 6+ (18 types, 324 interactions) — calcul côté client",
       "Pagination client-side sur 1025 Pokémon (24/page)",
-      "localStorage pour favoris et langue (FR/EN)",
-      "CORS restreint aux origines autorisées",
-      "Variables d'environnement séparées dev/prod"
+      "localStorage pour favoris et langue (FR/EN)"
     ]
   },
 
@@ -78,11 +78,12 @@ export const pokedex = {
 
   apprentissages: [
     "Conception et déploiement d'une architecture full-stack découplée (Vercel + Render + MongoDB Atlas)",
+    "Démarche de sécurité applicative cohérente : JWT (A07) + CORS (A05) + variables d'environnement (A02) — penser OWASP dès l'architecture",
     "Authentification JWT avec middleware Express et contexte React",
-    "Gestion du CORS en production avec origines restreintes",
+    "Le CORS mal configuré est une faille A05 classique — restreindre les origines dès le développement, pas en post-déploiement",
+    "Les variables d'environnement gitignorées ne sont pas optionnelles pour une application en production — elles protègent les secrets et les clés d'API",
     "Calcul d'algorithmes complexes côté client (table des types, efficacités cumulées)",
     "Pagination et filtres combinables sur un dataset important",
-    "Gestion des variables d'environnement en développement et production",
     "Conception d'un panel admin avec CRUD et retour visuel"
   ],
 

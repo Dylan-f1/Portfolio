@@ -9,7 +9,7 @@ export const sylnux = {
   technologies: ["Next.js", "TypeScript", "Prisma ORM", "PostgreSQL", "NextAuth.js", "Zod", "PM2", "Nginx"],
   courteDescription: "Site vitrine de l'agence avec backoffice sécurisé, internationalisation FR/EN administrable et infrastructure de production sur VPS",
 
-  conclusionOrale: "Le site Sylnux est le projet où j'ai le plus appris sur le déploiement en conditions réelles. Au-delà du développement Next.js avec TypeScript et Prisma, j'ai dû gérer toute la chaîne d'infrastructure : configuration Nginx, certificats SSL avec Certbot, orchestration avec PM2 et systemd. La mise en place d'un système de traduction entièrement administrable depuis un backoffice sécurisé par whitelist démontre ma capacité à penser une solution complète, du code à la mise en production.",
+  conclusionOrale: "Le site Sylnux est le projet où j'ai le plus appris sur la sécurisation d'une infrastructure de production réelle. Au-delà du développement Next.js avec TypeScript et Prisma, j'ai mis en place une démarche complète garantissant les trois piliers de la sécurité : confidentialité (whitelist email, HTTPS/SSL, variables d'environnement sécurisées), intégrité (Zod pour la validation des données, TypeScript strict, format de réponse standardisé) et disponibilité (PM2 pour la reprise automatique des processus, systemd pour la persistance après redémarrage VPS, Nginx comme reverse proxy stable). Ce projet démontre que la cybersécurisation d'une solution applicative ne se limite pas au code — elle englobe l'infrastructure, les accès et la continuité de service.",
 
   contexte: `Sylnux est l'agence web dans laquelle j'effectue mon alternance. J'ai été chargé de construire leur site vitrine depuis zéro : une interface publique pour présenter les projets et services, couplée à un backoffice d'administration restreint. L'internationalisation FR/EN est gérée dynamiquement via une base de données PostgreSQL, permettant de modifier les traductions sans redéploiement. Le tout est hébergé sur un VPS Ubuntu derrière un reverse proxy Nginx.`,
 
@@ -45,6 +45,11 @@ export const sylnux = {
       titre: "Infrastructure VPS — déploiement complet",
       description: "Le déploiement impliquait plusieurs étapes critiques : configuration PM2, intégration systemd pour le redémarrage automatique, certificats SSL avec Certbot et gestion des variables d'environnement en production.",
       solution: "Configuration de PM2 avec ecosystem.config.js, intégration systemd pour la persistance après redémarrage serveur, HTTPS via Certbot avec renouvellement automatique, et Nginx comme reverse proxy avec redirection HTTP → HTTPS."
+    },
+    {
+      titre: "Garantir disponibilité, intégrité et confidentialité (DIC)",
+      description: "Un site de production exposé à internet doit répondre aux trois piliers de la sécurité : être disponible (uptime), préserver l'intégrité des données et garantir la confidentialité des accès.",
+      solution: "Disponibilité : PM2 redémarre le processus Node.js automatiquement en cas de crash — systemd le relance après redémarrage VPS. Nginx assure la continuité du routage. Intégrité : Zod valide toutes les données entrantes côté API, TypeScript strict élimine les erreurs de typage à la compilation, format { success, data } standardisé sur tous les endpoints. Confidentialité : HTTPS (Let's Encrypt/Certbot) chiffre tous les échanges, whitelist email restreint l'accès backoffice, variables d'environnement sécurisées (aucun secret en clair dans le code)."
     }
   ],
 
@@ -79,14 +84,17 @@ export const sylnux = {
     "Le pattern client-only pour l'auth de backoffice est plus simple à maintenir que la séparation Server/Client Component",
     "La cohérence de nommage entre routes API et appels frontend est critique — une convention stricte évite des sessions de débogage longues",
     "Centraliser la config Nginx en un seul fichier par domaine évite les conflits server_name silencieux",
+    "La trilogie DIC (Disponibilité, Intégrité, Confidentialité) s'applique à l'infrastructure autant qu'au code : PM2/systemd pour la D, Zod/TypeScript pour l'I, HTTPS/whitelist pour la C",
+    "PM2 + systemd est la combinaison minimale pour garantir la disponibilité d'un service Node.js en production sans orchestrateur complexe",
     "Déploiement complet sur VPS : PM2, systemd, Nginx, Certbot",
-    "Gestion des variables d'environnement en production"
+    "Gestion des variables d'environnement en production — aucun secret dans le dépôt Git"
   ],
 
   prochaines_etapes: [
     "Convertir le reste des données statiques en traductions dynamiques administrables",
     "Ajouter un module de gestion des projets (CRUD complet) depuis l'interface admin",
     "Mettre en place un pipeline CI/CD pour automatiser les déploiements depuis Git",
-    "Ajouter des tests sur les endpoints API critiques (auth, traductions)"
+    "Ajouter des tests sur les endpoints API critiques (auth, traductions)",
+    "Mettre en place des sauvegardes automatisées de la base PostgreSQL (pg_dump planifié) — garantie de reprise après incident"
   ]
 };
