@@ -59,7 +59,7 @@ const Home = () => {
       <section className="main-sections">
         <div className="sections-container">
           {/* Carte Sur Moi */}
-          <Link to="/competences" className="section-card about-card">
+          <Link to="/a-propos" className="section-card about-card">
             <div className="card-icon">
               <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
