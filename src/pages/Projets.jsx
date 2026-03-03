@@ -47,6 +47,15 @@ const Projets = () => {
           ))}
         </div>
         
+        {/* Transition - Complémentarité des projets */}
+        <div className="projects-transition">
+          <p>
+            Les projets en entreprise m'ont appris à travailler sous contraintes réelles — clients exigeants,
+            délais, qualité de code en production. Mes projets personnels, c'est là où je pousse mes limites
+            en totale autonomie, du choix de la stack jusqu'au déploiement.
+          </p>
+        </div>
+
         {/* Section Projets Personnels */}
         <header className="page-header">
           <h1>Mes Projets Personnels</h1>

@@ -4,6 +4,7 @@ import '../styles/APropos.css';
 
 const Competences = () => {
   const [showPDF, setShowPDF] = useState(false);
+  const [showCV, setShowCV] = useState(false);
 
   const parcours = [
     {
@@ -53,20 +54,22 @@ const Competences = () => {
         <div className="introduction-section">
           <div className="intro-content">
             <p className="intro-text">
-              Ma passion pour l'informatique est née de ma passion pour les jeux vidéo. 
-              Cependant, j'ai rapidement réalisé que l'industrie du jeu vidéo, bien que fascinante, 
-              est extrêmement exigeante et compétitive. J'ai donc choisi de m'orienter vers le 
-              développement web et le développement d'applications, un domaine où je peux exprimer ma créativité 
-              tout en construisant des solutions concrètes et innovantes.
+              Ma passion pour l'informatique est née des jeux vidéo. Ce qui m'attirait,
+              ce n'était pas simplement de jouer — c'était de comprendre comment ça fonctionnait derrière l'écran,
+              et un jour d'en créer moi-même. J'ai rapidement orienté cette curiosité vers le développement web
+              et les applications : un domaine où je peux exprimer ma créativité tout en construisant
+              des solutions concrètes qui ont un vrai impact.
             </p>
             <p className="intro-text">
-              Au-delà de la l'informatique, je suis passionné par le sport automobile plus particulièrement la Formule 1. Ce sport représente 
-              pour moi bien plus que de simples courses: c'est un concentré d'innovation technologique, 
-              d'optimisation des performances et de travail d'équipe. L'analyse des données en temps réel, 
-              les stratégies complexes et l'évolution constante des technologies en F1 m'inspirent dans 
-              mon approche du développement logiciel. Tout comme les écuries cherchent constamment à 
-              optimiser leurs performances, je m'efforce d'améliorer continuellement mes compétences 
-              et d'adopter les meilleures pratiques de développement.
+              Je suis aussi passionné par la Formule 1. Plus qu'un sport, c'est un concentré de technologie,
+              d'optimisation et d'innovation permanente — chaque dixième de seconde compte, chaque détail est
+              poussé à l'extrême. C'est exactement la même logique que j'applique dans mon code :
+              chercher constamment à faire mieux, plus propre, plus performant.
+            </p>
+            <p className="intro-text">
+              Ces deux passions ont un point commun : la technologie au service de la performance.
+              C'est ce fil rouge qui m'a naturellement conduit vers le BTS SIO option SLAM —
+              pour transformer cette curiosité en un vrai savoir-faire professionnel.
             </p>
           </div>
         </div>
@@ -91,6 +94,42 @@ const Competences = () => {
             ))}
           </div>
         </div>
+
+        {/* Section CV */}
+        <div className="pdf-toggle-container">
+          <button
+            className="pdf-toggle-btn"
+            onClick={() => setShowCV(!showCV)}
+          >
+            {showCV ? 'Masquer' : 'Afficher'} mon CV
+          </button>
+        </div>
+
+        {showCV && (
+          <div className="pdf-container">
+            <div className="cv-image-container">
+              <img
+                src="/CV-Dylan-Fernandes.png"
+                alt="CV de Dylan Fernandes"
+                className="cv-image"
+              />
+            </div>
+            <div className="cv-download">
+              <a
+                href="/CV-Dylan-Fernandes.pdf"
+                download
+                className="download-button"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true" style={{verticalAlign:'middle',marginRight:'8px'}}>
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                Télécharger le CV (PDF)
+              </a>
+            </div>
+          </div>
+        )}
       </section>
     </div>
   );

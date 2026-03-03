@@ -66,21 +66,6 @@ const Entreprise = () => {
                 <h2>Mon Expérience en Entreprise</h2>
 
                 <div className="entreprise-container">
-                    {/* Introduction */}
-                    <div className="intro-section">
-                        <h3>Mon Parcours Professionnel</h3>
-                        <p>
-                            Durant mon <strong>BTS SIO</strong> (Services Informatiques aux Organisations),
-                            j'ai eu l'opportunité de mettre en pratique mes compétences à travers plusieurs
-                            expériences professionnelles. J'ai effectué des stages qui m'ont permis de
-                            découvrir le développement web en entreprise et d'acquérir des compétences
-                            techniques solides.
-                        </p>
-                        <p>
-                            Je suis actuellement en <strong>alternance chez Sylnux</strong>, où je travaille
-                            sur des projets de <em>refonte complète de systèmes e-commerce</em>.
-                        </p>
-                    </div>
 
                     {/* Expérience principale - Alternance */}
                     <div className="main-experience">
@@ -94,40 +79,31 @@ const Entreprise = () => {
                             </div>
                             <div className="experience-description">
                                 <p className="mission-intro">
-                                    <strong>Contexte :</strong> Entreprise spécialisée dans le développement web
-                                    et mobile pour des clients dans le secteur de la cosmétique et du e-commerce.
+                                    <strong>Contexte :</strong> Sylnux est une petite agence web sous-traitante
+                                    spécialisée dans le développement d'e-commerces pour des marques de cosmétiques
+                                    bio, notamment <strong>ZAO Makeup</strong> et <strong>Lamazuna</strong>.
+                                    J'interviens en autonomie sur des projets clients réels, de la migration
+                                    technologique aux tests de qualité.
                                 </p>
                                 <div className="missions-detail">
                                     <h6>Missions principales :</h6>
                                     <ul>
                                         <li>
-                                            <strong>Développement de sites e-commerce complets</strong> - Création
-                                            et maintenance de plateformes pour marques de cosmétiques
+                                            <strong>Refonte du système de checkout ZAO Makeup</strong> — Migration
+                                            de JavaScript vanilla vers React + Tailwind CSS, avec reproduction
+                                            pixel-perfect du design existant
                                         </li>
                                         <li>
-                                            <strong>Refonte du site Lamazuna</strong> - Migration complète vers
-                                            Next.js avec TypeScript, intégration du système de checkout développé
-                                            pour ZAO Makeup
+                                            <strong>Migration du site Lamazuna</strong> — Refonte complète vers
+                                            Next.js / TypeScript, intégration du checkout ZAO
                                         </li>
                                         <li>
-                                            <strong>Optimisation des performances</strong> - Amélioration des temps
+                                            <strong>Tests E2E avec Cypress</strong> — Mise en place d'une suite
+                                            de 10+ tests pour garantir la qualité du tunnel de paiement
+                                        </li>
+                                        <li>
+                                            <strong>Optimisation des performances</strong> — Amélioration des temps
                                             de chargement et du SEO des sites clients
-                                        </li>
-                                        <li>
-                                            <strong>Refonte complète du système de checkout</strong> - Migration
-                                            de JavaScript vanilla vers React avec Tailwind CSS
-                                        </li>
-                                        <li>
-                                            <strong>Tests E2E avec Cypress</strong> - Mise en place d'une suite
-                                            de tests complète pour garantir la qualité
-                                        </li>
-                                        <li>
-                                            <strong>Respect strict du design</strong> - Reproduction pixel-perfect
-                                            du design existant
-                                        </li>
-                                        <li>
-                                            <strong>Travail en équipe</strong> - Collaboration quotidienne avec
-                                            mon patron
                                         </li>
                                     </ul>
                                 </div>
@@ -155,40 +131,6 @@ const Entreprise = () => {
                         </div>
                     </div>
 
-                    {/* Apprentissages globaux */}
-                    <div className="global-learnings">
-                        <h3><IconBook />Apprentissages Globaux</h3>
-                        <div className="learnings-grid">
-                            <div className="learning-card">
-                                <h4><IconLaptop />Compétences Techniques</h4>
-                                <ul>
-                                    <li>Maîtrise de React et Next.js en environnement professionnel</li>
-                                    <li>TypeScript pour du code robuste et maintenable</li>
-                                    <li>Tests E2E pour garantir la qualité</li>
-                                    <li>Migration de systèmes legacy vers des stacks modernes</li>
-                                </ul>
-                            </div>
-                            <div className="learning-card">
-                                <h4><IconUsers />Soft Skills</h4>
-                                <ul>
-                                    <li>Gestion du temps et des priorités</li>
-                                    <li>Autonomie dans la résolution de problèmes</li>
-                                    <li>Adaptation rapide à différents contextes</li>
-                                    <li>Écoute active des besoins clients</li>
-                                </ul>
-                            </div>
-                            <div className="learning-card">
-                                <h4><IconGear />Méthodologies</h4>
-                                <ul>
-                                    <li>Code reviews et bonnes pratiques Git</li>
-                                    <li>Architecture évolutive et maintenable</li>
-                                    <li>Documentation technique claire</li>
-                                    <li>Tests automatisés et CI/CD</li>
-                                    <li>Respect des standards de qualité</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </section>
         </div>

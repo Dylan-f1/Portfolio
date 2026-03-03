@@ -38,9 +38,6 @@ const Navbar = () => {
           <Link to="/entreprise" className="nav-link">
             ENTREPRISE
           </Link>
-          <Link to="/cv" className="nav-link">
-            CV
-          </Link>
           <Link to="/projets" className="nav-link">
             PROJETS
           </Link>
@@ -53,9 +50,6 @@ const Navbar = () => {
         <nav className={`navigation mobile ${isMenuOpen ? 'active' : ''}`}>
           <Link to="/a-propos" className="nav-link" onClick={closeMenu}>
             À PROPOS
-          </Link>
-          <Link to="/cv" className="nav-link" onClick={closeMenu}>
-            CV
           </Link>
           <Link to="/projets" className="nav-link" onClick={closeMenu}>
             PROJETS
