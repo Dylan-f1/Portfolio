@@ -1,0 +1,92 @@
+/* ─── Fil Rouge — Aide à l'oral ───────────────────────────────────────────── */
+
+.fil-rouge-card {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  padding: 24px 32px;
+  background: rgba(245, 158, 11, 0.06);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  border-left: 4px solid #f59e0b;
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.08);
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.fil-rouge-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.fil-rouge-icon {
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.fil-rouge-titre {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #f59e0b;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 0;
+}
+
+.fil-rouge-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fil-rouge-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.fil-rouge-arrow {
+  color: #f59e0b;
+  font-size: 0.85rem;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+/* ─── Responsive ───────────────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .fil-rouge-card {
+    padding: 18px 20px;
+    margin-bottom: 30px;
+  }
+
+  .fil-rouge-point {
+    font-size: 0.9rem;
+  }
+
+  .fil-rouge-titre {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .fil-rouge-card {
+    padding: 14px 16px;
+  }
+
+  .fil-rouge-titre {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+  }
+
+  .fil-rouge-point {
+    font-size: 0.85rem;
+  }
+}

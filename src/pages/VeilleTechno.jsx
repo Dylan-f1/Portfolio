@@ -18,11 +18,11 @@ const VeilleTechno = () => {
             <p>Sources : Autosport, Flotauto, Tech Drive Play, Daily.dev</p>
           </div>
         </header>
-        
+
         <div className="articles-grid">
           {articles.map(article => (
-            <Link 
-              key={article.id} 
+            <Link
+              key={article.id}
               to={`/veille/${article.id}`}
               className="article-card"
             >
@@ -47,14 +47,11 @@ const VeilleTechno = () => {
             </svg>
             Pourquoi ce thème ?
           </h3>
-          <p>
-            Je suis passionné par la Formule 1 et l'automobile depuis toujours. Ce que j'ai réalisé,
-            c'est que les voitures sont aujourd'hui parmi les objets les plus technologiques qui existent :
-            télémétrie temps réel, mises à jour logicielles à distance, IA embarquée, capteurs LiDAR...
-            C'est un terrain d'innovation permanent qui connecte directement mes deux passions —
-            la technologie et les voitures. Je sélectionne mes sujets de veille là où la tech automobile
-            rejoint le développement logiciel : architectures de données, déploiement, IA, embarqué.
-          </p>
+          <ul className="veille-bullets">
+            <li>Les voitures sont aujourd'hui parmi les objets les plus technologiques : capteurs, logiciels embarqués, IA</li>
+            <li>Terrain d'innovation permanent qui connecte mes deux passions : la technologie et les voitures</li>
+            <li>Sujets ciblés là où la tech automobile rejoint le dev logiciel : données, déploiement, IA, embarqué</li>
+          </ul>
         </div>
       </div>
     </div>

@@ -1,5 +1,36 @@
 /* VeilleDetail.css - Page analyse détaillée */
 
+/* Points clés pour l'oral */
+.points-cles-section h2 {
+  color: var(--alpine-pink) !important;
+}
+
+.points-cles-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.points-cles-list li {
+  color: #e0e0e0;
+  font-size: 1rem;
+  line-height: 1.7;
+  padding-left: 22px;
+  position: relative;
+}
+
+.points-cles-list li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--alpine-pink);
+  font-size: 1rem;
+  top: 2px;
+}
+
 .veille-detail-container {
     min-height: 100vh;
     background-color: transparent;

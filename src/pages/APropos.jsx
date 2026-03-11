@@ -28,10 +28,10 @@ const Competences = () => {
       <Navbar />
       <section id="a-propos" className="competences-section">
         <h2 className="section-title">À Propos de Moi</h2>
-        
+
         {/* Bouton pour afficher/masquer le tableau de synthèse */}
         <div className="pdf-toggle-container">
-          <button 
+          <button
             className="pdf-toggle-btn"
             onClick={() => setShowPDF(!showPDF)}
           >
@@ -54,22 +54,23 @@ const Competences = () => {
         <div className="introduction-section">
           <div className="intro-content">
             <p className="intro-text">
-              Ma passion pour l'informatique est née des jeux vidéo. Ce qui m'attirait,
-              ce n'était pas simplement de jouer — c'était de comprendre comment ça fonctionnait derrière l'écran,
-              et un jour d'en créer moi-même. J'ai rapidement orienté cette curiosité vers le développement web
-              et les applications : un domaine où je peux exprimer ma créativité tout en construisant
-              des solutions concrètes qui ont un vrai impact.
+              Ma passion pour l'informatique est née grâce aux jeux vidéo.
+              Au départ, ce qui me fascinait n'était pas seulement d'y jouer, mais comprendre comment ils fonctionnaient,
+              et un jour de pouvoir créer mes propres projets.
             </p>
             <p className="intro-text">
-              Je suis aussi passionné par la Formule 1. Plus qu'un sport, c'est un concentré de technologie,
-              d'optimisation et d'innovation permanente — chaque dixième de seconde compte, chaque détail est
-              poussé à l'extrême. C'est exactement la même logique que j'applique dans mon code :
-              chercher constamment à faire mieux, plus propre, plus performant.
+              Avec le temps, cette curiosité s'est naturellement orientée vers le développement web et les applications.
+              C'est un domaine qui me permet d'exprimer ma créativité tout en construisant des solutions concrètes.
             </p>
             <p className="intro-text">
-              Ces deux passions ont un point commun : la technologie au service de la performance.
-              C'est ce fil rouge qui m'a naturellement conduit vers le BTS SIO option SLAM —
-              pour transformer cette curiosité en un vrai savoir-faire professionnel.
+              En parallèle, je suis aussi passionné par la Formule 1. Ce qui m'intéresse dans ce sport,
+              c'est la recherche permanente de performance, d'optimisation et d'innovation technologique.
+              C'est une logique que j'essaie aussi d'appliquer dans mon travail : améliorer constamment
+              mon code pour qu'il soit plus propre, plus clair et plus performant.
+            </p>
+            <p className="intro-text">
+              Ces deux passions ont un point commun : la technologie au service de la performance,
+              ce qui m'a naturellement conduit vers le BTS SIO option SLAM.
             </p>
           </div>
         </div>

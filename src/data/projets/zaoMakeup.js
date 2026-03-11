@@ -9,6 +9,18 @@ export const zaoMakeup = {
   technologies: ["React", "Tailwind CSS", "Cypress"],
   courteDescription: "Refonte complète du système de checkout d'une plateforme e-commerce de cosmétiques bio avec intégration multi-paiements",
 
+  filRouge: {
+    titre: "Points clés pour l'oral — Partie 3 : Projet professionnel",
+    points: [
+      "Contexte : ZAO Makeup, cosmétiques bio → ancien checkout en JavaScript vanilla, difficile à maintenir et faire évoluer",
+      "Objectif : migrer vers React en conservant exactement le même design pour l'utilisateur",
+      "Technologies utilisées : React + Tailwind CSS (interface) + Cypress (tests E2E automatisés)",
+      "Ma contribution : migration du style vers Tailwind CSS, reproduction pixel-perfect, tests E2E avec Cypress",
+      "Difficultés : Cypress (technologie nouvelle → timeouts, synchro, débogage console) + pixel-perfect (précision au pixel près)",
+      "Résultats : code plus moderne et maintenable, tunnel de paiement sécurisé par tests, moins de risques d'erreurs pour les développeurs",
+    ],
+  },
+
   conclusionOrale: "ZAO Makeup représente mon premier projet professionnel majeur avec des contraintes strictes de fidélité design. La migration de JavaScript vanilla vers React avec Tailwind CSS, tout en maintenant une reproduction pixel-perfect, a été un défi technique important. La mise en place d'une suite de 10 tests E2E Cypress a assuré une qualité zéro défaut en production. Ce projet a été tellement réussi qu'il sert maintenant de base technique réutilisée pour d'autres clients de Sylnux, démontrant la qualité et la maintenabilité de mon code.",
 
   contexte: `ZAO Makeup est une marque de cosmétiques bio rechargeable. Dans le cadre de mon stage chez Sylnux, j'ai été chargé de moderniser leur système de paiement en ligne en migrant d'une solution JavaScript vanilla vers React avec Tailwind CSS, tout en maintenant 100% de fidélité au design existant.`,
