@@ -13,10 +13,9 @@ const VeilleTechno = () => {
       <div className="content">
         <header className="page-header">
           <h1>Veille Technologique</h1>
-          <p>Analyses approfondies des dernières innovations technologiques</p>
+          <p>Automobile & Formule 1 — la technologie au service de la performance</p>
           <div className="veille-source">
-            <img src="/daily-dev-logo.png" alt="daily.dev" className="daily-logo" />
-            <p>Sources : Daily.Dev et actualités tech</p>
+            <p>Sources : Autosport, Flotauto, Tech Drive Play, Daily.dev</p>
           </div>
         </header>
         
@@ -46,12 +45,15 @@ const VeilleTechno = () => {
               <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
               <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
             </svg>
-            À propos de ma veille technologique
+            Pourquoi ce thème ?
           </h3>
           <p>
-            Je réalise une veille technologique constante pour rester à jour sur les dernières innovations. 
-            Chaque article que je sélectionne fait l'objet d'une analyse approfondie où j'explore les technologies, 
-            compare les approches, réfléchis aux implications futures et partage ma vision personnelle.
+            Je suis passionné par la Formule 1 et l'automobile depuis toujours. Ce que j'ai réalisé,
+            c'est que les voitures sont aujourd'hui parmi les objets les plus technologiques qui existent :
+            télémétrie temps réel, mises à jour logicielles à distance, IA embarquée, capteurs LiDAR...
+            C'est un terrain d'innovation permanent qui connecte directement mes deux passions —
+            la technologie et les voitures. Je sélectionne mes sujets de veille là où la tech automobile
+            rejoint le développement logiciel : architectures de données, déploiement, IA, embarqué.
           </p>
         </div>
       </div>
