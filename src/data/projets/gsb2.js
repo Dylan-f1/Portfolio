@@ -13,8 +13,6 @@ export const gsb2 = {
 
   contexte: `GSB 2 est une application de gestion médicale développée pour répondre aux besoins des professionnels de santé. Le projet vise à centraliser la gestion des patients, du catalogue de médicaments et des prescriptions dans une interface desktop sécurisée avec contrôle d'accès basé sur les rôles.`,
 
-  problematique: "Comment créer une application desktop robuste et sécurisée permettant la gestion complète d'un système médical avec différents niveaux d'accès, tout en garantissant l'intégrité des données et la conformité RGPD pour des données de santé (catégorie spéciale — article 9) ?",
-
   defis: [
     {
       titre: "Architecture en couches",

@@ -13,8 +13,6 @@ export const gsb_frontend = {
 
   contexte: `GSB Frontend est l'interface utilisateur web du système GSB, permettant aux utilisateurs de gérer leurs notes de frais de manière intuitive. Le projet met l'accent sur une expérience utilisateur moderne, une navigation fluide et une communication efficace avec l'API backend hébergée sur Render.`,
 
-  problematique: "Comment créer une interface web React performante et intuitive pour la gestion de frais tout en assurant une authentification sécurisée et une communication fluide avec une API REST distante ?",
-
   defis: [
     {
       titre: "Authentification et gestion de session",

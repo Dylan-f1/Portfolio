@@ -9,11 +9,20 @@ export const pokedex = {
   technologies: ["React", "Node.js", "Express.js", "MongoDB", "JWT", "Vite", "Vercel", "Render"],
   courteDescription: "Pokédex full-stack avec 1025 Pokémon, système de favoris, comparaison, panel admin CRUD et authentification JWT — déployé sur Vercel + Render + MongoDB Atlas",
 
+  filRouge: {
+    titre: "Points clés pour l'oral — Partie 4 : Projet personnel",
+    points: [
+      "Transition depuis ZAO Makeup → projet perso pour concevoir une application en totale autonomie",
+      "Objectif : site web Pokédex pour consulter les Pokémon avec leurs types, stats et évolutions",
+      "Stack technique : React (front) + Node.js (back) + MongoDB (BDD) + REST API + PokéAPI pour certaines données",
+      "Fonctionnalités : recherche, filtrage par type/génération/numéro, gestion des évolutions, stats, interface responsive",
+      "Ces deux projets sont complémentaires : Sylnux = rigueur pro & contraintes client / Pokédex = autonomie & architecture complète",
+    ],
+  },
+
   conclusionOrale: "Le Pokédex est passé d'un simple front-end consommant une API publique à une application full-stack complète avec son propre backend Node.js, sa base de données MongoDB et un système d'authentification JWT. Dès la conception du backend, j'ai appliqué une démarche de sécurité cohérente couvrant les principales vulnérabilités OWASP : CORS restreint aux origines autorisées (A05 — Security Misconfiguration), authentification JWT avec middleware Express (A07 — Auth Failures), variables d'environnement séparées et gitignorées (A02 — Cryptographic Failures), et routes protégées côté client. Ces mesures ne sont pas des ajouts tardifs mais des décisions d'architecture prises dès le départ pour sécuriser un panel admin exposé en production.",
 
   contexte: `Le Pokédex est un projet personnel qui a évolué bien au-delà de sa version initiale. L'objectif était de créer une application web complète permettant d'explorer les 1025 Pokémon avec une expérience utilisateur riche : recherche avancée, filtres combinables, comparaison, favoris et une interface bilingue FR/EN. Le projet dispose désormais de son propre backend Express.js avec MongoDB Atlas pour stocker et servir les données Pokémon, complété par la PokéAPI pour les sprites et statistiques.`,
-
-  problematique: "Comment concevoir une application full-stack Pokémon performante et maintenable, avec des fonctionnalités avancées (filtres combinables, comparaison, efficacités de types, admin CRUD) tout en assurant une expérience fluide sur 1025 entrées et un déploiement stable sur des services cloud distincts ?",
 
   defis: [
     {

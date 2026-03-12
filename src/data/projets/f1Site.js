@@ -13,8 +13,6 @@ export const f1Site = {
 
   contexte: `Projet en cours de conception visant à créer un site complet sur l'univers de la Formule 1. L'objectif est de centraliser toutes les informations sur les pilotes, écuries, circuits et résultats de course.`,
 
-  problematique: "Comment structurer et présenter efficacement une grande quantité de données F1 tout en créant une expérience utilisateur engageante pour les fans de sport automobile ?",
-
   defis: [
     {
       titre: "Architecture de données",

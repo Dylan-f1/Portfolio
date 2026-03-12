@@ -13,8 +13,6 @@ export const juliaApp = {
 
   contexte: `Julia App est une application thérapeutique qui connecte patients et thérapeutes via un assistant IA nommé Julia, disponible entre les séances. Les thérapeutes disposent d'un dashboard de suivi complet, tandis que les patients accèdent à leur interface via magic link — sans mot de passe. Le projet est développé en React Native avec Expo pour cibler à la fois le mobile et le web depuis un seul codebase.`,
 
-  problematique: "Comment construire une plateforme thérapeutique cross-platform avec deux interfaces distinctes (patient mobile-first, thérapeute desktop-first), deux systèmes d'authentification différents et une IA conversationnelle intégrée, tout en garantissant la sécurité des données de santé (RGPD art. 9), la préservation de l'identité numérique des patients et la conformité des traitements par une IA tierce (Google Gemini) ?",
-
   defis: [
     {
       titre: "Authentification multi-rôle complexe",
