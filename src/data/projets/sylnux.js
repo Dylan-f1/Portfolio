@@ -13,8 +13,6 @@ export const sylnux = {
 
   contexte: `Sylnux est l'agence web dans laquelle j'effectue mon alternance. J'ai été chargé de construire leur site vitrine depuis zéro : une interface publique pour présenter les projets et services, couplée à un backoffice d'administration restreint. L'internationalisation FR/EN est gérée dynamiquement via une base de données PostgreSQL, permettant de modifier les traductions sans redéploiement. Le tout est hébergé sur un VPS Ubuntu derrière un reverse proxy Nginx.`,
 
-  problematique: "Comment construire une plateforme portfolio professionnelle avec un système de traduction entièrement administrable, un backoffice sécurisé par whitelist email, et une infrastructure de production stable sur VPS — le tout dans un seul codebase Next.js ?",
-
   defis: [
     {
       titre: "Architecture backoffice isolée",

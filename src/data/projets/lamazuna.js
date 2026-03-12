@@ -13,8 +13,6 @@ export const lamazuna = {
 
   contexte: `Lamazuna est une marque pionnière dans les cosmétiques solides et zéro déchet. En alternance chez Sylnux, j'ai été chargé de la refonte complète de leur site e-commerce avec Next.js App Router et TypeScript, en s'appuyant sur Saleor comme backend e-commerce headless et GraphQL pour la communication entre couches. Le design de certaines sections s'inspire du checkout ZAO développé en amont.`,
 
-  problematique: "Comment construire un storefront e-commerce complet et production-ready en migrant progressivement depuis une base JSX/CSS legacy, tout en maintenant la cohérence visuelle et en intégrant un backend GraphQL dont le schéma diverge parfois de la documentation officielle ?",
-
   defis: [
     {
       titre: "Schéma GraphQL / Saleor divergent",

@@ -24,8 +24,6 @@ export const pokedex = {
 
   contexte: `Le Pokédex est un projet personnel qui a évolué bien au-delà de sa version initiale. L'objectif était de créer une application web complète permettant d'explorer les 1025 Pokémon avec une expérience utilisateur riche : recherche avancée, filtres combinables, comparaison, favoris et une interface bilingue FR/EN. Le projet dispose désormais de son propre backend Express.js avec MongoDB Atlas pour stocker et servir les données Pokémon, complété par la PokéAPI pour les sprites et statistiques.`,
 
-  problematique: "Comment concevoir une application full-stack Pokémon performante et maintenable, avec des fonctionnalités avancées (filtres combinables, comparaison, efficacités de types, admin CRUD) tout en assurant une expérience fluide sur 1025 entrées et un déploiement stable sur des services cloud distincts ?",
-
   defis: [
     {
       titre: "Architecture full-stack et déploiement multi-services",

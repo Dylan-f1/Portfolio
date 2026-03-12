@@ -13,8 +13,6 @@ export const geeki = {
 
   contexte: `Geeki est né d'une passion pour les jeux vidéo et du besoin de créer une plateforme centralisée où les gamers peuvent trouver des informations détaillées sur leurs jeux préférés. Le projet vise à créer une communauté autour du gaming avec des guides complets, des analyses de personnages.`,
 
-  problematique: "Comment créer une expérience utilisateur fluide et engageante pour une plateforme gaming tout en gérant une grande quantité de données et en maintenant des performances optimales ?",
-
   defis: [
     {
       titre: "Cohésion d'équipe",

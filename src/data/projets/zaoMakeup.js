@@ -25,8 +25,6 @@ export const zaoMakeup = {
 
   contexte: `ZAO Makeup est une marque de cosmétiques bio rechargeable. Dans le cadre de mon stage chez Sylnux, j'ai été chargé de moderniser leur système de paiement en ligne en migrant d'une solution JavaScript vanilla vers React avec Tailwind CSS, tout en maintenant 100% de fidélité au design existant.`,
 
-  problematique: "Comment moderniser un système de checkout critique pour l'entreprise tout en garantissant une parfaite fidélité au design existant, en intégrant trois solutions de paiement différentes et en assurant une qualité zéro défaut ?",
-
   defis: [
     {
       titre: "Fidélité du design",
@@ -62,8 +60,6 @@ export const zaoMakeup = {
       "100% de fidélité visuelle au design",
       "3 méthodes de paiement intégrées",
       "Suite de 10 tests E2E Cypress",
-      "Temps de chargement réduit de 30%",
-      "0 bug critique en production",
       "Code maintenance améliorée (composants réutilisables)"
     ],
     impact: "Checkout modernisé et robuste qui sert désormais de base pour d'autres projets de l'entreprise. Expérience utilisateur fluide maintenue tout en bénéficiant d'un code plus maintenable."
