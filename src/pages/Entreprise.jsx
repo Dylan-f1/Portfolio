@@ -72,61 +72,44 @@ const Entreprise = () => {
                         <div className="experience-card highlight-card">
                             <div className="experience-ribbon">En cours</div>
                             <div className="experience-header">
-                                <h4 className="company-name"><IconBuilding />Sylnux</h4>
-                                <h5 className="position-title">Alternant Développeur Web & Mobile</h5>
+                                <h4 className="company-name"><IconBuilding />Mon entreprise : Sylnux</h4>
                                 <p className="duration"><IconCalendar />Octobre 2025 - Juin 2026</p>
                                 <p className="location"><IconPin />Lyon, France</p>
                             </div>
                             <div className="experience-description">
                                 <p className="mission-intro">
-                                    <strong>Contexte :</strong> Sylnux est une petite agence web sous-traitante
-                                    spécialisée dans le développement d'e-commerces pour des marques de cosmétiques
-                                    bio, notamment <strong>ZAO Makeup</strong> et <strong>Lamazuna</strong>.
-                                    J'interviens en autonomie sur des projets clients réels, de la migration
-                                    technologique aux tests de qualité.
+                                    <strong>Sylnux</strong>, une petite agence web spécialisée dans le développement de sites e-commerce.
                                 </p>
+                                <p className="mission-intro">
+                                    L'entreprise travaille principalement en <strong>sous-traitance</strong> pour des
+                                    marques, notamment dans le domaine des cosmétiques bio, comme{' '}
+                                    <strong>ZAO Makeup</strong> ou <strong>Lamazuna</strong>.
+                                </p>
+
                                 <div className="missions-detail">
-                                    <h6>Missions principales :</h6>
+                                    <h6><IconUsers />J'ai été recruté pour apporter un soutien sur le développement front-end moderne, notamment sur :</h6>
                                     <ul>
-                                        <li>
-                                            <strong>Refonte du système de checkout ZAO Makeup</strong> — Migration
-                                            de JavaScript vanilla vers React + Tailwind CSS, avec reproduction
-                                            pixel-perfect du design existant
-                                        </li>
-                                        <li>
-                                            <strong>Migration du site Lamazuna</strong> — Refonte complète vers
-                                            Next.js / TypeScript, intégration du checkout ZAO
-                                        </li>
-                                        <li>
-                                            <strong>Tests E2E avec Cypress</strong> — Mise en place d'une suite
-                                            de 10+ tests pour garantir la qualité du tunnel de paiement
-                                        </li>
-                                        <li>
-                                            <strong>Optimisation des performances</strong> — Amélioration des temps
-                                            de chargement et du SEO des sites clients
-                                        </li>
+                                        <li><IconCheck />React</li>
+                                        <li><IconCheck />Next.js</li>
+                                        <li><IconCheck />TypeScript</li>
+                                        <li><IconCheck />La mise en place de tests automatisés</li>
                                     </ul>
                                 </div>
-                                <div className="accomplishments">
-                                    <h6>Réalisations :</h6>
+
+                                <div className="missions-detail">
+                                    <h6><IconLaptop />Dans mon travail quotidien, j'interviens principalement sur :</h6>
                                     <ul>
-                                        <li><IconCheck />Code TypeScript 100% type-safe</li>
-                                        <li><IconCheck />Réutilisation efficace de composants entre projets</li>
-                                        <li><IconCheck />100% de fidélité visuelle au design original</li>
-                                        <li><IconCheck />Suite de 10+ tests E2E Cypress</li>
+                                        <li><IconCheck />La modernisation d'interfaces e-commerce</li>
+                                        <li><IconCheck />La migration de technologies anciennes vers des frameworks modernes</li>
+                                        <li><IconCheck />L'amélioration de la qualité du code grâce aux tests automatisés</li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div className="skills-section">
-                                <h6>Technologies & Compétences :</h6>
-                                <div className="skills-list">
-                                    <span className="skill-tag">Next.js</span>
-                                    <span className="skill-tag">TypeScript</span>
-                                    <span className="skill-tag">React</span>
-                                    <span className="skill-tag">Tailwind CSS</span>
-                                    <span className="skill-tag">Cypress</span>
-                                    <span className="skill-tag">Gitlab</span>
-                                </div>
+
+                                <p className="mission-intro">
+                                    <IconBook />Cette expérience est très enrichissante car je travaille sur de{' '}
+                                    <strong>vrais projets clients</strong> avec des contraintes réelles de qualité
+                                    et de délais.
+                                </p>
                             </div>
                         </div>
                     </div>

@@ -18,9 +18,9 @@ const Home = () => {
                 <img src="/profile-photo.png" alt="Dylan Fernandes" />
               </div>
               <div className="profile-info">
-                <span className="profile-badge">Apprenti BTS SIO</span>
+                <span className="profile-badge">Alternant en BTS SIO</span>
                 <h1 className="profile-name">Dylan Fernandes</h1>
-                <p className="profile-role">Étudiant en BTS SIO SLAM à Lyon, Apprenti chez Sylnux</p>
+                <p className="profile-role">Étudiant en BTS SIO SLAM à Lyon, Alternant chez Sylnux</p>
               </div>
             </div>
           </div>
