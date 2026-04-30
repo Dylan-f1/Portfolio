@@ -129,15 +129,14 @@ const ProjetDetail = () => {
           </div>
         </header>
 
-        {/* Points clés pour l'oral */}
+        {/* Mots-clés */}
         {projet.filRouge && projet.filRouge.points && (
           <section className="projet-section points-cles-section">
-            <h2><IconTarget />Points clés pour l'oral</h2>
-            <ul className="points-cles-list">
-              {projet.filRouge.points.map((point, index) => (
-                <li key={index}>{point}</li>
+            <div className="mots-cles-tags">
+              {projet.filRouge.points.map((mot, index) => (
+                <span key={index} className="mot-cle-tag">{mot}</span>
               ))}
-            </ul>
+            </div>
           </section>
         )}
 

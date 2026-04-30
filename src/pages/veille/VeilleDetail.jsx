@@ -150,15 +150,14 @@ const VeilleDetail = () => {
           </div>
         </header>
 
-        {/* Points clés pour l'oral */}
+        {/* Mots-clés */}
         {article.pointsClesOral && article.pointsClesOral.length > 0 && (
           <section className="veille-section points-cles-section">
-            <h2><IconTarget />Points clés pour l'oral</h2>
-            <ul className="points-cles-list">
-              {article.pointsClesOral.map((point, index) => (
-                <li key={index}>{point}</li>
+            <div className="mots-cles-tags">
+              {article.pointsClesOral.map((mot, index) => (
+                <span key={index} className="mot-cle-tag">{mot}</span>
               ))}
-            </ul>
+            </div>
           </section>
         )}
 
