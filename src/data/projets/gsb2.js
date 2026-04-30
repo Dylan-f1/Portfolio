@@ -9,6 +9,12 @@ export const gsb2 = {
   technologies: ["C#", ".NET Framework", "Windows Forms", "MySQL"],
   courteDescription: "Application de bureau pour la gestion complète des patients, médicaments et prescriptions avec système de rôles (Docteur/Admin)",
 
+  filRouge: {
+    points: [
+      "C#", ".NET Framework", "Windows Forms", "MySQL", "Pattern DAO",
+    ],
+  },
+
   conclusionOrale: "GSB 2 est mon projet le plus complet en C# et démontre ma maîtrise de l'architecture en trois couches (Forms/Models/DAO). J'ai implémenté un système de rôles et permissions robuste avec gestion des relations N-N en base de données MySQL. La gestion de données médicales (patients, prescriptions, médicaments) m'a imposé une réflexion RGPD concrète : ces données appartiennent à la catégorie spéciale de l'article 9, ce qui a guidé chaque décision architecturale — contrôle d'accès strict, prévention des injections SQL (OWASP A03), minimisation des données et traçabilité. Ce projet illustre ma capacité à concevoir des systèmes desktop sécurisés et conformes pour des données sensibles à fort enjeu.",
 
   contexte: `GSB 2 est une application de gestion médicale développée pour répondre aux besoins des professionnels de santé. Le projet vise à centraliser la gestion des patients, du catalogue de médicaments et des prescriptions dans une interface desktop sécurisée avec contrôle d'accès basé sur les rôles.`,

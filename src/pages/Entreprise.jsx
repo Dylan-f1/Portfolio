@@ -78,12 +78,14 @@ const Entreprise = () => {
                             </div>
                             <div className="experience-description">
                                 <p className="mission-intro">
-                                    <strong>Sylnux</strong>, une petite agence web spécialisée dans le développement de sites e-commerce.
+                                    <strong>Sylnux</strong> est une petite entreprise web <strong>sous-traitante</strong>, spécialisée
+                                    dans le développement web et d'e-commerces pour des marques de cosmétiques bio, notamment{' '}
+                                    <strong>ZAO Makeup</strong> et <strong>Lamazuna</strong>.
                                 </p>
                                 <p className="mission-intro">
-                                    L'entreprise travaille principalement en <strong>sous-traitance</strong> pour des
-                                    marques, notamment dans le domaine des cosmétiques bio, comme{' '}
-                                    <strong>ZAO Makeup</strong> ou <strong>Lamazuna</strong>.
+                                    C'est une petite structure composée uniquement de mon patron et de moi-même.
+                                    Mon patron est spécialisé dans le <strong>backend</strong>, et moi dans le{' '}
+                                    <strong>développement front-end</strong>.
                                 </p>
 
                                 <div className="missions-detail">

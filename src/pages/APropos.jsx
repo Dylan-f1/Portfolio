@@ -39,7 +39,7 @@ const Competences = () => {
           </button>
         </div>
 
-        {/* Affichage du PDF */}
+        {/* Affichage du tableau de synthèse */}
         {showPDF && (
           <div className="pdf-container">
             <iframe
@@ -54,23 +54,19 @@ const Competences = () => {
         <div className="introduction-section">
           <div className="intro-content">
             <p className="intro-text">
-              Ma passion pour l'informatique est née grâce aux jeux vidéo.
-              Au départ, ce qui me fascinait n'était pas seulement d'y jouer, mais comprendre comment ils fonctionnaient,
-              et un jour de pouvoir créer mes propres projets.
+              Ma passion pour l'informatique est née des jeux vidéo. Ce qui m'attirait, ce n'était pas simplement
+              de jouer, c'était de comprendre comment ça fonctionnait — et d'en créer. Avec le temps, cette curiosité
+              s'est orientée vers le développement d'applications et le web, ce qui m'a décidé à faire un bac STI2D
+              option SIN, la partie informatique du bac technologique.
             </p>
             <p className="intro-text">
-              Avec le temps, cette curiosité s'est naturellement orientée vers le développement web et les applications.
-              C'est un domaine qui me permet d'exprimer ma créativité tout en construisant des solutions concrètes.
+              En parallèle, je suis passionné par la Formule 1. Pour moi c'est plus qu'un sport, c'est un concentré
+              de technologie, d'optimisation et d'innovation permanente — exactement la même logique que j'essaie
+              d'appliquer dans mon code : chercher constamment à faire mieux, plus propre, plus performant.
             </p>
             <p className="intro-text">
-              En parallèle, je suis aussi passionné par la Formule 1. Ce qui m'intéresse dans ce sport,
-              c'est la recherche permanente de performance, d'optimisation et d'innovation technologique.
-              C'est une logique que j'essaie aussi d'appliquer dans mon travail : améliorer constamment
-              mon code pour qu'il soit plus propre, plus clair et plus performant.
-            </p>
-            <p className="intro-text">
-              Ces deux passions ont un point commun : la technologie au service de la performance,
-              ce qui m'a naturellement conduit vers le BTS SIO option SLAM.
+              Ces deux passions ont un point commun : la technologie au service de la performance. C'est ce qui m'a
+              conduit vers le BTS SIO option SLAM.
             </p>
           </div>
         </div>
@@ -110,14 +106,14 @@ const Competences = () => {
           <div className="pdf-container">
             <div className="cv-image-container">
               <img
-                src="/CV-Dylan-Fernandes.png"
+                src="/CV-DylanFernandes.png"
                 alt="CV de Dylan Fernandes"
                 className="cv-image"
               />
             </div>
             <div className="cv-download">
               <a
-                href="/CV-Dylan-Fernandes.pdf"
+                href="/CV-DylanFernandes.pdf"
                 download
                 className="download-button"
               >

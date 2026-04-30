@@ -9,6 +9,13 @@ export const lamazuna = {
   technologies: ["Next.js", "TypeScript", "Tailwind CSS", "GraphQL", "Saleor", "Mapbox GL JS"],
   courteDescription: "Refonte totale d'un site e-commerce éco-responsable avec migration vers Next.js App Router, TypeScript strict et Saleor comme backend e-commerce headless",
 
+  filRouge: {
+    points: [
+      "Next.js 15", "TypeScript strict", "GraphQL", "Saleor", "Tailwind CSS",
+      "Mapbox GL JS",
+    ],
+  },
+
   conclusionOrale: "Lamazuna est mon projet le plus ambitieux et complexe techniquement. La migration complète vers Next.js App Router avec TypeScript strict représente une montée en compétences significative. J'ai dû maîtriser les concepts avancés de Server/Client Components, le SSR, et typer l'ensemble du code sans erreur de compilation. Le score Lighthouse supérieur à 90 démontre mon attention à la performance et au SEO. Ce projet prouve ma capacité à adopter rapidement des technologies de pointe et à les appliquer dans un contexte e-commerce professionnel exigeant.",
 
   contexte: `Lamazuna est une marque pionnière dans les cosmétiques solides et zéro déchet. En alternance chez Sylnux, j'ai été chargé de la refonte complète de leur site e-commerce avec Next.js App Router et TypeScript, en s'appuyant sur Saleor comme backend e-commerce headless et GraphQL pour la communication entre couches. Le design de certaines sections s'inspire du checkout ZAO développé en amont.`,

@@ -10,20 +10,15 @@ export const zaoMakeup = {
   courteDescription: "Refonte complète du système de checkout d'une plateforme e-commerce de cosmétiques bio avec intégration multi-paiements",
 
   filRouge: {
-    titre: "Points clés pour l'oral — Partie 3 : Projet professionnel",
     points: [
-      "Contexte : ZAO Makeup, cosmétiques bio → ancien checkout en JavaScript vanilla, difficile à maintenir et faire évoluer",
-      "Objectif : migrer vers React en conservant exactement le même design pour l'utilisateur",
-      "Technologies utilisées : React + Tailwind CSS (interface) + Cypress (tests E2E automatisés)",
-      "Ma contribution : migration du style vers Tailwind CSS, reproduction pixel-perfect, tests E2E avec Cypress",
-      "Difficultés : Cypress (technologie nouvelle → timeouts, synchro, débogage console) + pixel-perfect (précision au pixel près)",
-      "Résultats : code plus moderne et maintenable, tunnel de paiement sécurisé par tests, moins de risques d'erreurs pour les développeurs",
+      "Refonte checkout", "Migration JS → React", "Tailwind CSS", "Cypress",
+      "Tests E2E", "Pixel-perfect",
     ],
   },
 
-  conclusionOrale: "ZAO Makeup représente mon premier projet professionnel majeur avec des contraintes strictes de fidélité design. La migration de JavaScript vanilla vers React avec Tailwind CSS, tout en maintenant une reproduction pixel-perfect, a été un défi technique important. La mise en place d'une suite de 10 tests E2E Cypress a assuré une qualité zéro défaut en production. Ce projet a été tellement réussi qu'il sert maintenant de base technique réutilisée pour d'autres clients de Sylnux, démontrant la qualité et la maintenabilité de mon code.",
+  conclusionOrale: "ZAO Makeup est mon premier projet professionnel majeur. Grâce à cette migration, le code est plus moderne et plus maintenable, l'interface est plus performante, et le tunnel de paiement est sécurisé par des tests automatisés — ce qui permet aux développeurs de modifier le site avec beaucoup moins de risques d'erreurs. Ce projet m'a permis de développer ma rigueur dans un environnement professionnel, ma compréhension des besoins clients, et mon expérience sur des technologies modernes utilisées en production. Il sert aujourd'hui de base technique réutilisée pour d'autres clients de Sylnux.",
 
-  contexte: `ZAO Makeup est une marque de cosmétiques bio rechargeable. Dans le cadre de mon stage chez Sylnux, j'ai été chargé de moderniser leur système de paiement en ligne en migrant d'une solution JavaScript vanilla vers React avec Tailwind CSS, tout en maintenant 100% de fidélité au design existant.`,
+  contexte: `ZAO Makeup est une marque de cosmétiques bio rechargeable. Le site e-commerce utilisait un ancien système de checkout développé en JavaScript vanilla, qui devenait difficile à maintenir et à faire évoluer. Dans le cadre de mon alternance chez Sylnux, j'ai été chargé de moderniser cette partie du site en migrant vers React avec Tailwind CSS, tout en conservant exactement le même design pour l'utilisateur.`,
 
   defis: [
     {
@@ -38,8 +33,8 @@ export const zaoMakeup = {
     },
     {
       titre: "Tests E2E avec Cypress",
-      description: "Mise en place complète de la suite de tests E2E, ce qui était nouveau pour moi. Débogage des tests flaky et gestion des timeouts.",
-      solution: "Apprentissage approfondi de Cypress, utilisation de fixtures pour mocker les paiements, mise en place de data-testid sur tous les éléments clés. Configuration de retry logic pour la stabilité."
+      description: "La mise en place d'une suite de tests E2E était nouvelle pour moi. Ces tests simulent un utilisateur réel : ajout d'un produit au panier, passage par le tunnel de paiement, vérification que chaque étape fonctionne correctement.",
+      solution: "J'ai progressé en lisant la documentation officielle de Cypress et en analysant les erreurs dans la console. Utilisation de fixtures pour mocker les paiements, data-testid sur tous les éléments clés et retry logic pour la stabilité des tests."
     }
   ],
 
@@ -62,7 +57,7 @@ export const zaoMakeup = {
       "Suite de 10 tests E2E Cypress",
       "Code maintenance améliorée (composants réutilisables)"
     ],
-    impact: "Checkout modernisé et robuste qui sert désormais de base pour d'autres projets de l'entreprise. Expérience utilisateur fluide maintenue tout en bénéficiant d'un code plus maintenable."
+    impact: "Code plus moderne et plus maintenable, interface plus performante, tunnel de paiement sécurisé par tests automatisés. Les développeurs peuvent désormais modifier le site avec beaucoup moins de risques d'erreurs. Le projet sert de base technique réutilisée pour d'autres clients de Sylnux."
   },
 
   apprentissages: [

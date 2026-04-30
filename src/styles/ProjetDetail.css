@@ -1,34 +1,27 @@
 /* ProjetDetail.css - Page détaillée projet */
 
-/* Points clés pour l'oral */
-.points-cles-section h2 {
-  color: var(--alpine-pink) !important;
-}
-
-.points-cles-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* Mots-clés */
+.mots-cles-tags {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding: 0.5rem 0;
 }
 
-.points-cles-list li {
-  color: #e0e0e0;
-  font-size: 1rem;
-  line-height: 1.7;
-  padding-left: 22px;
-  position: relative;
-}
-
-.points-cles-list li::before {
-  content: "▸";
-  position: absolute;
-  left: 0;
+.mot-cle-tag {
+  background: rgba(255, 105, 180, 0.12);
   color: var(--alpine-pink);
-  font-size: 1rem;
-  top: 2px;
+  padding: 0.35rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 105, 180, 0.35);
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.mot-cle-tag:hover {
+  background: rgba(255, 105, 180, 0.22);
+  border-color: rgba(255, 105, 180, 0.6);
 }
 
 /* Conclusion Orale Section */
