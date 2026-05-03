@@ -13,6 +13,7 @@ export const juliaApp = {
     points: [
       "React Native", "Expo", "Node.js", "MongoDB", "Gemini IA",
       "Magic link", "Cross-platform",
+      "B2 – Répondre aux demandes d'évolution", "B3 – Développer la présence en ligne", "B4 – Travailler en mode projet", "B5 – Mettre à disposition un service", "B6 – Développement professionnel",
     ],
   },
 

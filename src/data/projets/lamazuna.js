@@ -13,6 +13,7 @@ export const lamazuna = {
     points: [
       "Next.js 15", "TypeScript strict", "GraphQL", "Saleor", "Tailwind CSS",
       "Mapbox GL JS",
+      "B2 – Répondre aux demandes d'évolution", "B3 – Développer la présence en ligne", "B4 – Travailler en mode projet", "B5 – Mettre à disposition un service", "B6 – Développement professionnel",
     ],
   },
 

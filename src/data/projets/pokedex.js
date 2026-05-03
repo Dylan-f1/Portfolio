@@ -13,6 +13,7 @@ export const pokedex = {
     points: [
       "Full-stack", "React", "Node.js", "MongoDB", "JWT", "REST API",
       "PokéAPI", "Recherche & filtres", "Responsive", "Autonomie",
+      "B3 – Développer la présence en ligne", "B4 – Travailler en mode projet", "B5 – Mettre à disposition un service", "B6 – Développement professionnel",
     ],
   },
 
