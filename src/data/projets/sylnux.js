@@ -13,6 +13,7 @@ export const sylnux = {
     points: [
       "Next.js 15", "TypeScript", "Prisma ORM", "PostgreSQL",
       "NextAuth.js", "i18n FR/EN", "Backoffice",
+      "B1 – Gérer le patrimoine informatique", "B2 – Répondre aux demandes d'évolution", "B3 – Développer la présence en ligne", "B4 – Travailler en mode projet", "B5 – Mettre à disposition un service", "B6 – Développement professionnel",
     ],
   },
 

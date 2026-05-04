@@ -12,6 +12,7 @@ export const gsb2 = {
   filRouge: {
     points: [
       "C#", ".NET Framework", "Windows Forms", "MySQL", "Pattern DAO",
+      "B1 – Gérer le patrimoine informatique", "B2 – Répondre aux demandes d'évolution", "B4 – Travailler en mode projet", "B5 – Mettre à disposition un service", "B6 – Développement professionnel",
     ],
   },
 

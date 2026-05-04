@@ -13,6 +13,7 @@ export const f1Site = {
     points: [
       "React", "JavaScript", "CSS3", "API F1",
       "Pilotes & Écuries", "Circuits", "En cours",
+      "B3 – Développer la présence en ligne", "B4 – Travailler en mode projet", "B6 – Développement professionnel",
     ],
   },
 

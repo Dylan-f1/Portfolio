@@ -13,6 +13,7 @@ export const geeki = {
     points: [
       "React", "JavaScript", "API REST", "CSS Modules",
       "Pagination", "Composants réutilisables",
+      "B3 – Développer la présence en ligne", "B4 – Travailler en mode projet", "B6 – Développement professionnel",
     ],
   },
 
