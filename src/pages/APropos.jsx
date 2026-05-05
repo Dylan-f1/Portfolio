@@ -54,22 +54,13 @@ const Competences = () => {
         <div className="introduction-section">
           <div className="intro-content">
             <p className="intro-text">
-              Ma passion pour l'informatique est née des jeux vidéo. Ce qui m'attirait,
-              ce n'était pas simplement de jouer — c'était de comprendre comment ça fonctionnait derrière l'écran,
-              et un jour d'en créer moi-même. J'ai rapidement orienté cette curiosité vers le développement web
-              et les applications : un domaine où je peux exprimer ma créativité tout en construisant
-              des solutions concrètes qui ont un vrai impact.
+              Ma passion pour l'informatique est née des jeux vidéo. Ce qui m'attirait, ce n'était pas simplement de jouer, c'était de comprendre comment ça fonctionnait et d'en créer. Avec le temps, cette curiosité s'est orientée vers le développement d'applications et le web, ce qui m'a décidé à faire un bac STI2D option SIN.
             </p>
             <p className="intro-text">
-              Je suis aussi passionné par la Formule 1. Plus qu'un sport, c'est un concentré de technologie,
-              d'optimisation et d'innovation permanente — chaque dixième de seconde compte, chaque détail est
-              poussé à l'extrême. C'est exactement la même logique que j'applique dans mon code :
-              chercher constamment à faire mieux, plus propre, plus performant.
+              En parallèle, je suis passionné par la Formule 1. Pour moi c'est plus qu'un sport, c'est un concentré de technologie, d'optimisation et d'innovation permanente exactement la même logique que j'essaie d'appliquer dans mon code : chercher constamment à faire mieux, plus propre, plus performant.
             </p>
             <p className="intro-text">
-              Ces deux passions ont un point commun : la technologie au service de la performance.
-              C'est ce fil rouge qui m'a naturellement conduit vers le BTS SIO option SLAM —
-              pour transformer cette curiosité en un vrai savoir-faire professionnel.
+              Ces deux passions ont un point commun : la technologie au service de la performance. C'est ce qui m'a conduit vers le BTS SIO option SLAM.
             </p>
           </div>
         </div>
