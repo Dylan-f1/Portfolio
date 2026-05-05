@@ -9,11 +9,17 @@ export const f1Site = {
   technologies: ["React", "JavaScript", "CSS3"],
   courteDescription: "Site de la F1 avec informations sur chaque pilote, écurie et circuit (en cours de réflexion)",
 
+  filRouge: {
+    points: [
+      "React", "JavaScript", "CSS3", "API F1",
+      "Pilotes & Écuries", "Circuits", "En cours",
+      "B3 – Développer la présence en ligne", "B4 – Travailler en mode projet", "B6 – Développement professionnel",
+    ],
+  },
+
   conclusionOrale: "Le site F1 est mon projet passion actuel, encore en phase de conception. Il combine ma passion pour la Formule 1 avec mes compétences en développement web. Ce projet me permettra d'appliquer tout ce que j'ai appris sur les précédents projets : architecture React optimale, design moderne, gestion de données complexes avec relations entre pilotes, écuries et circuits. C'est un projet ambitieux qui démontrera ma capacité à mener un projet complet de la conception à la réalisation.",
 
   contexte: `Projet en cours de conception visant à créer un site complet sur l'univers de la Formule 1. L'objectif est de centraliser toutes les informations sur les pilotes, écuries, circuits et résultats de course.`,
-
-  problematique: "Comment structurer et présenter efficacement une grande quantité de données F1 tout en créant une expérience utilisateur engageante pour les fans de sport automobile ?",
 
   defis: [
     {

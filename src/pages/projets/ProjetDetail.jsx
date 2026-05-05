@@ -129,6 +129,17 @@ const ProjetDetail = () => {
           </div>
         </header>
 
+        {/* Mots-clés */}
+        {projet.filRouge && projet.filRouge.points && (
+          <section className="projet-section points-cles-section">
+            <div className="mots-cles-tags">
+              {projet.filRouge.points.map((mot, index) => (
+                <span key={index} className="mot-cle-tag">{mot}</span>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* Conclusion Orale */}
         {projet.conclusionOrale && (
           <section className="conclusion-orale-section">

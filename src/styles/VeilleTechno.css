@@ -209,6 +209,31 @@
   font-weight: 600;
 }
 
+.veille-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.veille-bullets li {
+  color: #e0e0e0;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  padding-left: 22px;
+  position: relative;
+}
+
+.veille-bullets li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--alpine-blue);
+  font-size: 1rem;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .content {

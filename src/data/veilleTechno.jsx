@@ -9,7 +9,12 @@ export const veilleTechnoData = {
     image: "/f1-telemetrie.jpg",
     resumeCourt: "Comment la FIA utilise RaceWatch, une plateforme intégrant 300+ capteurs par voiture et l'IA, pour prendre des décisions en temps réel pendant les Grands Prix.",
 
-    contexte: `En Formule 1, chaque dixième de seconde compte. Mais derrière la spectacle des courses se cache une infrastructure technologique colossale : des centaines de capteurs, des flux de données en temps réel, et des algorithmes d'intelligence artificielle qui analysent tout à la milliseconde. En 2026, la FIA a levé le voile sur RaceWatch, son "cerveau numérique" développé avec Catapult, qui révolutionne la gestion des courses et la prise de décision arbitrale.`,
+    pointsClesOral: [
+      "RaceWatch", "FIA", "300+ capteurs", "IA temps réel",
+      "95% automatisé", "Décision < 1s", "Streaming données", "Amélioration continue",
+    ],
+
+    contexte: `En Formule 1, chaque dixième de seconde compte. Derrière le spectacle des courses se cache une infrastructure technologique colossale : des centaines de capteurs, des flux de données en temps réel, et des algorithmes d'intelligence artificielle qui analysent tout à la milliseconde. En 2026, la FIA a levé le voile sur RaceWatch, son "cerveau numérique" développé avec Catapult, qui révolutionne la prise de décision arbitrale. Ce qui m'a frappé : l'architecture de RaceWatch, c'est exactement ce qu'on apprend en développement — streaming de données, traitement IA, interface de décision. Sauf que là, la latence doit être de quelques millisecondes et les erreurs peuvent changer l'issue d'un championnat.`,
 
     technologiesAnalysees: [
       {
@@ -148,7 +153,12 @@ Ma conclusion : La F1 est le meilleur laboratoire technologique automobile du mo
     image: "/ota-voiture.jpg",
     resumeCourt: "Tesla, BMW, Renault... Les constructeurs automobiles déploient désormais des mises à jour logicielles à distance sur leurs véhicules, transformant la voiture en produit en évolution permanente.",
 
-    contexte: `Il y a 15 ans, une voiture avait un moteur, une carrosserie, et c'était tout. Aujourd'hui, une Tesla Model 3 tourne sur plus de 100 millions de lignes de code. BMW a déployé plus de 10 millions de mises à jour OTA. Renault intègre un système Android Automotive dans ses derniers modèles. La voiture est devenue un logiciel roulant — avec toutes les opportunités et tous les risques que ça implique.`,
+    pointsClesOral: [
+      "OTA", "SOTA", "FOTA", "Tesla", "BMW",
+      "CI/CD", "Déploiement continu", "+10M mises à jour", "Logiciel embarqué",
+    ],
+
+    contexte: `Il y a 15 ans, une voiture avait un moteur, une carrosserie, et c'était tout. Aujourd'hui, une Tesla Model 3 tourne sur plus de 100 millions de lignes de code. BMW a déployé plus de 10 millions de mises à jour OTA. Renault intègre Android Automotive dans ses derniers modèles. La voiture est devenue un logiciel roulant. Pour un développeur, c'est du CI/CD appliqué à l'automobile — avec des contraintes de sécurité fonctionnelle radicalement différentes : une mise à jour du système de freinage mal poussée, c'est potentiellement fatal.`,
 
     technologiesAnalysees: [
       {
@@ -302,7 +312,12 @@ Ma conclusion : L'OTA automobile est inévitable et globalement positive — à 
     image: "/adas-voiture.jpg",
     resumeCourt: "Depuis juillet 2024, le règlement GSR2 impose les systèmes ADAS (freinage d'urgence, maintien de voie, adaptation de vitesse...) sur tous les véhicules neufs en Europe. Ce que la technologie doit maintenant faire par la loi.",
 
-    contexte: `Le 7 juillet 2024 marque un tournant dans l'histoire de la sécurité automobile en Europe. Le règlement général sur la sécurité 2 (GSR2) est entré pleinement en vigueur, rendant obligatoires une dizaine de systèmes ADAS (Advanced Driver Assistance Systems) sur tous les véhicules neufs. Ce qui était un argument marketing premium il y a 5 ans devient désormais une obligation légale — preuve que la technologie d'aide à la conduite est mature et validée.`,
+    pointsClesOral: [
+      "ADAS", "GSR2", "AEB", "ISA", "LiDAR",
+      "Fusion capteurs", "IA embarquée", "Valeo", "Mobileye", "Obligatoire UE — juill. 2024",
+    ],
+
+    contexte: `Le 7 juillet 2024 marque un tournant dans la sécurité automobile en Europe. Le règlement GSR2 est entré pleinement en vigueur, rendant obligatoires une dizaine de systèmes ADAS sur tous les véhicules neufs. Ce qui était un argument marketing premium il y a 5 ans devient une obligation légale. Ces systèmes reposent sur la fusion de capteurs (caméras, LiDAR, radars) et des algorithmes d'IA embarquée temps réel. Ce qui m'a le plus intéressé : le LiDAR Valeo Scala 3 permet la conduite de niveau 3 — c'est-à-dire que la responsabilité juridique passe du conducteur au constructeur. La loi qui suit la technologie.`,
 
     technologiesAnalysees: [
       {
