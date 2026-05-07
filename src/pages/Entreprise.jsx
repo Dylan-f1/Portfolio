@@ -94,7 +94,7 @@ const Entreprise = () => {
                                         <li><IconCheck />React</li>
                                         <li><IconCheck />Next.js</li>
                                         <li><IconCheck />TypeScript</li>
-                                        <li><IconCheck />La mise en place de tests automatisés</li>
+                                        <li><IconCheck />La mise en place de tests E2E</li>
                                     </ul>
                                 </div>
 
@@ -103,7 +103,7 @@ const Entreprise = () => {
                                     <ul>
                                         <li><IconCheck />La modernisation d'interfaces e-commerce</li>
                                         <li><IconCheck />La migration de technologies anciennes vers des frameworks modernes</li>
-                                        <li><IconCheck />L'amélioration de la qualité du code grâce aux tests automatisés</li>
+                                        <li><IconCheck />La mise en place de tests</li>
                                     </ul>
                                 </div>
 

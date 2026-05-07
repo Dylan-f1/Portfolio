@@ -15,7 +15,7 @@ const VeilleTechno = () => {
           <h1>Veille Technologique</h1>
           <p>Automobile & Formule 1 — la technologie au service de la performance</p>
           <div className="veille-source">
-            <p>Sources : Autosport, Flotauto, Tech Drive Play, Daily.dev</p>
+            <p>Sources : Autosport, IA paramétré</p>
           </div>
         </header>
 
