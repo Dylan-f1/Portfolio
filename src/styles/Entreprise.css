@@ -9,14 +9,14 @@
 }
 
 .entreprise-main-section h2 {
+  font-family: var(--heading-font);
   position: relative;
   z-index: 2;
   text-align: center;
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
   font-weight: 700;
   margin-bottom: 3rem;
-  color: var(--alpine-blue);
-  text-shadow: 0 0 20px rgba(0, 144, 255, 0.5);
+  color: var(--text-primary);
 }
 
 .entreprise-container {
@@ -87,13 +87,12 @@
 
 /* Experience Card */
 .experience-card {
-  background: rgba(3, 3, 3, 0.6);
-  border-radius: clamp(10px, 2vw, 15px);
+  background: var(--surface);
+  border-radius: clamp(10px, 2vw, 14px);
   padding: clamp(2rem, 4vw, 3rem) clamp(1.5rem, 3vw, 2.5rem);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(0, 144, 255, 0.3);
-  transition: all 0.3s ease;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--border-subtle);
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
   position: relative;
   overflow: hidden;
   animation: fadeInUp 0.8s ease forwards;
@@ -127,15 +126,15 @@
 }
 
 .experience-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 25px 50px rgba(0, 144, 255, 0.4);
-  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lift);
+  background: var(--surface-hover);
+  border-color: var(--border-accent);
 }
 
-/* Highlight card (en cours) */
+/* Highlight card */
 .highlight-card {
-  border: 2px solid rgba(255, 20, 147, 0.5);
-  background: linear-gradient(135deg, rgba(0, 144, 255, 0.1), rgba(255, 20, 147, 0.05));
+  border: 1px solid rgba(255, 20, 147, 0.35);
 }
 
 .experience-ribbon {
@@ -148,7 +147,6 @@
   font-size: 0.8rem;
   font-weight: 600;
   transform: rotate(45deg);
-  box-shadow: 0 4px 10px rgba(0, 144, 255, 0.3);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -159,11 +157,11 @@
 }
 
 .company-name {
+  font-family: var(--heading-font);
   font-size: clamp(1.5rem, 3.5vw, 2rem);
   font-weight: 700;
-  color: var(--alpine-pink);
+  color: var(--text-primary);
   margin-bottom: 0.5rem;
-  text-shadow: 0 0 15px rgba(255, 20, 147, 0.4);
 }
 
 .position-title {
@@ -174,20 +172,20 @@
 }
 
 .duration {
-  font-size: clamp(0.95rem, 2vw, 1.1rem);
-  color: #b0b0b0;
-  font-style: italic;
+  font-family: var(--mono-font);
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  color: var(--text-secondary);
   margin-bottom: 0.5rem;
 }
 
 .location {
   font-size: clamp(0.95rem, 2vw, 1.1rem);
-  color: #95a5a6;
+  color: var(--text-secondary);
 }
 
 /* Description */
 .experience-description {
-  color: #e0e0e0;
+  color: var(--text-secondary);
   line-height: 1.6;
   margin-bottom: 1.5rem;
   font-size: clamp(0.95rem, 2vw, 1.05rem);
@@ -196,14 +194,14 @@
 .mission-intro {
   margin-bottom: 1.5rem;
   padding: 1.2rem;
-  background: rgba(0, 144, 255, 0.1);
+  background: var(--surface-hover);
   border-radius: 8px;
   border-left: 3px solid var(--alpine-blue);
 }
 
 .missions-detail h6,
 .accomplishments h6 {
-  color: var(--alpine-pink);
+  color: var(--text-primary);
   font-size: clamp(1.1rem, 2.5vw, 1.2rem);
   margin-bottom: 1rem;
   margin-top: 1.5rem;
