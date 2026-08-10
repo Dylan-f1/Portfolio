@@ -3,7 +3,6 @@ import Navbar from '../components/Navbar';
 import '../styles/APropos.css';
 
 const Competences = () => {
-  const [showPDF, setShowPDF] = useState(false);
   const [showCV, setShowCV] = useState(false);
 
   const parcours = [
@@ -12,7 +11,7 @@ const Competences = () => {
       titre: "BTS SIO SLAM",
       etablissement: "Lyon",
       description: "Spécialisation Solutions Logicielles et Applications Métiers",
-      statut: "En cours"
+      statut: "Obtenu"
     },
     {
       annee: "2021 - 2023",
@@ -28,41 +27,6 @@ const Competences = () => {
       <Navbar />
       <section id="a-propos" className="competences-section">
         <h2 className="section-title">À Propos de Moi</h2>
-
-        {/* Bouton pour afficher/masquer le tableau de synthèse */}
-        <div className="pdf-toggle-container">
-          <button
-            className="pdf-toggle-btn"
-            onClick={() => setShowPDF(!showPDF)}
-          >
-            {showPDF ? 'Masquer' : 'Afficher'} le Tableau de Synthèse
-          </button>
-        </div>
-
-        {/* Affichage du tableau de synthèse */}
-        {showPDF && (
-          <div className="pdf-container">
-            <img
-              src="/Tableau-de-synthese.png"
-              alt="Tableau de Synthèse des Compétences BTS SIO"
-              style={{ width: '100%', borderRadius: '10px', display: 'block' }}
-            />
-            <div className="cv-download">
-              <a
-                href="/Tableau-de-synthese.pdf"
-                download
-                className="download-button"
-              >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true" style={{verticalAlign:'middle',marginRight:'8px'}}>
-                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                  <polyline points="7 10 12 15 17 10"/>
-                  <line x1="12" y1="15" x2="12" y2="3"/>
-                </svg>
-                Télécharger le Tableau de Synthèse (PDF)
-              </a>
-            </div>
-          </div>
-        )}
 
         {/* Section Introduction */}
         <div className="introduction-section">
@@ -114,14 +78,14 @@ const Competences = () => {
           <div className="pdf-container">
             <div className="cv-image-container">
               <img
-                src="/CV-DylanFernandes.png"
+                src="/CV-DylanFERNANDES.png"
                 alt="CV de Dylan Fernandes"
                 className="cv-image"
               />
             </div>
             <div className="cv-download">
               <a
-                href="/CV-DylanFernandes.pdf"
+                href="/CV-DylanFERNANDES.pdf"
                 download
                 className="download-button"
               >

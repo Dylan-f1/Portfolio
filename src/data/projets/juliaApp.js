@@ -3,23 +3,13 @@ export const juliaApp = {
   type: 'personnel',
   title: "Julia App",
   subtitle: "Plateforme thérapeutique avec assistant IA 24/7",
-  image: "/julia-logo.png",
+  image: "/julia-logo.svg",
   liveUrl: "",
   githubUrl: null,
   technologies: ["React Native", "Expo", "Node.js", "MongoDB", "Google Gemini", "NativeWind", "Expo Router"],
   courteDescription: "Application thérapeutique cross-platform connectant patients et thérapeutes via un assistant IA conversationnel disponible entre les séances",
 
-  filRouge: {
-    points: [
-      "React Native", "Expo", "Node.js", "MongoDB", "Gemini IA",
-      "Magic link", "Cross-platform",
-      "B2 – Répondre aux demandes d'évolution", "B3 – Développer la présence en ligne", "B4 – Travailler en mode projet", "B5 – Mettre à disposition un service", "B6 – Développement professionnel",
-    ],
-  },
-
-  conclusionOrale: "Julia App est le projet le plus complexe architecturalement que j'ai développé, et aussi celui qui posait les enjeux de sécurité les plus critiques. Les données traitées — humeur, anxiété, sommeil, conversations thérapeutiques, situations de crise — sont des données de santé au sens de l'article 9 du RGPD. Chaque décision architecturale a été guidée par cet enjeu : consentement explicite avant toute collecte, séparation stricte des données par rôle, magic link sans mot de passe pour réduire la surface d'attaque sur l'identité numérique des patients, SecureStore pour le stockage chiffré côté mobile. L'intégration de Gemini soulève également la question du transfert de données de santé vers un prestataire tiers (Google), ce qui nécessite une base légale explicite. Ce projet démontre ma capacité à penser la cybersécurité et la protection des données dès la conception, sur une application à fort enjeu humain.",
-
-  contexte: `Julia App est une application thérapeutique qui connecte patients et thérapeutes via un assistant IA nommé Julia, disponible entre les séances. Les thérapeutes disposent d'un dashboard de suivi complet, tandis que les patients accèdent à leur interface via magic link — sans mot de passe. Le projet est développé en React Native avec Expo pour cibler à la fois le mobile et le web depuis un seul codebase.`,
+  conclusionOrale: "Julia App est une plateforme thérapeutique cross-platform (mobile et web depuis un seul codebase React Native/Expo) qui connecte patients et thérapeutes via un assistant IA conversationnel disponible entre les séances. Les patients accèdent à leur interface sans mot de passe via magic link, suivent au quotidien leur humeur, leur anxiété et leur sommeil, tandis que les thérapeutes disposent d'un dashboard de suivi complet avec upload de notes de session et détection automatique des situations de crise. Les données traitées étant des données de santé au sens de l'article 9 du RGPD, l'application impose un consentement explicite avant toute collecte, une séparation stricte des données par rôle et un stockage chiffré des tokens côté mobile.",
 
   defis: [
     {

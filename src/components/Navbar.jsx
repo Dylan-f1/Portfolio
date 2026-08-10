@@ -41,9 +41,6 @@ const Navbar = () => {
           <Link to="/projets" className="nav-link">
             PROJETS
           </Link>
-          <Link to="/veille-techno" className="nav-link">
-            VEILLE TECHNO
-          </Link>
         </nav>
 
         {/* Navigation mobile */}
@@ -56,9 +53,6 @@ const Navbar = () => {
           </Link>
           <Link to="/entreprise" className="nav-link" onClick={closeMenu}>
             ENTREPRISE
-          </Link>
-          <Link to="/veille-techno" className="nav-link" onClick={closeMenu}>
-            VEILLE TECHNO
           </Link>
         </nav>
       </div>

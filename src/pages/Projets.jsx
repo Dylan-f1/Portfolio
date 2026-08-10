@@ -13,22 +13,22 @@ const Projets = () => {
       <Navbar />
       <div className="content">
 
-                {/* Section Projets Entreprise */}
-                <header className="page-header enterprise-header">
-          <h1>Projets Entreprise</h1>
-          <p>Projets professionnels réalisés en stage et alternance</p>
+        {/* Section Projets Personnels */}
+        <header className="page-header">
+          <h1>Mes Projets Personnels</h1>
+          <p>Découvrez mes projets personnels développés par passion</p>
         </header>
-        
+
         <div className="articles-grid">
-          {projetsEntreprise.map(projet => (
-            <Link 
-              key={projet.id} 
+          {projetsPersonnels.map(projet => (
+            <Link
+              key={projet.id}
               to={`/projets/${projet.id}`}
-              className="article-card enterprise-card"
+              className={`article-card ${projet.id === 'f1Site' ? 'flagship-card' : ''}`}
             >
               <div className="card-image">
                 <img src={projet.image} alt={projet.title} />
-                <div className="enterprise-badge">Entreprise</div>
+                {projet.id === 'f1Site' && <div className="flagship-badge">Projet phare</div>}
               </div>
               <div className="card-content">
                 <h3>{projet.title}</h3>
@@ -46,31 +46,23 @@ const Projets = () => {
             </Link>
           ))}
         </div>
-        
-        {/* Transition - Complémentarité des projets */}
-        <div className="projects-transition">
-          <p>
-            Les projets en entreprise m'ont appris à travailler sous contraintes réelles — clients exigeants,
-            délais, qualité de code en production. Mes projets personnels, c'est là où je pousse mes limites
-            en totale autonomie, du choix de la stack jusqu'au déploiement.
-          </p>
-        </div>
 
-        {/* Section Projets Personnels */}
-        <header className="page-header">
-          <h1>Mes Projets Personnels</h1>
-          <p>Découvrez mes projets personnels développés par passion</p>
+        {/* Section Projets Entreprise */}
+        <header className="page-header enterprise-header">
+          <h1>Projets Entreprise</h1>
+          <p>Projets professionnels réalisés en stage et alternance</p>
         </header>
-        
+
         <div className="articles-grid">
-          {projetsPersonnels.map(projet => (
-            <Link 
-              key={projet.id} 
+          {projetsEntreprise.map(projet => (
+            <Link
+              key={projet.id}
               to={`/projets/${projet.id}`}
-              className="article-card"
+              className="article-card enterprise-card"
             >
               <div className="card-image">
                 <img src={projet.image} alt={projet.title} />
+                <div className="enterprise-badge">Entreprise</div>
               </div>
               <div className="card-content">
                 <h3>{projet.title}</h3>

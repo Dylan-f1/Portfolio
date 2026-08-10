@@ -18,9 +18,9 @@ const Home = () => {
                 <img src="/profile-photo.png" alt="Dylan Fernandes" />
               </div>
               <div className="profile-info">
-                <span className="profile-badge">Alternant en BTS SIO</span>
+                <span className="profile-badge">Développeur Full-Stack</span>
                 <h1 className="profile-name">Dylan Fernandes</h1>
-                <p className="profile-role">Étudiant en BTS SIO SLAM à Lyon, Alternant chez Sylnux</p>
+                <p className="profile-role">Titulaire du BTS SIO SLAM, passionné d'informatique sous toutes ses formes — disponible pour une alternance à Lyon.</p>
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@ const Home = () => {
           {/* Carte Mes Projets */}
           <Link to="/projets" className="section-card projects-card">
             <div className="card-preview">
-              <div className="preview-item">My Works</div>
+              <div className="preview-item">Full-Stack, F1 & E-commerce</div>
             </div>
             <div className="card-content">
               <span className="card-label">DÉCOUVRIR</span>
@@ -113,8 +113,8 @@ const Home = () => {
             </div>
           </Link>
 
-          {/* Veille Techno */}
-          <Link to="/veille-techno" className="bottom-card veille-card">
+          {/* CV */}
+          <Link to="/cv" className="bottom-card veille-card">
             <div className="card-icon-small">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
                 <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
@@ -122,8 +122,8 @@ const Home = () => {
               </svg>
             </div>
             <div className="card-content">
-              <span className="card-label">VEILLE</span>
-              <h2 className="card-title">Technologique</h2>
+              <span className="card-label">TÉLÉCHARGER</span>
+              <h2 className="card-title">Mon CV</h2>
             </div>
             <div className="card-arrow">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

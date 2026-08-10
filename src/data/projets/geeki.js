@@ -9,17 +9,7 @@ export const geeki = {
   technologies: ["React", "JavaScript", "CSS3"],
   courteDescription: "Plateforme gaming offrant une vaste collection de jeux vidéo avec guides détaillés, bestiaires de personnages et interface moderne pour passionnés",
 
-  filRouge: {
-    points: [
-      "React", "JavaScript", "API REST", "CSS Modules",
-      "Pagination", "Composants réutilisables",
-      "B3 – Développer la présence en ligne", "B4 – Travailler en mode projet", "B6 – Développement professionnel",
-    ],
-  },
-
-  conclusionOrale: "Geeki illustre mon apprentissage de l'architecture React et de la gestion d'état. Malgré les difficultés de coordination d'équipe où j'ai dû travailler principalement seul, j'ai su créer une plateforme gaming fonctionnelle avec plus de 15 jeux référencés. Le projet démontre ma capacité à maintenir la cohérence visuelle à travers des composants réutilisables et à optimiser les performances. L'évolution prévue vers une architecture par fonctionnalités montre ma compréhension de l'amélioration continue du code.",
-
-  contexte: `Geeki est né d'une passion pour les jeux vidéo et du besoin de créer une plateforme centralisée où les gamers peuvent trouver des informations détaillées sur leurs jeux préférés. Le projet vise à créer une communauté autour du gaming avec des guides complets, des analyses de personnages.`,
+  conclusionOrale: "Geeki est une plateforme gaming qui centralise plus de 15 jeux avec guides détaillés et bestiaires de personnages, dans une interface moderne pensée pour les passionnés. L'application repose sur une architecture React par composants réutilisables (Card, Header, GameDetails), avec pagination côté client et images optimisées pour rester fluide malgré le volume de contenu. Une migration vers une architecture par fonctionnalités est prévue pour faciliter l'ajout de nouveaux jeux et guides.",
 
   defis: [
     {

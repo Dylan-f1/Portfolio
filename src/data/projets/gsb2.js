@@ -9,16 +9,7 @@ export const gsb2 = {
   technologies: ["C#", ".NET Framework", "Windows Forms", "MySQL"],
   courteDescription: "Application de bureau pour la gestion complète des patients, médicaments et prescriptions avec système de rôles (Docteur/Admin)",
 
-  filRouge: {
-    points: [
-      "C#", ".NET Framework", "Windows Forms", "MySQL", "Pattern DAO",
-      "B1 – Gérer le patrimoine informatique", "B2 – Répondre aux demandes d'évolution", "B4 – Travailler en mode projet", "B5 – Mettre à disposition un service", "B6 – Développement professionnel",
-    ],
-  },
-
-  conclusionOrale: "GSB 2 est mon projet le plus complet en C# et démontre ma maîtrise de l'architecture en trois couches (Forms/Models/DAO). J'ai implémenté un système de rôles et permissions robuste avec gestion des relations N-N en base de données MySQL. La gestion de données médicales (patients, prescriptions, médicaments) m'a imposé une réflexion RGPD concrète : ces données appartiennent à la catégorie spéciale de l'article 9, ce qui a guidé chaque décision architecturale — contrôle d'accès strict, prévention des injections SQL (OWASP A03), minimisation des données et traçabilité. Ce projet illustre ma capacité à concevoir des systèmes desktop sécurisés et conformes pour des données sensibles à fort enjeu.",
-
-  contexte: `GSB 2 est une application de gestion médicale développée pour répondre aux besoins des professionnels de santé. Le projet vise à centraliser la gestion des patients, du catalogue de médicaments et des prescriptions dans une interface desktop sécurisée avec contrôle d'accès basé sur les rôles.`,
+  conclusionOrale: "GSB 2 est une application de bureau en C#/.NET qui centralise la gestion des patients, du catalogue de médicaments et des prescriptions pour des cabinets médicaux, avec un système de rôles distinguant Docteurs (lecture seule) et Administrateurs (CRUD complet). L'architecture repose sur trois couches (Forms/Models/DAO) et gère des relations many-to-many entre prescriptions et médicaments. Les données traitées étant des données de santé au sens de l'article 9 du RGPD, l'application applique un contrôle d'accès strict, des requêtes SQL paramétrées (OWASP A03) et une validation systématique des entrées à chaque couche.",
 
   defis: [
     {

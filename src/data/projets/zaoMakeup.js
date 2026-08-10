@@ -9,17 +9,7 @@ export const zaoMakeup = {
   technologies: ["React", "Tailwind CSS", "Cypress"],
   courteDescription: "Refonte complète du système de checkout d'une plateforme e-commerce de cosmétiques bio avec intégration multi-paiements",
 
-  filRouge: {
-    points: [
-      "Refonte checkout", "Migration JS → React", "Tailwind CSS", "Cypress",
-      "Tests E2E", "Pixel-perfect",
-      "B2 – Répondre aux demandes d'évolution", "B3 – Développer la présence en ligne", "B4 – Travailler en mode projet", "B5 – Mettre à disposition un service", "B6 – Développement professionnel",
-    ],
-  },
-
-  conclusionOrale: "ZAO Makeup est mon premier projet professionnel majeur. Grâce à cette migration, le code est plus moderne et plus maintenable, l'interface est plus performante, et le tunnel de paiement est sécurisé par des tests automatisés — ce qui permet aux développeurs de modifier le site avec beaucoup moins de risques d'erreurs. Ce projet m'a permis de développer ma rigueur dans un environnement professionnel, ma compréhension des besoins clients, et mon expérience sur des technologies modernes utilisées en production. Il sert aujourd'hui de base technique réutilisée pour d'autres clients de Sylnux.",
-
-  contexte: `ZAO Makeup est une marque de cosmétiques bio rechargeable. Le site e-commerce utilisait un ancien système de checkout développé en JavaScript vanilla, qui devenait difficile à maintenir et à faire évoluer. Dans le cadre de mon alternance chez Sylnux, j'ai été chargé de moderniser cette partie du site en migrant vers React avec Tailwind CSS, tout en conservant exactement le même design pour l'utilisateur.`,
+  conclusionOrale: "ZAO Makeup - Refonte Checkout est la reconstruction complète du tunnel de paiement d'une plateforme e-commerce de cosmétiques bio, migré de JavaScript vanilla vers React avec Tailwind CSS tout en conservant une fidélité pixel-perfect au design existant. Le tunnel intègre trois méthodes de paiement et s'appuie sur une suite de tests end-to-end Cypress couvrant les parcours utilisateur critiques (ajout au panier, code promo, paiement), pour réduire les risques de régression lors des évolutions futures du site. Il sert aujourd'hui de base technique réutilisée pour d'autres clients de Sylnux.",
 
   defis: [
     {

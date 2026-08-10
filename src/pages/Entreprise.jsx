@@ -70,10 +70,10 @@ const Entreprise = () => {
                     {/* Expérience principale - Alternance */}
                     <div className="main-experience">
                         <div className="experience-card highlight-card">
-                            <div className="experience-ribbon">En cours</div>
+                            <div className="experience-ribbon">Terminée</div>
                             <div className="experience-header">
-                                <h4 className="company-name"><IconBuilding />Mon entreprise : Sylnux</h4>
-                                <p className="duration"><IconCalendar />Octobre 2025 - Juin 2026</p>
+                                <h4 className="company-name"><IconBuilding />Sylnux</h4>
+                                <p className="duration"><IconCalendar />Octobre 2025 - Juin 2026 (Alternance BTS SIO)</p>
                                 <p className="location"><IconPin />Lyon, France</p>
                             </div>
                             <div className="experience-description">
@@ -81,11 +81,6 @@ const Entreprise = () => {
                                     <strong>Sylnux</strong> est une petite entreprise web <strong>sous-traitante</strong>, spécialisée
                                     dans le développement web et d'e-commerces pour des marques de cosmétiques bio, notamment{' '}
                                     <strong>ZAO Makeup</strong> et <strong>Lamazuna</strong>.
-                                </p>
-                                <p className="mission-intro">
-                                    C'est une petite structure composée uniquement de mon patron et de moi-même.
-                                    Mon patron est spécialisé dans le <strong>backend</strong>, et moi dans le{' '}
-                                    <strong>développement front-end</strong>.
                                 </p>
 
                                 <div className="missions-detail">
@@ -99,7 +94,7 @@ const Entreprise = () => {
                                 </div>
 
                                 <div className="missions-detail">
-                                    <h6><IconLaptop />Dans mon travail quotidien, j'interviens principalement sur :</h6>
+                                    <h6><IconLaptop />Au quotidien, je suis intervenu principalement sur :</h6>
                                     <ul>
                                         <li><IconCheck />La modernisation d'interfaces e-commerce</li>
                                         <li><IconCheck />La migration de technologies anciennes vers des frameworks modernes</li>
@@ -108,7 +103,7 @@ const Entreprise = () => {
                                 </div>
 
                                 <p className="mission-intro">
-                                    <IconBook />Cette expérience est très enrichissante car je travaille sur de{' '}
+                                    <IconBook />Cette expérience a été très enrichissante : j'y ai travaillé sur de{' '}
                                     <strong>vrais projets clients</strong> avec des contraintes réelles de qualité
                                     et de délais.
                                 </p>

@@ -9,17 +9,7 @@ export const gsb_frontend = {
   technologies: ["React", "React Router", "JavaScript", "CSS3", "Render"],
   courteDescription: "Interface web moderne pour la gestion des notes de frais avec système d'authentification complet et communication API REST",
 
-  filRouge: {
-    points: [
-      "React", "React Router v6", "JWT", "Context API",
-      "REST API", "Responsive",
-      "B2 – Répondre aux demandes d'évolution", "B3 – Développer la présence en ligne", "B4 – Travailler en mode projet", "B5 – Mettre à disposition un service", "B6 – Développement professionnel",
-    ],
-  },
-
-  conclusionOrale: "GSB Frontend illustre ma maîtrise de React Router v6 et de la Context API pour créer une application web complète avec authentification JWT. J'ai développé une interface 100% responsive communiquant avec une API REST hébergée sur Render. La gestion des rôles utilisateurs avec routes protégées et le système d'authentification sécurisé démontrent ma compréhension des enjeux de sécurité web. Ce projet prouve ma capacité à créer des interfaces modernes et intuitives tout en maintenant une architecture propre.",
-
-  contexte: `GSB Frontend est l'interface utilisateur web du système GSB, permettant aux utilisateurs de gérer leurs notes de frais de manière intuitive. Le projet met l'accent sur une expérience utilisateur moderne, une navigation fluide et une communication efficace avec l'API backend hébergée sur Render.`,
+  conclusionOrale: "GSB Frontend est l'interface web de gestion des notes de frais du système GSB : authentification complète, routes protégées selon le rôle de l'utilisateur (admin ou standard), et communication avec une API REST hébergée sur Render. L'application est développée en React avec React Router v6 pour la navigation et la Context API pour la gestion globale de l'authentification, avec une interface responsive sur desktop, tablette et mobile.",
 
   defis: [
     {

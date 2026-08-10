@@ -11,14 +11,14 @@ const CV = () => {
         <div className="cv-container">
           <div className="cv-image-container">
             <img 
-              src="/CV-DylanFernandes.png" 
+              src="/CV-DylanFERNANDES.png" 
               alt="CV de Dylan Fernandes" 
               className="cv-image" 
             />
           </div>
           <div className="cv-download">
             <a 
-              href="/CV-DylanFernandes.pdf" 
+              href="/CV-DylanFERNANDES.pdf" 
               download
               className="download-button"
             >

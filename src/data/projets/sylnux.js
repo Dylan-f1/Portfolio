@@ -9,17 +9,7 @@ export const sylnux = {
   technologies: ["Next.js", "TypeScript", "Prisma ORM", "PostgreSQL", "NextAuth.js", "Zod", "PM2", "Nginx"],
   courteDescription: "Site vitrine de l'agence avec backoffice sécurisé, internationalisation FR/EN administrable et infrastructure de production sur VPS",
 
-  filRouge: {
-    points: [
-      "Next.js 15", "TypeScript", "Prisma ORM", "PostgreSQL",
-      "NextAuth.js", "i18n FR/EN", "Backoffice",
-      "B1 – Gérer le patrimoine informatique", "B2 – Répondre aux demandes d'évolution", "B3 – Développer la présence en ligne", "B4 – Travailler en mode projet", "B5 – Mettre à disposition un service", "B6 – Développement professionnel",
-    ],
-  },
-
-  conclusionOrale: "Le site Sylnux est le projet où j'ai le plus appris sur la sécurisation d'une infrastructure de production réelle. Au-delà du développement Next.js avec TypeScript et Prisma, j'ai mis en place une démarche complète garantissant les trois piliers de la sécurité : confidentialité (whitelist email, HTTPS/SSL, variables d'environnement sécurisées), intégrité (Zod pour la validation des données, TypeScript strict, format de réponse standardisé) et disponibilité (PM2 pour la reprise automatique des processus, systemd pour la persistance après redémarrage VPS, Nginx comme reverse proxy stable). Ce projet démontre que la cybersécurisation d'une solution applicative ne se limite pas au code — elle englobe l'infrastructure, les accès et la continuité de service.",
-
-  contexte: `Sylnux est l'agence web dans laquelle j'effectue mon alternance. J'ai été chargé de construire leur site vitrine depuis zéro : une interface publique pour présenter les projets et services, couplée à un backoffice d'administration restreint. L'internationalisation FR/EN est gérée dynamiquement via une base de données PostgreSQL, permettant de modifier les traductions sans redéploiement. Le tout est hébergé sur un VPS Ubuntu derrière un reverse proxy Nginx.`,
+  conclusionOrale: "Le site Sylnux est le site vitrine de l'agence, avec un backoffice sécurisé permettant de gérer le contenu et les traductions FR/EN sans redéploiement. Développé en Next.js avec TypeScript, Prisma et PostgreSQL, il tourne en production sur un VPS derrière Nginx, avec PM2 et systemd pour garantir la disponibilité du service. L'accès au backoffice est restreint par whitelist d'e-mails via NextAuth.js, et toutes les données entrantes sont validées avec Zod.",
 
   defis: [
     {

@@ -9,17 +9,7 @@ export const pokedex = {
   technologies: ["React", "Node.js", "Express.js", "MongoDB", "JWT", "Vite", "Vercel", "Render"],
   courteDescription: "Pokédex full-stack avec 1025 Pokémon, système de favoris, comparaison, panel admin CRUD et authentification JWT — déployé sur Vercel + Render + MongoDB Atlas",
 
-  filRouge: {
-    points: [
-      "Full-stack", "React", "Node.js", "MongoDB", "JWT", "REST API",
-      "PokéAPI", "Recherche & filtres", "Responsive", "Autonomie",
-      "B3 – Développer la présence en ligne", "B4 – Travailler en mode projet", "B5 – Mettre à disposition un service", "B6 – Développement professionnel",
-    ],
-  },
-
-  conclusionOrale: "ZAO Makeup et le Pokédex représentent deux facettes complémentaires de ma formation : chez Sylnux, j'ai appris la rigueur du code en production — contraintes client, qualité, délais. Sur le Pokédex, j'ai appris la liberté de concevoir — choisir sa stack, architecturer, déployer seul. L'un sans l'autre, ma formation serait incomplète. Techniquement, le projet est passé d'un simple front-end à une application full-stack avec backend Node.js, base MongoDB et authentification JWT. Dès la conception, j'ai appliqué une démarche de sécurité cohérente : CORS restreint (OWASP A05), JWT avec middleware Express (A07), variables d'environnement gitignorées (A02) — des décisions d'architecture prises dès le départ, pas en post-déploiement.",
-
-  contexte: `ZAO Makeup m'a appris à travailler dans un cadre professionnel avec des contraintes client strictes. Avec le Pokédex, j'ai voulu aller plus loin : construire une application full-stack de A à Z, en totale autonomie, pour choisir moi-même ma stack et pousser mes compétences. L'objectif était de créer un outil simple et complet pour consulter les 1025 Pokémon avec leurs types, statistiques et évolutions — avec recherche, filtrage avancé et une interface responsive. Le projet dispose de son propre backend Express.js avec MongoDB Atlas, complété par la PokéAPI pour les sprites et les statistiques.`,
+  conclusionOrale: "Le Pokédex est une application web full-stack qui référence les 1025 Pokémon avec leurs types, statistiques et évolutions, avec recherche, filtres combinables, comparaison côte à côte et système de favoris. Il dispose d'un panel d'administration CRUD protégé par authentification JWT et d'un backend Express.js dédié avec MongoDB Atlas, déployé sur Vercel (frontend) et Render (backend). La sécurité est pensée dès la conception : CORS restreint aux origines autorisées (OWASP A05), tokens JWT vérifiés par middleware (OWASP A07) et variables d'environnement séparées entre développement et production (OWASP A02).",
 
   defis: [
     {
