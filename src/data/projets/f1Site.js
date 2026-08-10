@@ -6,7 +6,6 @@ export const f1Site = {
   image: "/F1-Logo.webp",
   liveUrl: null,
   githubUrl: "https://github.com/Dylan-f1/SpeedTrack-Front",
-  githubUrlBackend: "https://github.com/Dylan-f1/SpeedTrack-Back",
   technologies: ["Next.js 15", "React 19", "Tailwind CSS v4", "Node.js", "Express", "MongoDB Atlas", "Mongoose"],
   courteDescription: "Plateforme F1 complète — pilotes, écuries, circuits, saisons et règlements — avec API REST propre (10 collections), synchronisation avec l'API publique F1 Jolpica et classements calculés à la volée",
 
