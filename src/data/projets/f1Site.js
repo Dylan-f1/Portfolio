@@ -44,7 +44,6 @@ export const f1Site = {
       "Modélisation temporelle par collections de liaison plutôt que champs imbriqués",
       "Classements calculés à la demande, jamais persistés",
       "Sanitization systématique des entrées contre les injections NoSQL",
-      "Scripts de synchronisation avec l'API publique Jolpica-F1",
     ]
   },
 
@@ -63,7 +62,6 @@ export const f1Site = {
     "Modéliser des relations qui changent dans le temps par des collections de liaison, pas des champs imbriqués",
     "Ne jamais stocker une donnée calculable — la recalculer garantit qu'elle reste juste",
     "Sanitizer systématiquement les entrées d'une API REST, même publique et en lecture seule",
-    "S'appuyer sur une API publique existante plutôt que ressaisir des données à la main quand c'est possible",
   ],
 
   prochaines_etapes: [
