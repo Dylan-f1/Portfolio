@@ -3,7 +3,7 @@ export const sylnux = {
   type: 'entreprise',
   title: "Sylnux — Site vitrine & backoffice",
   subtitle: "Portfolio multilingue avec système de gestion de contenu intégré",
-  image: "logo-sylnux.webp",
+  image: "/logo-sylnux.webp",
   liveUrl: "https://sylnux.com",
   githubUrl: null,
   technologies: ["Next.js", "TypeScript", "Prisma ORM", "PostgreSQL", "NextAuth.js", "Zod", "PM2", "Nginx"],

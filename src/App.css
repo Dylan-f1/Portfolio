@@ -1,154 +1,498 @@
-/* App.css - Styles globaux du portfolio */
+/* App.css — système « Livrée » : la carrosserie Alpine (voir docs/DESIGN.md) */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --lv-blue: #0055b8;      /* bleu Alpine profond, texte blanc 6.6:1 */
+  --lv-blue-hi: #2e9bff;   /* reflet, seulement sur fond sombre */
+  --lv-pink: #ff2e93;      /* rose BWT, texte carbone dessus */
+  --lv-carbon: #0b1020;
+  /* Rôles : ce sont eux que les pages utilisent, pour pouvoir changer de fond */
+  --lv-page: #f6f8fb;      /* fond de page */
+  --lv-surface: #ffffff;   /* cartes encadrées */
+  --lv-alt: #e9eef6;       /* section de fond alterné */
+  --lv-panel: #0b1020;     /* blocs sombres posés dans la page */
+  --lv-ink: #0b1020;       /* texte */
+  --lv-muted: #4a5672;     /* texte secondaire, 7:1 sur blanc */
+  --lv-rule: #d5dbe6;      /* filets fins */
+  --lv-link: #0055b8;      /* texte bleu, 6.3:1 sur le fond */
+  --lv-nav-edge: transparent;
+  --lv-texture: none;
+  --lv-texture-pos: 0 0;
+
+  --lv-display: 'Anybody', 'Arial Narrow', sans-serif;
+  --lv-text: 'Schibsted Grotesk', 'Helvetica Neue', Arial, sans-serif;
+
+  --lv-slant: 9vw;         /* pente commune aux découpes verticales */
+  --lv-drop: 3.5rem;       /* pente commune aux découpes horizontales */
+  --lv-stripe: 0.9rem;     /* épaisseur du liseré rose */
+  --gut: clamp(1rem, 4vw, 3rem);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Fond noir : la fibre de carbone de la monoplace, tissée en sergé très discret.
+   Le bleu des panneaux et le rose ne bougent pas ; seuls les rôles changent.
+   Deux déclencheurs, mêmes valeurs : le choix du visiteur (data-fond="noir"),
+   ou le réglage sombre du système tant qu'il n'a pas choisi le fond clair.
+   Sur la teinte la plus claire du tissage (#0e1323), le texte secondaire reste à 8:1. */
+:root[data-fond="noir"] {
+  --lv-page: #070a14;
+  --lv-surface: #10172b;
+  --lv-alt: #0c1224;
+  --lv-panel: #141c36;     /* plus clair que la page, sinon les blocs sombres disparaissent */
+  --lv-ink: #edf1f9;
+  --lv-muted: #a7b2c9;
+  --lv-rule: #26304a;
+  --lv-link: #5aa9ff;      /* 7.6:1 ; le bleu Alpine profond tombe à 3:1 sur le noir */
+  --lv-nav-edge: #1c2440;
+  --lv-texture:
+    linear-gradient(27deg, #0a0e1b 5px, transparent 5px),
+    linear-gradient(207deg, #0a0e1b 5px, transparent 5px),
+    linear-gradient(27deg, #0d1221 5px, transparent 5px),
+    linear-gradient(207deg, #0d1221 5px, transparent 5px),
+    linear-gradient(90deg, #090d19 10px, transparent 10px),
+    linear-gradient(#0a0e1b 25%, #080c17 25%, #080c17 50%, transparent 50%, transparent 75%, #0e1323 75%, #0e1323);
+  --lv-texture-pos: 0 5px, 10px 0, 0 10px, 10px 5px, 0 0, 0 0;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-fond="clair"]) {
+    --lv-page: #070a14;
+    --lv-surface: #10172b;
+    --lv-alt: #0c1224;
+    --lv-panel: #141c36;
+    --lv-ink: #edf1f9;
+    --lv-muted: #a7b2c9;
+    --lv-rule: #26304a;
+    --lv-link: #5aa9ff;
+    --lv-nav-edge: #1c2440;
+    --lv-texture:
+      linear-gradient(27deg, #0a0e1b 5px, transparent 5px),
+      linear-gradient(207deg, #0a0e1b 5px, transparent 5px),
+      linear-gradient(27deg, #0d1221 5px, transparent 5px),
+      linear-gradient(207deg, #0d1221 5px, transparent 5px),
+      linear-gradient(90deg, #090d19 10px, transparent 10px),
+      linear-gradient(#0a0e1b 25%, #080c17 25%, #080c17 50%, transparent 50%, transparent 75%, #0e1323 75%, #0e1323);
+    --lv-texture-pos: 0 5px, 10px 0, 0 10px, 10px 5px, 0 0, 0 0;
+    color-scheme: dark;
+  }
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  background-color: var(--bg-base);
-  background-image:
-    radial-gradient(circle at 15% 8%, rgba(0, 144, 255, 0.14), transparent 45%),
-    radial-gradient(circle at 88% 92%, rgba(255, 20, 147, 0.12), transparent 45%),
-    repeating-linear-gradient(115deg, rgba(255, 255, 255, 0.025) 0px, rgba(255, 255, 255, 0.025) 1px, transparent 1px, transparent 90px);
-  background-attachment: fixed, fixed, fixed;
-  background-repeat: no-repeat, no-repeat, repeat;
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#root {
-  width: 100%;
-  min-height: 100vh;
+  background-color: var(--lv-page);
+  background-image: var(--lv-texture);
+  background-position: var(--lv-texture-pos);
+  background-size: 20px 20px;
+  color: var(--lv-ink);
+  font-family: var(--lv-text);
+  font-size: 1.0625rem;
+  line-height: 1.6;
   overflow-x: hidden;
 }
 
+#root,
 .app-container {
   width: 100%;
   min-height: 100vh;
 }
 
-/* Design tokens partagés */
-:root {
-  --heading-font: 'Space Grotesk', 'Poppins', -apple-system, sans-serif;
-  --mono-font: 'Space Mono', 'Courier New', monospace;
-
-  --bg-base: #06060a;
-  --surface: rgba(255, 255, 255, 0.035);
-  --surface-hover: rgba(255, 255, 255, 0.065);
-  --border-subtle: rgba(255, 255, 255, 0.09);
-  --border-accent: rgba(0, 144, 255, 0.45);
-
-  --text-primary: #f5f5f7;
-  --text-secondary: #9a9aa5;
-
-  --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.35);
-  --shadow-lift: 0 16px 40px rgba(0, 0, 0, 0.45);
-
-  /* Compat — anciens noms encore référencés dans certains fichiers */
-  --primary-color: #c20497;
-  --primary-hover: #ff1493;
-  --background-dark: var(--bg-base);
-  --text-light: #ffffff;
-  --text-gray: var(--text-secondary);
-  --glass-bg: var(--surface);
-  --glass-border: var(--border-subtle);
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Scrollbar styling */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #1C1C1C;
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #c20497, #ff1493);
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #ff1493;
-}
-
-/* Sélection de texte */
-::selection {
-  background: rgba(194, 4, 151, 0.3);
-  color: white;
-}
-
-::-moz-selection {
-  background: rgba(194, 4, 151, 0.3);
-  color: white;
-}
-
-/* Utilitaires */
-.text-center {
-  text-align: center;
-}
-
-.mt-1 { margin-top: 0.5rem; }
-.mt-2 { margin-top: 1rem; }
-.mt-3 { margin-top: 1.5rem; }
-.mt-4 { margin-top: 2rem; }
-
-.mb-1 { margin-bottom: 0.5rem; }
-.mb-2 { margin-bottom: 1rem; }
-.mb-3 { margin-bottom: 1.5rem; }
-.mb-4 { margin-bottom: 2rem; }
-
-/* Transitions globales */
-a {
-  transition: all 0.3s ease;
-}
-
-button {
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-/* Error container */
-.error-container {
-  min-height: 70vh;
+.app-container {
   display: flex;
   flex-direction: column;
+}
+
+.app-container > main {
+  flex: 1;
+}
+
+/* Cible du lien d'évitement : reçoit le focus sans afficher d'anneau */
+.app-container > main:focus {
+  outline: none;
+}
+
+html {
+  scrollbar-color: var(--lv-blue) var(--lv-rule);
+  accent-color: var(--lv-pink);
+  caret-color: var(--lv-pink);
+}
+
+::selection {
+  background: var(--lv-pink);
+  color: var(--lv-carbon);
+}
+
+:focus-visible {
+  outline: 3px solid var(--lv-pink);
+  outline-offset: 3px;
+}
+
+/* Sur le bleu, un anneau rose à côté d'un bouton rose se perd : anneau blanc */
+.lv-hero :focus-visible {
+  outline-color: #fff;
+}
+
+h1, h2, h3 {
+  text-wrap: balance;
+}
+
+p, li {
+  text-wrap: pretty;
+}
+
+/* Lien d'évitement, visible seulement au clavier */
+.lv-skip {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 50;
+  padding: 0.75rem 1.25rem;
+  background: var(--lv-pink);
+  color: var(--lv-carbon);
+  font-weight: 700;
+  transform: translateY(-200%);
+}
+
+.lv-skip:focus-visible {
+  transform: none;
+  outline-color: #fff;
+}
+
+/* --- Mise en page --- */
+.lv-wrap {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-inline: var(--gut);
+}
+
+.lv-section {
+  padding-block: clamp(3rem, 7vw, 5.5rem);
+}
+
+/* Section qui prolonge la précédente sans séparation */
+.lv-section--suite {
+  padding-top: 0;
+}
+
+/* --- Titres --- */
+.lv-h2 {
+  font-family: var(--lv-display);
+  font-weight: 800;
+  font-stretch: 62%;
+  font-size: clamp(2.1rem, 4.5vw, 3.25rem);
+  line-height: 1;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.75rem;
+}
+
+.lv-h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.lv-muted {
+  color: var(--lv-muted);
+}
+
+/* En rem et non en ch : les paragraphes sont souvent plus grands que leur parent */
+.lv-prose {
+  max-width: 42rem;
+}
+
+.lv-prose p + p {
+  margin-top: 1.1em;
+}
+
+/* Les textes de la veille contiennent des retours à la ligne et des listes en « - » */
+.lv-pre {
+  white-space: pre-line;
+}
+
+/* --- En-tête de page : panneau bleu + liseré rose --- */
+.lv-hero {
+  position: relative;
+  background: var(--lv-pink);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--lv-drop)), 0 100%);
+}
+
+.lv-hero-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: clamp(2.5rem, 6vw, 4.5rem) var(--gut) calc(var(--lv-drop) + 3rem);
+  background: var(--lv-blue);
+  color: #fff;
+  clip-path: polygon(0 0, 100% 0,
+    100% calc(100% - var(--lv-drop) - var(--lv-stripe)), 0 calc(100% - var(--lv-stripe)));
+}
+
+.lv-hero-inner {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.lv-hero-top {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  color: white;
+  gap: 0.75rem 1.5rem;
 }
 
-.error-container h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #c20497;
+.lv-hero-title {
+  font-family: var(--lv-display);
+  font-style: italic;
+  font-weight: 900;
+  font-stretch: 115%;
+  font-size: clamp(2.6rem, 6.5vw, 5.75rem);
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+  max-width: 18ch;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
-.back-link {
-  color: #c20497;
-  text-decoration: none;
-  font-size: 1.1rem;
-  padding: 1rem 2rem;
-  border: 2px solid #c20497;
-  border-radius: 50px;
-  transition: all 0.3s ease;
+/* Le panneau scindé est plus étroit : titre réduit pour ne pas couper les mots */
+.lv-hero--split .lv-hero-title {
+  font-size: clamp(2.4rem, 4.6vw, 4.5rem);
 }
 
-.back-link:hover {
-  background: rgba(194, 4, 151, 0.2);
-  transform: translateY(-2px);
+.lv-hero--long .lv-hero-title {
+  font-stretch: 100%;
+  font-size: clamp(2.4rem, 4.2vw, 3.75rem);
+  line-height: 1;
+  max-width: 24ch;
 }
+
+.lv-hero-body {
+  max-width: 44rem;
+  font-size: 1.15rem;
+  color: #e6efff;
+}
+
+/* Variante scindée : panneau à gauche coupé en biais, visuel sur fond blanc à droite */
+.lv-hero--split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  background: transparent;  /* laisse voir le fond de page (et le carbone) */
+  clip-path: none;
+  overflow: hidden;
+}
+
+.lv-hero--split .lv-hero-panel {
+  position: relative;
+  z-index: 1;
+  justify-content: flex-end;
+  padding: clamp(3rem, 7vw, 6rem) calc(var(--lv-slant) + 2rem) clamp(3rem, 6vw, 4.5rem) var(--gut);
+  clip-path: polygon(0 0, 100% 0, calc(100% - var(--lv-slant)) 100%, 0 100%);
+}
+
+/* 61.54 % = largeur du panneau (1.6fr sur 2.6fr) */
+.lv-hero--split::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--lv-pink);
+  clip-path: polygon(61.54% 0, calc(61.54% + var(--lv-stripe)) 0,
+    calc(61.54% + var(--lv-stripe) - var(--lv-slant)) 100%, calc(61.54% - var(--lv-slant)) 100%);
+}
+
+.lv-hero-aside {
+  display: grid;
+  place-items: center;
+  padding: 3rem var(--gut) 3rem 1rem;
+}
+
+.lv-hero-aside img {
+  width: min(100%, 320px);
+  max-height: 340px;
+  object-fit: contain;
+}
+
+/* --- Éléments --- */
+
+/* Languette rose à coin coupé : badges, statuts, mise en avant */
+.lv-tab {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 0.25rem 1rem 0.25rem 0.7rem;
+  background: var(--lv-pink);
+  color: var(--lv-carbon);
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 0.6rem) 100%, 0 100%);
+}
+
+.lv-tab--blue {
+  background: var(--lv-blue);
+  color: #fff;
+}
+
+.lv-tab--quiet {
+  background: transparent;
+  color: inherit;
+  padding-inline: 0;
+  clip-path: none;
+}
+
+.lv-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Étiquette non cliquable : un aplat léger, pas un contour qui ressemblerait à un bouton */
+.lv-tag {
+  padding: 0.15rem 0.6rem;
+  background: color-mix(in srgb, currentColor 9%, transparent);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* La forme coupée est dessinée par ::before : un clip-path sur le lien
+   couperait aussi l'anneau de focus */
+.lv-btn {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 44px;
+  padding: 0.8rem 1.6rem 0.8rem 1.2rem;
+  color: var(--lv-carbon);
+  font-weight: 700;
+}
+
+.lv-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--lv-pink);
+  clip-path: polygon(0 0, 100% 0, calc(100% - 0.8rem) 100%, 0 100%);
+  transition: background-color 160ms ease;
+}
+
+.lv-btn:hover::before {
+  background: #fff;
+}
+
+.lv-btn--line {
+  color: inherit;
+  box-shadow: inset 0 0 0 1.5px currentColor;
+  padding-inline: 1.2rem;
+}
+
+.lv-btn--line::before {
+  background: transparent;
+  clip-path: none;
+}
+
+.lv-btn--line:hover {
+  color: var(--lv-blue);
+}
+
+.lv-btn--ink {
+  color: #fff;
+}
+
+.lv-btn--ink::before {
+  background: var(--lv-panel);
+}
+
+.lv-btn--ink:hover::before {
+  background: var(--lv-blue);
+}
+
+/* Phrase mise en avant : le liseré rose posé en biais au-dessus du texte */
+.lv-callout {
+  position: relative;
+  padding-top: 1.5rem;
+}
+
+.lv-callout::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0.3rem;
+  width: 4rem;
+  height: var(--lv-stripe);
+  background: var(--lv-pink);
+  transform: skewX(-20deg);
+}
+
+.lv-back {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  align-self: flex-start;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.lv-back:hover {
+  text-decoration-color: var(--lv-pink);
+  text-decoration-thickness: 3px;
+}
+
+/* Liste à carrés roses, comme sur le CV */
+.lv-list li {
+  position: relative;
+  padding-left: 1.4rem;
+}
+
+.lv-list li + li {
+  margin-top: 0.55rem;
+}
+
+.lv-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--lv-pink);
+}
+
+/* Fiche : bloc sans boîte, posé sur un filet épais */
+.lv-fiche {
+  border-top: 3px solid var(--lv-ink);
+  padding-top: 1rem;
+}
+
+
+@media (max-width: 760px) {
+  :root {
+    --lv-slant: 0px;
+    --lv-drop: 2.5rem;
+  }
+
+  .lv-hero--split {
+    grid-template-columns: 1fr;
+    background: var(--lv-pink);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--lv-drop)), 0 100%);
+  }
+
+  .lv-hero--split::after {
+    display: none;
+  }
+
+  .lv-hero--split .lv-hero-panel {
+    padding: 2.5rem var(--gut) calc(var(--lv-drop) + 2.5rem);
+    clip-path: polygon(0 0, 100% 0,
+      100% calc(100% - var(--lv-drop) - var(--lv-stripe)), 0 calc(100% - var(--lv-stripe)));
+  }
+
+  .lv-hero--split .lv-hero-aside {
+    display: none;
+  }
+}
+
