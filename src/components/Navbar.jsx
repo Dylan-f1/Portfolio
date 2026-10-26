@@ -1,62 +1,73 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useRef, useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import BoutonFond from './BoutonFond';
 import '../styles/Navbar.css';
+
+const liens = [
+  { to: '/a-propos', label: 'À propos' },
+  { to: '/entreprise', label: 'Entreprise' },
+  { to: '/projets', label: 'Projets' },
+  { to: '/cv', label: 'Mon CV' },
+];
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const barre = useRef(null);
 
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
 
+  // Menu mobile : se ferme avec Échap ou en touchant ailleurs
+  useEffect(() => {
+    if (!isMenuOpen) return undefined;
+
+    const onKey = (event) => {
+      if (event.key === 'Escape') setIsMenuOpen(false);
+    };
+    const onPointer = (event) => {
+      if (barre.current && !barre.current.contains(event.target)) setIsMenuOpen(false);
+    };
+
+    document.addEventListener('keydown', onKey);
+    document.addEventListener('pointerdown', onPointer);
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      document.removeEventListener('pointerdown', onPointer);
+    };
+  }, [isMenuOpen]);
+
   return (
-    <div className="navbar-container">
-      <div className="navigation-container">
-        <div className="logo">
-          <Link to="/" onClick={closeMenu}>DF</Link>
-        </div>
-        
-        {/* Menu hamburger */}
-        <div 
-          className={`hamburger ${isMenuOpen ? 'active' : ''}`}
-          onClick={toggleMenu}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+    <header className="navbar" ref={barre}>
+      <div className="navbar-inner">
+        <Link to="/" className="navbar-logo" onClick={closeMenu} aria-label="Dylan Fernandes, accueil">
+          <span className="navbar-logo-slash" aria-hidden="true" />DF
+        </Link>
 
-        {/* Navigation desktop */}
-        <nav className="navigation">
-          <Link to="/a-propos" className="nav-link">
-            À PROPOS
-          </Link>
-          <Link to="/entreprise" className="nav-link">
-            ENTREPRISE
-          </Link>
-          <Link to="/projets" className="nav-link">
-            PROJETS
-          </Link>
-        </nav>
+        <div className="navbar-right">
+          <nav id="navbar-links" className={`navbar-links ${isMenuOpen ? 'is-open' : ''}`} aria-label="Navigation principale">
+            {liens.map((lien) => (
+              <NavLink key={lien.to} to={lien.to} className="navbar-link" onClick={closeMenu}>
+                {lien.label}
+              </NavLink>
+            ))}
+          </nav>
 
-        {/* Navigation mobile */}
-        <nav className={`navigation mobile ${isMenuOpen ? 'active' : ''}`}>
-          <Link to="/a-propos" className="nav-link" onClick={closeMenu}>
-            À PROPOS
-          </Link>
-          <Link to="/projets" className="nav-link" onClick={closeMenu}>
-            PROJETS
-          </Link>
-          <Link to="/entreprise" className="nav-link" onClick={closeMenu}>
-            ENTREPRISE
-          </Link>
-        </nav>
+          <BoutonFond />
+
+          <button
+            type="button"
+            className="navbar-toggle"
+            aria-expanded={isMenuOpen}
+            aria-controls="navbar-links"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <span className="navbar-toggle-bars" aria-hidden="true" />
+            Menu
+          </button>
+        </div>
       </div>
-    </div>
+    </header>
   );
 };
 

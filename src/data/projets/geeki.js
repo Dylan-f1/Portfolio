@@ -3,7 +3,7 @@ export const geeki = {
   type: 'personnel',
   title: "Geeki",
   subtitle: "Plateforme Gaming Complète",
-  image: "Geeki-logo.png",
+  image: "/Geeki-logo.png",
   liveUrl: "https://www.geeki-games.fr/",
   githubUrl: "https://github.com/Dylan-f1/Geeki",
   technologies: ["React", "JavaScript", "CSS3"],

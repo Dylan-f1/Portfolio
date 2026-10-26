@@ -1,299 +1,181 @@
-/* Projets.css */
+/* --- Projet phare : panneau carbone, comme une bande de la livrée --- */
+.projet-phare {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
+  background: var(--lv-panel);
+  color: #fff;
+}
 
-.projets-container {
-    min-height: 100vh;
-    background-color: transparent;
-    padding-bottom: 2rem;
-  }
-  
-  .content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-  }
-  
-  /* Transition entre projets entreprise et perso */
-  .page-header {
-    text-align: center;
-    margin-bottom: 3rem;
-    color: white;
-    animation: fadeInDown 0.8s ease-out;
-  }
-  
-  @keyframes fadeInDown {
-    from {
-      opacity: 0;
-      transform: translateY(-30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .page-header h1 {
-    font-family: var(--heading-font);
-    font-size: clamp(2.2rem, 5vw, 3rem);
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: var(--text-primary);
-  }
+.projet-phare-image {
+  display: grid;
+  place-items: center;
+  padding: 2.5rem;
+  background: #fff;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 4rem) 100%, 0 100%);
+}
 
-  .page-header p {
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    opacity: 0.9;
-    max-width: 600px;
-    margin: 0 auto;
-    color: var(--text-secondary);
-  }
-  
-  .enterprise-header {
-    margin-top: 5rem;
-  }
-  
-  .enterprise-header h1 {
-    color: var(--alpine-pink);
-  }
-  
-  /* Grille des projets */
-  .articles-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    padding: 1rem 0;
-  }
-  
-  .article-card {
-    background: var(--surface);
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: var(--shadow-soft);
-    transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
-    cursor: pointer;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    text-decoration: none;
-    border: 1px solid var(--border-subtle);
-    animation: fadeInUp 0.6s ease forwards;
-    opacity: 0;
-  }
-  
-  .article-card:nth-child(1) { animation-delay: 0.1s; }
-  .article-card:nth-child(2) { animation-delay: 0.2s; }
-  .article-card:nth-child(3) { animation-delay: 0.3s; }
-  .article-card:nth-child(4) { animation-delay: 0.4s; }
-  .article-card:nth-child(5) { animation-delay: 0.5s; }
-  .article-card:nth-child(6) { animation-delay: 0.6s; }
-  
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-  }
-  
-  .article-card:hover {
-    transform: translateY(-6px);
-    background: var(--surface-hover);
-    box-shadow: var(--shadow-lift);
-    border-color: var(--border-accent);
-  }
+.projet-phare-image img {
+  width: 70%;
+  max-height: 220px;
+  object-fit: contain;
+}
 
-  .enterprise-card {
-    border: 1px solid rgba(255, 20, 147, 0.25);
-  }
+.projet-phare-texte {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.9rem;
+  padding: clamp(2rem, 4vw, 3.5rem);
+}
 
-  .enterprise-card:hover {
-    border-color: rgba(255, 20, 147, 0.5);
-  }
-  
-  /* Image */
-  .card-image {
-    position: relative;
-    height: 250px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, rgba(0, 144, 255, 0.1) 0%, rgba(255, 20, 147, 0.1) 100%);
-  }
-  
-  .card-image img {
-    max-width: 90%;
-    max-height: 90%;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-  }
-  
-  .article-card:hover .card-image img {
-    transform: scale(1.1);
-  }
-  
-  .enterprise-badge {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: rgba(6, 6, 10, 0.75);
-    color: var(--alpine-pink);
-    border: 1px solid rgba(255, 20, 147, 0.4);
-    padding: 0.4rem 0.9rem;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    backdrop-filter: blur(10px);
-  }
+.projet-phare-titre {
+  font-family: var(--lv-display);
+  font-style: italic;
+  font-weight: 900;
+  font-stretch: 120%;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+}
 
-  .flagship-badge {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    background: rgba(6, 6, 10, 0.75);
-    color: var(--alpine-blue);
-    border: 1px solid rgba(0, 144, 255, 0.4);
-    padding: 0.4rem 0.9rem;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    backdrop-filter: blur(10px);
+.projet-phare .projet-carte-sous-titre {
+  color: var(--lv-blue-hi);
+}
+
+.projet-phare-description {
+  max-width: 62ch;
+  color: #cfd7e6;
+}
+
+.projet-phare .lv-tag {
+  color: #cfd7e6;
+}
+
+.projet-phare:hover .projet-phare-titre {
+  color: var(--lv-pink);
+}
+
+/* --- Grille de fiches --- */
+.projets-grille {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3rem 2.5rem;
+}
+
+/* Fiche encadrée : sans cadre, les cartes flottaient sur le fond.
+   Le filet épais du haut reste la marque des fiches (rose au survol). */
+.projet-carte {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 1.5rem 1.5rem 1.25rem;
+  background: var(--lv-surface);
+  border: 1px solid var(--lv-rule);
+  border-top: 3px solid var(--lv-ink);
+}
+
+.projet-carte-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+/* Hauteur fixe, largeur libre : les logos larges (Sylnux, ZAO) restent lisibles */
+.projet-logo {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  min-width: 4rem;
+  max-width: 11rem;
+  padding: 0.5rem;
+  background: #fff;
+  border: 1px solid var(--lv-rule);
+}
+
+.projet-logo img {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.projet-carte-titre {
+  font-family: var(--lv-display);
+  font-weight: 800;
+  font-stretch: 80%;
+  font-size: 1.75rem;
+  line-height: 1.05;
+}
+
+.projet-carte-sous-titre {
+  font-weight: 700;
+  color: var(--lv-link);
+}
+
+.projet-carte .lv-tags {
+  margin-top: 0.5rem;
+}
+
+.projet-carte-lien {
+  margin-top: auto;
+  padding-top: 0.75rem;
+  font-weight: 700;
+}
+
+.projet-carte:hover {
+  border-top-color: var(--lv-pink);
+}
+
+.projet-carte:hover .projet-carte-titre {
+  color: var(--lv-link);
+}
+
+.projet-carte--entreprise {
+  border-top-color: var(--lv-blue);
+}
+
+/* --- Projets entreprise --- */
+.projets-entreprise {
+  background: var(--lv-alt);
+}
+
+.projets-entreprise-header {
+  margin-bottom: 2.5rem;
+}
+
+.projets-entreprise-header .lv-h2 {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .projets-grille {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .projet-phare {
+    grid-template-columns: minmax(0, 1fr);
   }
 
-  .article-card.flagship-card {
-    border: 1px solid rgba(0, 144, 255, 0.35);
-  }
-  
-  /* Contenu */
-  .card-content {
+  .projet-phare-image {
     padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    color: white;
-  }
-  
-  .card-content h3 {
-    font-family: var(--heading-font);
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: var(--text-primary);
-    line-height: 1.3;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.5rem), 0 100%);
   }
 
-  .project-subtitle {
-    font-size: 1rem;
-    color: var(--alpine-blue);
-    margin-bottom: 0.8rem;
-    font-weight: 500;
+  .projet-phare-image img {
+    width: 45%;
   }
 
-  .project-description {
-    color: var(--text-secondary);
-    line-height: 1.6;
-    margin-bottom: 1rem;
-    font-size: 0.95rem;
-    flex-grow: 1;
+  .projet-phare-titre {
+    font-size: 2.4rem;
+    font-stretch: 100%;
   }
 
-  /* Tags technologies */
-  .tech-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
+  .projets-grille {
+    grid-template-columns: 1fr;
   }
-
-  .tech-tag {
-    background: var(--surface-hover);
-    color: var(--text-secondary);
-    padding: 0.3rem 0.8rem;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    border: 1px solid var(--border-subtle);
-  }
-  
-  /* Read more */
-  .read-more {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-top: auto;
-  }
-  
-  .read-more span {
-    color: var(--alpine-blue);
-    font-weight: 600;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
-  }
-  
-  .article-card:hover .read-more span {
-    color: var(--alpine-pink);
-    transform: translateX(5px);
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .content {
-      padding: 1rem 0.5rem;
-    }
-    
-    .page-header h1 {
-      font-size: 2.2rem;
-    }
-    
-    .page-header p {
-      font-size: 1rem;
-      padding: 0 1rem;
-    }
-    
-    .articles-grid {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-    
-    .article-card {
-      margin: 0 0.5rem;
-    }
-  
-    .card-image {
-      height: 220px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .page-header h1 {
-      font-size: 1.8rem;
-    }
-    
-    .card-content {
-      padding: 1rem;
-    }
-    
-    .card-content h3 {
-      font-size: 1.2rem;
-    }
-  
-    .card-image {
-      height: 200px;
-      padding: 1rem;
-    }
-  
-    .tech-tags {
-      gap: 0.3rem;
-    }
-  
-    .tech-tag {
-      font-size: 0.75rem;
-      padding: 0.25rem 0.6rem;
-    }
-  }
-  
+}

@@ -1,86 +1,94 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from '../components/Navbar';
+import PageHero from '../components/PageHero';
 import { getProjetsPersonnels, getProjetsEntreprise } from '../data/projets';
+import { usePageTitle } from '../hooks/usePageTitle';
 import '../styles/Projets.css';
 
+const ProjetCarte = ({ projet, entreprise = false }) => (
+  <Link
+    to={`/projets/${projet.id}`}
+    className={`projet-carte lv-fiche ${entreprise ? 'projet-carte--entreprise' : ''}`}
+    aria-labelledby={`projet-${projet.id}`}
+  >
+    <div className="projet-carte-top">
+      <span className="projet-logo">
+        <img src={projet.image} alt="" />
+      </span>
+    </div>
+    <h3 className="projet-carte-titre" id={`projet-${projet.id}`}>{projet.title}</h3>
+    <p className="projet-carte-sous-titre">{projet.subtitle}</p>
+    <p className="lv-muted">{projet.courteDescription}</p>
+    <div className="lv-tags">
+      {projet.technologies.slice(0, 4).map((tech) => (
+        <span key={tech} className="lv-tag">{tech}</span>
+      ))}
+    </div>
+    <span className="projet-carte-lien">Voir les détails →</span>
+  </Link>
+);
+
 const Projets = () => {
+  usePageTitle('Projets');
   const projetsPersonnels = getProjetsPersonnels();
   const projetsEntreprise = getProjetsEntreprise();
+  const phare = projetsPersonnels.find((projet) => projet.id === 'f1Site');
+  const autres = projetsPersonnels.filter((projet) => projet.id !== 'f1Site');
 
   return (
-    <div className="projets-container">
-      <Navbar />
-      <div className="content">
+    <div className="projets">
+      <PageHero titre="Mes Projets Personnels">
+        <p>Découvrez mes projets personnels développés par passion</p>
+      </PageHero>
 
-        {/* Section Projets Personnels */}
-        <header className="page-header">
-          <h1>Mes Projets Personnels</h1>
-          <p>Découvrez mes projets personnels développés par passion</p>
-        </header>
-
-        <div className="articles-grid">
-          {projetsPersonnels.map(projet => (
-            <Link
-              key={projet.id}
-              to={`/projets/${projet.id}`}
-              className={`article-card ${projet.id === 'f1Site' ? 'flagship-card' : ''}`}
-            >
-              <div className="card-image">
-                <img src={projet.image} alt={projet.title} />
-                {projet.id === 'f1Site' && <div className="flagship-badge">Projet phare</div>}
-              </div>
-              <div className="card-content">
-                <h3>{projet.title}</h3>
-                <p className="project-subtitle">{projet.subtitle}</p>
-                <p className="project-description">{projet.courteDescription}</p>
-                <div className="tech-tags">
-                  {projet.technologies.slice(0, 4).map((tech, index) => (
-                    <span key={index} className="tech-tag">{tech}</span>
+      {/* Projet phare */}
+      {phare && (
+        <section className="lv-section">
+          <div className="lv-wrap">
+            <Link to={`/projets/${phare.id}`} className="projet-phare" aria-labelledby="projet-phare-titre">
+              <span className="projet-phare-image">
+                <img src={phare.image} alt="" />
+              </span>
+              <div className="projet-phare-texte">
+                <span className="lv-tab">Projet phare</span>
+                <h2 className="projet-phare-titre" id="projet-phare-titre">{phare.title}</h2>
+                <p className="projet-carte-sous-titre">{phare.subtitle}</p>
+                <p className="projet-phare-description">{phare.courteDescription}</p>
+                <div className="lv-tags">
+                  {phare.technologies.slice(0, 4).map((tech) => (
+                    <span key={tech} className="lv-tag">{tech}</span>
                   ))}
                 </div>
-                <div className="read-more">
-                  <span>Voir les détails →</span>
-                </div>
+                <span className="projet-carte-lien">Voir les détails →</span>
               </div>
             </Link>
+          </div>
+        </section>
+      )}
+
+      {/* Autres projets personnels */}
+      <section className={`lv-section ${phare ? 'lv-section--suite' : ''}`}>
+        <div className="lv-wrap projets-grille">
+          {autres.map((projet) => (
+            <ProjetCarte key={projet.id} projet={projet} />
           ))}
         </div>
+      </section>
 
-        {/* Section Projets Entreprise */}
-        <header className="page-header enterprise-header">
-          <h1>Projets Entreprise</h1>
-          <p>Projets professionnels réalisés en stage et alternance</p>
-        </header>
-
-        <div className="articles-grid">
-          {projetsEntreprise.map(projet => (
-            <Link
-              key={projet.id}
-              to={`/projets/${projet.id}`}
-              className="article-card enterprise-card"
-            >
-              <div className="card-image">
-                <img src={projet.image} alt={projet.title} />
-                <div className="enterprise-badge">Entreprise</div>
-              </div>
-              <div className="card-content">
-                <h3>{projet.title}</h3>
-                <p className="project-subtitle">{projet.subtitle}</p>
-                <p className="project-description">{projet.courteDescription}</p>
-                <div className="tech-tags">
-                  {projet.technologies.slice(0, 4).map((tech, index) => (
-                    <span key={index} className="tech-tag">{tech}</span>
-                  ))}
-                </div>
-                <div className="read-more">
-                  <span>Voir les détails →</span>
-                </div>
-              </div>
-            </Link>
-          ))}
+      {/* Projets entreprise */}
+      <section className="lv-section projets-entreprise">
+        <div className="lv-wrap">
+          <header className="projets-entreprise-header">
+            <h2 className="lv-h2">Projets Entreprise</h2>
+            <p className="lv-muted">Projets professionnels réalisés en stage et alternance</p>
+          </header>
+          <div className="projets-grille">
+            {projetsEntreprise.map((projet) => (
+              <ProjetCarte key={projet.id} projet={projet} entreprise />
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
