@@ -1,7 +1,7 @@
 export const juliaApp = {
   id: 'juliaApp',
   type: 'personnel',
-  title: "Julia App",
+  title: "MindLink",
   subtitle: "Plateforme thérapeutique avec assistant IA 24/7",
   image: "/julia-logo.svg",
   liveUrl: "",
@@ -9,7 +9,7 @@ export const juliaApp = {
   technologies: ["React Native", "Expo", "Node.js", "MongoDB", "Google Gemini", "NativeWind", "Expo Router"],
   courteDescription: "Application thérapeutique cross-platform connectant patients et thérapeutes via un assistant IA conversationnel disponible entre les séances",
 
-  conclusionOrale: "Julia App est une plateforme thérapeutique cross-platform (mobile et web depuis un seul codebase React Native/Expo) qui connecte patients et thérapeutes via un assistant IA conversationnel disponible entre les séances. Les patients accèdent à leur interface sans mot de passe via magic link, suivent au quotidien leur humeur, leur anxiété et leur sommeil, tandis que les thérapeutes disposent d'un dashboard de suivi complet avec upload de notes de session et détection automatique des situations de crise. Les données traitées étant des données de santé au sens de l'article 9 du RGPD, l'application impose un consentement explicite avant toute collecte, une séparation stricte des données par rôle et un stockage chiffré des tokens côté mobile.",
+  conclusionOrale: "MindLink est une plateforme thérapeutique cross-platform (mobile et web depuis un seul codebase React Native/Expo) qui connecte patients et thérapeutes via un assistant IA conversationnel disponible entre les séances. Les patients accèdent à leur interface sans mot de passe via magic link, suivent au quotidien leur humeur, leur anxiété et leur sommeil, tandis que les thérapeutes disposent d'un dashboard de suivi complet avec upload de notes de session et détection automatique des situations de crise. Les données traitées étant des données de santé au sens de l'article 9 du RGPD, l'application impose un consentement explicite avant toute collecte, une séparation stricte des données par rôle et un stockage chiffré des tokens côté mobile.",
 
   defis: [
     {
@@ -71,7 +71,7 @@ export const juliaApp = {
 
   resultats: {
     metriques: [
-      "Flow complet de bout en bout : création patient → magic link → chat Julia → dashboard thérapeute",
+      "Flow complet de bout en bout : création patient → magic link → chat avec l'assistant IA → dashboard thérapeute",
       "Système de compte thérapeute complet (login, inscription, profil, gestion patients)",
       "Chat patient façon iMessage avec sidebar de conversations résumées par l'IA",
       "Évaluations quotidiennes : humeur, anxiété, sommeil",
@@ -79,7 +79,7 @@ export const juliaApp = {
       "Détection automatique des situations de crise",
       "12 variantes de skeleton components pour les états de chargement"
     ],
-    impact: "Plateforme thérapeutique fonctionnelle permettant un suivi continu des patients entre les séances. L'assistant IA Julia réduit le sentiment d'isolement des patients et donne aux thérapeutes une vision plus complète de l'évolution de leurs patients."
+    impact: "Plateforme thérapeutique fonctionnelle permettant un suivi continu des patients entre les séances. L'assistant IA réduit le sentiment d'isolement des patients et donne aux thérapeutes une vision plus complète de l'évolution de leurs patients."
   },
 
   apprentissages: [
@@ -94,7 +94,7 @@ export const juliaApp = {
   ],
 
   prochaines_etapes: [
-    "Implémenter les notifications de crise en temps réel (push notifications quand Julia détecte une situation grave)",
+    "Implémenter les notifications de crise en temps réel (push notifications quand l'assistant IA détecte une situation grave)",
     "Affiner le système d'évaluation quotidienne avec des visualisations graphiques dans le dashboard thérapeute",
     "Ajouter une couche de tests unitaires sur les services critiques (auth, geminiService, emailService)",
     "Rédiger une politique de confidentialité conforme RGPD et implémenter le droit à l'effacement des données (droit à l'oubli — art. 17)"

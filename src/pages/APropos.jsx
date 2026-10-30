@@ -25,7 +25,7 @@ const APropos = () => {
             </p>
           </div>
           <p className="a-propos-chute lv-callout">
-            Ces deux passions ont un point commun : la technologie au service de la performance. C'est ce qui m'a conduit vers le BTS SIO option SLAM.
+            Ces deux passions ont un point commun : la technologie au service de la performance. C'est ce qui m'a conduit vers le BTS SIO option SLAM. Les transformer en projets techniques (SpeedTrack, Geeki) m'a ensuite fait découvrir la dimension projet, celle qui m'intéresse aujourd'hui le plus : d'où le Bachelor Chef de Projet Web & Digital.
           </p>
         </div>
       </section>

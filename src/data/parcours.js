@@ -10,15 +10,15 @@ export const parcours = [
   {
     annee: "2024 - 2026",
     titre: "BTS SIO SLAM",
-    etablissement: "Lyon",
+    etablissement: "Nexa Digital School, Lyon",
     description: "Spécialisation Solutions Logicielles et Applications Métiers",
     statut: "Obtenu"
   },
   {
-    annee: "2021 - 2023",
+    annee: "2024",
     titre: "Baccalauréat",
-    etablissement: "Lycée Martinière Monplaisir ",
-    description: "Bac Technologique STI2D",
+    etablissement: "La Martinière Monplaisir, Lyon",
+    description: "Bac STI2D, option SIN",
     statut: "Obtenu"
   }
 ];
