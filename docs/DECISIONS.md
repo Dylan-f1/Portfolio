@@ -48,3 +48,14 @@
   - L'interrupteur d'essai temporaire est supprimé.
 - **Fiches projet encadrées** (demande de Dylan) : fond de carte, filet fin autour, le filet épais du haut est gardé. Sans cadre, les cartes flottaient sur le fond.
 - **Config de preview corrigée.** L'entrée « Portfolio » de `D:\.claude\launch.json` pointait vers un ancien chemin ; elle pointe maintenant vers `C:\Users\Utilisateur\Projet-Perso\Portfolio`, port 5175 (le 5173 est pris par Ark Breeding).
+
+## 30/10/2026 — Alignement sur le CV d'octobre 2026
+
+Source : `C:\Users\Utilisateur\alternance\CV-DylanFERNANDES.pdf` (version du 19/10, demande de Dylan : « le portfolio n'a pas mon CV adéquat »). Le site servait encore l'ancien PDF (identique à `CV-DylanFERNANDES.backup-avant-correction.pdf`).
+
+- **PDF et aperçu PNG remplacés** dans `public/`. Le PNG est régénéré depuis le PDF (PyMuPDF, 300 dpi, 2481 × 3508 px, même taille qu'avant).
+- **Parcours** : BTS à « Nexa Digital School, Lyon » ; bac en « 2024 », « La Martinière Monplaisir, Lyon », « Bac STI2D, option SIN » (le site disait 2021-2023, le CV fait foi).
+- **Phrase d'accueil** (décision en attente n° 5) : mentionne le bachelor et l'alternance 2026-2027 « à Lyon et ses alentours », comme le titre du CV.
+- **À propos** : la chute ajoute le passage du CV sur la dimension projet (SpeedTrack, Geeki) qui mène au bachelor.
+- **Entreprise** : les missions du CV remplacent les trois puces génériques (conseiller beauté IA ZAO, tunnel Saleor, configurateur Lamazuna, back-office traductions, VPS OVH, Claude Code) ; « Lyon, France » devient « 100 % remote » ; nouvelle section « Stages » (Sylnux août 2025, Quevyn Rohel EI avril-juillet 2025), même titraille que « Mon Parcours ».
+- **Julia App renommé MindLink** (décision de Dylan, 30/10) : titre et texte de la page projet, comme sur le CV. Les trois mentions de « Julia » comme nom de l'assistant deviennent « l'assistant IA », pour ne pas mélanger deux noms. L'id `juliaApp`, l'URL `/projets/juliaApp` et le logo `julia-logo.svg` (sans texte) ne changent pas, pour ne pas casser les liens existants.

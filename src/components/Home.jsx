@@ -33,7 +33,7 @@ const Home = () => {
             <span>Fernandes</span>
           </h1>
           <p className="home-role">
-            Titulaire du BTS SIO SLAM, passionné d'informatique sous toutes ses formes — disponible pour une alternance à Lyon.
+            Titulaire du BTS SIO SLAM, en Bachelor Chef de Projet Web & Digital — disponible pour une alternance 2026-2027 à Lyon et ses alentours.
           </p>
           <div className="home-social">
             <a href="https://www.linkedin.com/in/dylan-fer" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
